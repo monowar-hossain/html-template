@@ -44,6 +44,9 @@
 	.service-icon i:before {
 		margin: 0 auto 20px;
 	}
+	div#accordion {
+	    margin-bottom: 50px;
+	}
 	.contact-from-area {
 		margin-top: 51px;
 	}
@@ -146,6 +149,9 @@
 
 	.social-icon {
 		text-align: center;
+	}
+	div#accordion {
+	    margin-bottom: 50px;
 	}
 	.contact-from-area {
 		margin-top: 51px;

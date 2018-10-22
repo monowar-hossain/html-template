@@ -1621,6 +1621,13 @@ Styled Pagination end
     color: #1e272e;
 }
 
+#accordion .card:last-child {
+    margin: 0;
+}
+
+.card-body {
+    padding-bottom: 17px;
+}
 
 /*** 
 ====================================================================

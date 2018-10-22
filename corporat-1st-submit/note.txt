@@ -1,0 +1,35 @@
+
+https://d29u17ylf1ylz9.cloudfront.net/fsulting-v2/fsulting/index.html	=menu/comment
+http://ary-themes.com/html/mushawart/blog.html			blog.html
+http://themeearth.com/tf/html/gobiss/				=search-bar-icon//slider(only text anumation)//about us//faq
+http://anilbasnet.com/demo/biz-lina/home-v1.html		=latest news/testimonial carosel
+http://themezinho.net/vorota/about-us.html		
+http://themesflat.com/html/standell/about.html
+http://rstheme.com/products/html/hepta/project-gallery.html		single portfolio
+
+
+
+
+
+
+/*
+ link color #0652DD
+link hover color #009432
+responsive
+*/
+
+
+
+1/slider problam : nav right:0 dile bire cole jacce.
+
+2/ PORTFOLIO te megnefick popup big img a curssor lafai
+
+3/counter up kaj korce na
+4/responsive: mobile a logo kivabe rakbo
+
+
+
+
+
+
+

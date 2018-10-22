@@ -1,0 +1,152 @@
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.service {
+    display: block;
+    text-align: center;
+	}
+	.service-icon i:before {
+		margin: 0 auto 20px;
+	}
+	
+	
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.mainmenu ul li a {
+		padding: 25px 10px;
+	}
+	.about-us-tab-button {
+		margin-bottom: 50px;
+	}
+	.single-team-member {
+		margin-bottom: 30px;
+	}
+	.our-team-area {
+		padding-bottom: 20px;
+	}
+	.numbers .item {
+		color: #fff;
+		margin-bottom: 40px;
+	}
+	.service {
+    display: block;
+    text-align: center;
+	}
+	.service-icon i:before {
+		margin: 0 auto 20px;
+	}
+	.contact-from-area {
+		margin-top: 51px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.section-padding {
+		padding: 60px 0;
+	}
+	.header-area {
+		display: none;
+	}
+	.header-top-area {
+		display: none;
+	}
+	.slicknav_menu {
+	display: block;
+    padding: 0;
+    background: #2A2A2A;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+	}
+	.slicknav_brand {
+		padding: 0;
+	}
+	.slicknav_brand img {
+		width: 40px;
+		padding: 0;
+	}
+	.slicknav_btn {
+		background: transparent;
+		margin: 9px 5px 6px;
+	}
+	.slicknav_nav ul {
+		border-top: 1px solid #ddd;
+		margin: 0;
+	}
+	.slicknav_nav li {
+		border-bottom: 1px solid #000;
+	}
+	.slicknav_nav li:last-child {
+		border: none;
+	}
+	.slicknav_nav li a {
+		margin: 0;
+		padding: 10px;
+		border-radius: inherit;
+	}
+	.slicknav_nav li a:hover {
+		background: #000;
+		color: #fff;
+	}
+	.slicknav_nav .slicknav_row {
+		margin: 0;
+		text-transform:uppercase;
+		padding: 10px;
+		border-radius: inherit;
+	}
+	.slicknav_nav .slicknav_row:hover {
+		background: #000;
+	}
+	
+	.slide-buttons a.boxed-btn {
+		margin-bottom: 20px;
+	}
+	.about-us-tab-button {
+		margin-bottom: 50px;
+	}
+	.about-us-tab-button p {
+		text-align: justify;
+	}
+	.single-team-member {
+		margin-bottom: 30px;
+	}
+	.our-team-area {
+		padding: 50px 0;
+	}
+	.service-area {
+		padding-top: 30px;
+	}
+	.service {
+		display: block;
+		text-align: center;
+	}
+	.service-icon i:before {
+		margin: 0 auto 20px;
+	}
+	.numbers .item {
+		color: #fff;
+		margin-bottom: 40px;
+	}
+
+
+	.footer-copyright {
+		text-align: center;
+	}
+
+	.social-icon {
+		text-align: center;
+	}
+	.contact-from-area {
+		margin-top: 51px;
+	}
+	.single-project-area p {
+		text-align: justify;
+	}
+	.testimonial-area .owl-nav button {
+		top: -35px;
+	}
+}

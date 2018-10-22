@@ -1807,6 +1807,10 @@ Styled Pagination end
 
 .contact-from-area .boxed-btn {
     padding: 7px 15px;
+	border:1px solid #1e272e;
+}
+.contact-from-area .boxed-btn:hover {
+    background: #1e272e;
 }
 
 

@@ -1139,13 +1139,15 @@ About Us area home section end
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
-
+.outside-none {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
 .single-projects {
     height: 250px;
     background-size: cover;
     background-position: center;
     background-color: #777;
-    margin-bottom: 15px;
     -webkit-transition: .3s;
     transition: .3s;
     position: relative;
@@ -1621,14 +1623,13 @@ Styled Pagination end
     background: #fff;
     color: #1e272e;
 }
-
 #accordion .card:last-child {
     margin: 0;
 }
-
 .card-body {
     padding-bottom: 17px;
 }
+
 
 /*** 
 ====================================================================
@@ -1814,7 +1815,6 @@ Styled Pagination end
     background: #1e272e;
 }
 
-
 /*** 
 ====================================================================
 	 contact area  end
@@ -1876,8 +1876,9 @@ nav.service-menu ul li a:hover {
     padding: 3px 0;
 }
 .news a:hover {
-	text-decoration: underline;
+text-decoration: underline;
 }
+
 .news span {
     display: block;
 }
@@ -2498,3 +2499,6 @@ ul.photo-bar li {
 	end counter-number Area
 ====================================================================
  ***/
+ .blog-inter p {
+    margin-top: 10px;
+}

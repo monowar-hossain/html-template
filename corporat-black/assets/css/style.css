@@ -582,7 +582,8 @@ body.preloader-active {
 
 .about-us-area .boxed-btn {
     margin-top: 18px;
-	transition: .3s;
+    transition: .3s;
+    border: 1px solid #1E272E;
 }
 .about-us-area .boxed-btn:hover {
     background: #1e272e;

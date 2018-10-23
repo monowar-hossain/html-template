@@ -1868,12 +1868,16 @@ nav.service-menu ul {
 nav.service-menu ul li a {
     color: #fff;
 }
-
+nav.service-menu ul li a:hover {
+    text-decoration: underline;
+}
 .news a {
     color: #fff;
     padding: 3px 0;
 }
-
+.news a:hover {
+	text-decoration: underline;
+}
 .news span {
     display: block;
 }

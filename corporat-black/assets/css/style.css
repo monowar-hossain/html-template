@@ -584,11 +584,13 @@ body.preloader-active {
     margin-top: 18px;
     transition: .3s;
     border: 1px solid #1E272E;
+    background: #1e272e;
+    color: #fff;
 }
 .about-us-area .boxed-btn:hover {
-    background: #1e272e;
     border: 1px solid #1e272e;
-    color: #fff;
+    background: transparent;
+    color: #1e272e;
 }
 
 
@@ -870,6 +872,7 @@ About Us area home section end
     width: 144px;
     margin: auto;
     border-radius: 50%;
+	margin-top: 25px;
 }
 
 .team-info {
@@ -883,7 +886,9 @@ About Us area home section end
     font-size: 20px;
     color: #141414;
 }
-
+.team-social-link {
+    margin-top: 15px;
+}
 .team-social-link a {
     width: 35px;
     height: 35px;
@@ -919,13 +924,14 @@ About Us area home section end
 
 .service-area.section-padding {
     padding-bottom: 50px;
+    padding-top: 75px;
 }
 
 .service {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 25px 15px;
+    padding: 25px;
     border: 1px solid #eeeeee;
     min-height: 220px;
     margin-bottom: 30px;
@@ -942,6 +948,7 @@ About Us area home section end
     border: 1px solid #1e272e;
     border-radius: 50%;
     margin-right: 25px;
+	margin-left:0;
 }
 
 .service-content h5 a {
@@ -1104,7 +1111,7 @@ About Us area home section end
 
 .portfolio-area.section-padding {
     background: #f1f2f6;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
 }
 
 .projects-title {
@@ -1386,7 +1393,9 @@ related single Project area end
 	 blog/latest Post Area  start
 ====================================================================
  ***/
-
+.latest-news-area.section-padding {
+    padding-bottom: 50px;
+}
 .single-latest-news {
     box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.3);
     -webkit-transition: box-shadow 0.3s, -webkit-transform 0.3s;
@@ -1433,10 +1442,12 @@ related single Project area end
     padding: 25px 30px;
     position: relative;
 }
-
-.latest-posts-title a {
+.latest-posts-title {
+    line-height: 23px;
     font-size: 19px;
     margin-bottom: 5px;
+}
+.latest-posts-title a {
 }
 
 .latest-posts-title:hover a {
@@ -1474,6 +1485,8 @@ span.cat-links a {
     transition: 0.3s;
     font-weight: 600;
     font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .more-link:hover {

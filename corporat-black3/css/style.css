@@ -544,6 +544,7 @@ transition:.4s;
     height: 60px;
     line-height: 60px;
     border-radius: 50%;
+    transition: .4s;
 }
 
 .slider-area .owl-nav i.fa:hover {

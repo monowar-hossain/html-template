@@ -143,7 +143,7 @@ $(document).ready(function(){
         if($.fn.isotope){
             $('.project-list').isotope({
               // options
-              itemSelector: '.box',
+              itemSelector: '.col-lg-4',
               layoutMode: 'fitRows'
             });
         };

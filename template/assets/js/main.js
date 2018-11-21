@@ -1,3 +1,5 @@
+
+
 //menu start
 (function($) {
 $.fn.menumaker = function(options) {  
@@ -124,21 +126,20 @@ $(document).ready(function(){
 
 
 
-//      start isotope
-    $(".projects-filter li").on('click', function() {
+// start isotop
+// init Isotope
+var $grid = $('.grid').isotope({
+  // options
+});
+// filter items on button click
+$('.projects-filter').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+$('.projects-filter').on( 'click', 'li', function() {
+  $('this').addClass('active').siblings().removeClass('active');
 
-        $(".projects-filter li").removeClass("active");
-        $(this).addClass("active");
-
-        var selector = $(this).attr('data-filter');
-        $(".project-list").isotope({
-                    filter: selector,
-        });
-    });
-
-
-       jQuery(".project-list").isotope();
- 
+});
 //      end isotope
 //testimonial start
 

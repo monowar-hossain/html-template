@@ -133,20 +133,11 @@ $(document).ready(function(){
         var selector = $(this).attr('data-filter');
         $(".project-list").isotope({
                     filter: selector,
-                    masonry: {
-                        
-                    }
         });
     });
 
 
-        if($.fn.isotope){
-            $('.project-list').isotope({
-              // options
-              itemSelector: '.col-lg-4',
-              layoutMode: 'fitRows'
-            });
-        };
+       jQuery(".project-list").isotope();
  
 //      end isotope
 //testimonial start

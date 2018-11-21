@@ -492,13 +492,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
            projects-css
  ************************************************************************/
 
-.projects-filter {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: -7px;
-}
-
-.projects-filter li {
+.projects-filter ul li {
     display: inline-block;
     cursor: pointer;
     margin: 0 10px;
@@ -509,8 +503,9 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 .projects-filter li:hover {
     color: #FFC20E;
 }
-.project-list{
-    overflow: hidden;
+.grid{
+    display: block;
+    width: 100%;
 }
 /* --hover css--*/
 .box{
@@ -522,7 +517,6 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     width: 100%;
     height: auto;
 }
-/*
 .box .box-text{
     padding: 25% 5%;
     position: absolute;
@@ -600,7 +594,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     color: #fff;
     border-radius: 50%;
     box-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
-}*/
+}
 
 /***********************************************************************
            end-projects-css

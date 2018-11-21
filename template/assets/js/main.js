@@ -132,10 +132,23 @@ $(document).ready(function(){
 
         var selector = $(this).attr('data-filter');
         $(".project-list").isotope({
-            filter: selector,
+                    filter: selector,
+                    masonry: {
+                        
+                    }
         });
     });
     jQuery(".project-list").isotope();
+
+
+
+        if($.fn.isotope){
+            $('.project-list').isotope({
+              // options
+              itemSelector: '.box',
+              layoutMode: 'fitRows'
+            });
+        };
 //      end isotope
 //testimonial start
 

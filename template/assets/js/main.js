@@ -138,15 +138,7 @@ $(document).ready(function(){
                     }
         });
     });
-
-
-        if($.fn.isotope){
-            $('.project-list').isotope({
-              // options
-              itemSelector: '.box',
-              layoutMode: 'fitRows'
-            });
-        };
+        $('.project-list').isotope();
 //      end isotope
 //testimonial start
 

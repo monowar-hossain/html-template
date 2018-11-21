@@ -503,12 +503,10 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 .projects-filter li:hover {
     color: #FFC20E;
 }
-.grid{
-    width: 100%;
-    position:relative;
-}
+
 .element-item{
-    width: 100%;
+    width: 30%;
+    height: 270px;
     margin-bottom: 30px;
 }
 /* --hover css--*/

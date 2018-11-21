@@ -147,6 +147,7 @@ $(document).ready(function(){
               layoutMode: 'fitRows'
             });
         };
+ 
 //      end isotope
 //testimonial start
 

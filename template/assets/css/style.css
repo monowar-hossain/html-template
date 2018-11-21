@@ -504,17 +504,16 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     color: #FFC20E;
 }
 .grid{
-    width:100%;
+    width: 100%;
 }
 .element-item{
-    width: 325px;
+    width: 100%;
     margin-bottom: 30px;
 }
 /* --hover css--*/
 .box{
     overflow: hidden;
     position: relative;
-    margin-bottom: 30px;
 }
 .box img{
     width: 100%;

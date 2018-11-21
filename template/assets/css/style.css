@@ -503,6 +503,9 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 .projects-filter li:hover {
     color: #FFC20E;
 }
+.grid{
+    width:100%;
+}
 .element-item{
     width: 325px;
     margin-bottom: 30px;

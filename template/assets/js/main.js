@@ -138,8 +138,6 @@ $(document).ready(function(){
                     }
         });
     });
-    jQuery(".project-list").isotope();
-
 
 
         if($.fn.isotope){

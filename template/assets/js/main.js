@@ -137,12 +137,16 @@ $('.projects-filter').on( 'click', 'li', function() {
   $grid.isotope({ filter: filterValue });
 });
 $('.projects-filter').on( 'click', 'li', function() {
-  $('this').addClass('active').siblings().removeClass('active');
+  $(this).addClass('active').siblings().removeClass('active');
 
 });
 
 
-
+$('.grid').isotope({
+ // options
+ itemSelector: '.element-item',
+ layoutMode: 'fitRows'
+});
 //      end isotope
 //testimonial start
 

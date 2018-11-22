@@ -97,7 +97,7 @@ img {
 .scrollTop {
     position: fixed;
     right: 20px;
-    bottom: 45px;
+    bottom: 20px;
     background-color: #FFC20E;
     border: 1px solid #FFC20E;
     padding: 10px 15px;
@@ -106,7 +106,7 @@ img {
     z-index: 999;
     color: #fff;
     font-size: 18px;
-    box-shadow: 0px 4px 5px 0px #2A2A2A;
+    box-shadow: 0px 2px 5px 0px #2A2A2A;
 }
 .scrollTop:hover {
     color: #FFC20E;
@@ -492,6 +492,9 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
            projects-css
  ************************************************************************/
 
+.projects-filter{
+    margin: 0px auto 30px;
+}
 .projects-filter ul li {
     display: inline-block;
     cursor: pointer;
@@ -499,8 +502,8 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: all .5s ease-in-out;
     font-weight: 600;
 }
-.projects-filter li.active,
-.projects-filter li:hover {
+.projects-filter ul li.active,
+.projects-filter ul li:hover {
     color: #FFC20E;
 }
 .grid{
@@ -627,6 +630,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 .cta-area .tec-btn{
     background-color: #fff;
     color: #FFC20E;
+    display: block;
 }
 .cta-area .tec-btn:hover .btn-front {
     color: #FFC20E;
@@ -909,7 +913,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
  ************************************************************************/
 
 .client-area {
-    background-color: #FFC20E;
+    /*background-color: #FFC20E;*/
 }
 .client-area .single-client{
     transition: all 0.5s ease-out 0s;
@@ -972,7 +976,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     padding-left: 18px;
     color: #fff;
     text-transform: capitalize;
-    transition: all 5s ease;
+    transition: all .5s ease;
 }
 .footer-area .services-widget li a:hover {
     color: #FFC20E;

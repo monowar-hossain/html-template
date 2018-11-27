@@ -345,8 +345,14 @@
 @media only screen and (max-width: 767px) {
   .mt-xs-40 {
     padding-top: 40px }
+  .mt-xs-45 {
+    margin-top: 45px !important }
   .mt-xs-0 {
-    margin-top: 0px }
+    margin-top: 0px !important }
+  .mb-xs-45 {
+    margin-bottom: 45px !important }
+  .mb-xs-0 {
+    margin-bottom: 0px !important }
 }
 
 

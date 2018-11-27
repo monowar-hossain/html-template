@@ -4,6 +4,16 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+	.experience {
+	    margin-bottom: 45px;
+	}
+	.skills {
+	    margin-bottom: 45px;
+	}
+
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 .main-section {
     margin-left: -20px;

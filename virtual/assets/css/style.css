@@ -5,7 +5,7 @@
 1. Fonts / Reset / Global
 2. wrapper
 4. About Section / Skill Section
-5.	CONTACT ME
+5.  CONTACT ME
 6. Services Section / single service
 7. Project section / single Project / Related Projects
 
@@ -15,7 +15,7 @@
 
 /***
 ====================================================================
-			Fonts
+            Fonts
 ====================================================================
  ***/
 
@@ -24,36 +24,36 @@
 /*-- Reset --*/
 
 * {
-	margin: 0px;
-	padding: 0px;
-	border: none;
-	outline: none;
-	font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 100%;
 }
 
 
 /*-- Global Settings --*/
 
 body {
-	color: #666666;
+    color: #f1f2f3;
     background-color: #222f3e;
-	font-size: 15px;
-	line-height: 1.7em;
-	font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7em;
+    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
 
 a {
-	text-decoration: none;
-	cursor: pointer;
-	color: #24252c;
+    text-decoration: none;
+    cursor: pointer;
+    color: #24252c;
 }
 
 a:hover,
 a:focus,
 a:visited {
-	text-decoration: none;
-	outline: none;
+    text-decoration: none;
+    outline: none;
 }
 
 
@@ -63,40 +63,41 @@ h3,
 h4,
 h5,
 h6 {
-	position: relative;
-	font-weight: normal;
-	margin: 0;
-	background: none;
-	line-height: 1.2em;
-	font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: normal;
+    margin: 0;
+    background: none;
+    line-height: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f2f3;
 }
 img{
-	width: 100%;
+    width: 100%;
 }
 textarea {
-	overflow: hidden;
-	resize: none;
+    overflow: hidden;
+    resize: none;
 }
 
 button {
-	outline: none;
-	cursor: pointer;
+    outline: none;
+    cursor: pointer;
 }
 
 button:focus {
-	outline: none;
+    outline: none;
 }
 
 p {
-	font-weight: 400;
-	margin: 0;
+    font-weight: 400;
+    margin: 0;
 }
 
 ul,
 li {
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -112,11 +113,10 @@ li {
 }
 
 .wrapper .container-fluid {
-	padding: 0px;
+    padding: 0px;
 }
 
 .hero-pic {
-    background-image: url(../img/young-man.jpg);
     background-image: url(../img/about-man.jpg);
     height: calc(100vh - 40px);
     background-size: cover;
@@ -156,9 +156,11 @@ li {
     font-size: 25px;
     font-weight: 400;
     margin-right: 10px;
-    color: #fff;
+    color: #f1f2f3;
 }
-
+.my-name h2 i {
+    margin-right: 10px;
+}
 .main-section .section-page span.color {
     color: #FF7200;
     transition: .4s;
@@ -167,12 +169,12 @@ li {
 }
 
 .main-section .section-page span.white {
-    color: #fff;
+    color: #f1f2f3;
     transition: .4s;
 }
 
 .main-section .section-page:hover span.color {
-    color: #fff;
+    color: #f1f2f3;
 }
 
 .main-section .section-page:hover span.white {
@@ -187,16 +189,16 @@ li {
 /* Home section css end */
 
 .tech-panel{
-    left: 0;
-    width: 100%;
+    left: 42%;
+    width: 58%;
     height: 100%;
     top: 100%;
     position: absolute;
-	position:fixed;
+    position:fixed;
     background-color: #222f3e;
     z-index: 99;
     opacity: 1;
-    color: #fff;
+    color: #f1f2f3;
     visibility: visible;
 }
 
@@ -204,28 +206,10 @@ li {
 .container-fluid{
     background-color: #222f3e;
 }
-/*
-.tech-panel:target {
-    margin-left:0%;
-    opacity: 1;
-    visibility: visible;
-}
-.tech-panel {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: #222f3e;
-    z-index: 99;
-    opacity: 1;
-    color: #fff;
-    margin-left:97%;
-    transition: 1s;
-}*/
+
 h2.page-title {
     font-size: 30px;
-    color: #ffffff;
+    color: #f1f2f3;
     margin-top: 60px;
     margin-bottom: 40px;
     font-weight: 700;
@@ -247,14 +231,14 @@ h2.page-title {
 
 .title-about-me {
     font-size: 30px; 
-    color: #fff;
+    color: #f1f2f3;
     margin-top: 60px;
 }
 
 .about-info p {
     font-size: 15px;
     font-weight: 400;
-    color: #f1f2f6;
+    color: #f1f2f3;
     line-height: 26px;
     margin: 20px 0 20px 0;
 }
@@ -278,9 +262,9 @@ h2.page-title {
     width: 35px;
     height: 35px;
     background: #1e272e;
-    color: #fff;
+    color: #f1f2f3;
     display: inline-block;
-    border: 1px solid #fff;
+    border: 1px solid #f1f2f3;
     text-align: center;
     border-radius: 50%;
     transition: .4s;
@@ -297,11 +281,11 @@ h2.page-title {
 
 
 .btn-medium-border {
-    border: 2px solid #fff;
+    border: 2px solid #f1f2f3;
     border-radius: 35px;
     padding: 10px 45px;
     font-size: 14px;
-    color: #fff;
+    color: #f1f2f3;
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
@@ -314,6 +298,7 @@ h2.page-title {
 /*---------- Factes -------- */
 .fun-facts {
     padding-top: 60px;
+    padding-bottom: 15px;
 }
 
 .fun-facts h2 {
@@ -425,6 +410,9 @@ h2.page-title {
 #contact-section form input[type="submit"]:hover {
     background-color:#fff
 }
+#contact-section button.btn.btn-block {
+   border-radius: 0;
+}
 
 /* Contact me Section end */
 
@@ -432,7 +420,9 @@ h2.page-title {
 /*-------------------------------
  05- Services
 -----------------------------*/
-
+#service-section .mCSB_container {
+    padding-bottom: 15px;
+}
 #service-section .single-service {
     padding: 25px;
     margin-bottom: 30px;
@@ -503,7 +493,7 @@ h2.page-title {
     font-size: 14px;
     font-weight: 600;
     margin-right: 10px;
-    color: #fff;
+    color: #f1f2f3;
     padding: 5px 15px;
     text-transform: uppercase;
     cursor: pointer;
@@ -639,7 +629,6 @@ h2.page-title {
 /*-- skills ---*/
 .skills {
     background: #1E272E;
-    margin: 60px 0;
     padding: 45px 28px 50px;
     border-radius: 5px;
 }
@@ -768,6 +757,5 @@ border-color: transparent transparent transparent #FF7200;
     right: 45px;
 }
 /* right menu end */
-
 
 

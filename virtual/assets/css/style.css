@@ -101,14 +101,69 @@ li {
 }
 
 
-/*-- main css --*/
+/*================ common css ===================*/
+
+.tech-panel{
+    left: 42%;
+    width: 58%;
+    height: 100%;
+    top: 100%;
+    position: absolute;
+    position:fixed;
+    background-color: #222f3e;
+    z-index: 99;
+    opacity: 1;
+    color: #f1f2f3;
+    visibility: visible;
+}
+
+.container-fluid{
+    background-color: #222f3e;
+}
+
+h2.page-title {
+    font-size: 30px;
+    color: #f1f2f3;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.about-scroll{
+    height: 100vh;
+    padding-right: 42px;
+}
+.service-scroll{
+    height: 100vh;
+    padding-right: 42px;
+}
+.portfolio-scroll{
+    height: 100vh;
+    padding-right: 42px;
+}
+.service-scroll {
+    height: 100vh;
+    padding-right: 42px;
+}
+.resume-scroll{
+    height: 100vh;
+    padding-right: 42px;
+}
+.contact-scroll{
+    height: 100vh;
+    padding-right: 42px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #ea664f;
+}
+
+/* common css end */
+
 
 /* Home section css start */
 
 .wrapper {
     color: #fff;
     padding: 20px;
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -117,7 +172,7 @@ li {
 }
 
 .hero-pic {
-    background-image: url(../img/about-man.jpg);
+    background-image: url(../img/young-man.jpg);
     height: calc(100vh - 40px);
     background-size: cover;
     background-position: center;
@@ -133,7 +188,6 @@ li {
 .main-section .section-page {
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
     padding-left: 20px;
     margin: 10px 0px;
     border-left: 20px solid #222F3E;
@@ -188,46 +242,7 @@ li {
 
 /* Home section css end */
 
-.tech-panel{
-    left: 42%;
-    width: 58%;
-    height: 100%;
-    top: 100%;
-    position: absolute;
-    position:fixed;
-    background-color: #222f3e;
-    z-index: 99;
-    opacity: 1;
-    color: #f1f2f3;
-    visibility: visible;
-}
-
-/* common css start */
-.container-fluid{
-    background-color: #222f3e;
-}
-
-h2.page-title {
-    font-size: 30px;
-    color: #f1f2f3;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    font-weight: 700;
-}
-/* common css end */
-
-
-
-
-/* ABOUT ME Section start */
-.avatar-image {
-    height: 100vh;
-    display: flex;
-    width: 100%;
-    background-image: url(../img/about-man.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+/* About me section start */
 
 .title-about-me {
     font-size: 30px; 
@@ -279,7 +294,6 @@ h2.page-title {
     line-height: 35px;
 }
 
-
 .btn-medium-border {
     border: 2px solid #f1f2f3;
     border-radius: 35px;
@@ -295,7 +309,7 @@ h2.page-title {
     border: 2px solid #FF7200;
     color: #FF7200;
 }
-/*---------- Factes -------- */
+/*============= fun facts ======= */
 .fun-facts {
     padding-top: 60px;
     padding-bottom: 15px;
@@ -311,13 +325,13 @@ h2.page-title {
     margin-bottom: 30px;
 }
 .fun-facts span {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .fun-facts h4 {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #f1f2f3;
     font-weight: 700;
     margin-top: 15px;
 }
@@ -325,15 +339,11 @@ h2.page-title {
 .fun-facts h5 {
     font-size: 18px;
     font-weight: 400;
-    color: #fff;
+    color: #f1f2f3;
+    text-transform: uppercase;
 }
 
-
-
-
-
-
-/* Contact me Section start*/
+/*=================== Contact me Section start===================*/
 
 #contact-section iframe {
     width: 100%;
@@ -414,12 +424,11 @@ h2.page-title {
    border-radius: 0;
 }
 
-/* Contact me Section end */
+/*================== Contact me Section end==================== */
 
 
-/*-------------------------------
- 05- Services
------------------------------*/
+/*===================Services section start==================*/
+
 #service-section .mCSB_container {
     padding-bottom: 15px;
 }
@@ -430,7 +439,7 @@ h2.page-title {
 }
 #service-section .single-service span {
     font-size: 30px;
-    color: #FF7200;
+    color: #f1f2f3;
 }
 #service-section .single-service h3 {
     font-size: 18px;
@@ -442,53 +451,23 @@ h2.page-title {
 }
 #service-section .single-service p {
     font-size: 14px;
-    color: #bac8d3;
+    color: #f1f2f3;
     font-weight: 400;
     line-height: 26px;
     padding: 0;
     margin: 0;
 }
 
+/*===================Services section end==================*/
 
+/*===================portfolio-section  start==================*/
 
-/*-------------------------------
- portfolio-section 
------------------------------*/
-.about-scroll{
-    height: 100vh;
-    padding-right: 42px;
+#portfolio-section .projects-filter {
+    margin: -10px auto 25px;
 }
-.service-scroll{
-    height: 100vh;
-    padding-right: 42px;
-}
-.portfolio-scroll{
-    height: 100vh;
-    padding-right: 42px;
-}
-.service-scroll {
-    height: 100vh;
-    padding-right: 42px;
-}
-.resume-scroll{
-    height: 100vh;
-    padding-right: 42px;
-}
-.contact-scroll{
-    height: 100vh;
-    padding-right: 42px;
-}
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background-color: #ea664f;
-}
-
-
-#portfolio-section .button-group {
-    margin-bottom: 20px;
-    margin-top: -10px;
-}
-#portfolio-section .button-group button {
+#portfolio-section .projects-filter li {
     border: 0;
+    display: inline-block;
     background: transparent;
     font-size: 14px;
     font-weight: 600;
@@ -501,26 +480,36 @@ h2.page-title {
     transition: all .2s ease-in-out;
 }
 
-#portfolio-section .button-group button:hover,
-#portfolio-section .button-group button.active {
+#portfolio-section .projects-filter li:hover,
+#portfolio-section .projects-filter li.active {
     color: #FF7200;
     background: #1E272E;
 }
 
-#portfolio-section .col-lg-4{
-    padding-right: 10px;
-    padding-left: 10px;
+.element-item {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 255px;
 }
 .single-portfolio {
     position: relative;
-    margin-bottom: 30px;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
+.portfolio-1{background-image: url(../img/portfolio/1.jpg);}
+.portfolio-2{background-image: url(../img/portfolio/2.jpg);}
+.portfolio-3{background-image: url(../img/portfolio/3.jpg);}
+.portfolio-4{background-image: url(../img/portfolio/4.jpg);}
+.portfolio-5{background-image: url(../img/portfolio/5.jpg);}
+.portfolio-6{background-image: url(../img/portfolio/6.jpg);}
 
 .single-portfolio .overlay{
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 101%;
     height: 100%;
     background: linear-gradient(45deg, #ea664f 0%,#ffb736 100%);
     color: #ffffff;
@@ -560,11 +549,37 @@ h2.page-title {
     opacity: .95;
 }
 
+/*  start popup-mfp-zoom: ;*/
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out; 
+    -moz-transition: all 0.3s ease-out; 
+    -o-transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+.mfp-arrow-left:after, .mfp-arrow-left .mfp-a {
+    border-right: 17px solid #FF7200;
+}
+
+/*===================portfolio-section  end==================*/
 
 
 
-/*fs==============================================================sgh*/
-
+/*===================resume-section  start==================*/
 
 .experience {
     background: #1E272E;
@@ -621,11 +636,6 @@ h2.page-title {
     background: #FF7200;
 }
 
-
-
-
-
-
 /*-- skills ---*/
 .skills {
     background: #1E272E;
@@ -665,11 +675,9 @@ h2.page-title {
     right: 0;
 }
 
+/*===================resume-section  end==================*/
 
-
-
-
-/* right menu start */
+/*=================== right menu  start==================*/
 .right-menu {
     width: 40px;
     height: 100%;
@@ -724,22 +732,22 @@ h2.page-title {
     opacity: 0;
 }
 .right-menu ul li .hover:before {
-content: '';
-position: absolute;
-right: -6px;
-top: 4px;
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 8px 0 8px 8px;
-border-color: transparent transparent transparent #FF7200;
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 8px;
+    border-color: transparent transparent transparent #FF7200;
 }
 .right-menu ul li:hover .hover {
     right: 53px;
     opacity: 1;
 }
 
-
+/*right menu social*/
 
 .right-menu ul.social {
     position: absolute;
@@ -756,6 +764,5 @@ border-color: transparent transparent transparent #FF7200;
     bottom: 0;
     right: 45px;
 }
-/* right menu end */
-
+/*=================== right menu  end==================*/
 

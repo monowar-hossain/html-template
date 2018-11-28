@@ -278,15 +278,15 @@ h2.page-title {
     width: 35px;
     height: 35px;
     background: #1e272e;
-    color: #f1f2f3;
+    color: #FF003C;
     display: inline-block;
-    border: 1px solid #f1f2f3;
+    border: 1px solid #FF003C;
     text-align: center;
     border-radius: 50%;
     transition: .4s;
 }
 .social-links a:hover {
-    color: #FF003C;
+    color: #f1f2f3;
     border: 1px solid #FF003C;
 }
 
@@ -296,11 +296,11 @@ h2.page-title {
 }
 
 .btn-medium-border {
-    border: 2px solid #f1f2f3;
+    border: 2px solid #FF003C;
     border-radius: 35px;
     padding: 10px 45px;
     font-size: 14px;
-    color: #f1f2f3;
+    color: #FF003C;
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
@@ -308,7 +308,7 @@ h2.page-title {
 }
 .btn-medium-border:hover {
     border: 2px solid #FF003C;
-    color: #FF003C;
+    color: #f1f2f3;
 }
 /*============= fun facts ======= */
 .fun-facts {
@@ -327,6 +327,7 @@ h2.page-title {
 }
 .fun-facts span {
     font-size: 40px;
+    color: #FF003C;
 }
 
 .fun-facts h4 {
@@ -368,6 +369,7 @@ h2.page-title {
     border-radius: 50%;
     position: absolute;
     background-color: #1e272e;
+    color: #FF003C;
 }
 .contact-icon i {
     line-height: 50px;
@@ -440,7 +442,7 @@ h2.page-title {
 }
 #service-section .single-service span {
     font-size: 30px;
-    color: #f1f2f3;
+    color: #FF003C;
 }
 #service-section .single-service h3 {
     font-size: 18px;
@@ -547,7 +549,9 @@ h2.page-title {
     text-decoration: none;
     font-size: 20px;
 }
-
+.single-portfolio span {
+    color: #FF003C;
+}
 .single-portfolio:hover .overlay {
     opacity: .95;
 }

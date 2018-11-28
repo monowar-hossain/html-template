@@ -25,12 +25,41 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+.main-section .section-page.my-home {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+}
+
+.row.main-section {
+    padding-top: 120px;
+}
+
+.main-section .section-page {
+}
+
+.main-section .section-page.my-home i.fa {
+    display: none;
+}
+
+.my-name.text-center {
+    width: 100%;
+}
+
+
+
 .main-section {
     margin-left: -20px;
 }
 .tech-panel{
     left: -8px;
     width: 95%;
+}
+.right-menu ul li a .icon {
+    height: 25px;
+    line-height: 25px;
 }
 
 }

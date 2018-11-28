@@ -1,59 +1,43 @@
-        jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
+
+//counter start
+    $('.count').counterUp({
+        delay: 10,
+        time: 1000
+    });
+//counter end
+
+//mCustomScrollbar start
+    $(".about-scroll").mCustomScrollbar({
+        scrollInertia:50,
+    });
+
+    $(".service-scroll").mCustomScrollbar({
+        scrollInertia:50,
+    });
+
+    $(".portfolio-scroll").mCustomScrollbar({
+        scrollInertia:50,
+    });
+
+    $(".resume-scroll").mCustomScrollbar({
+        scrollInertia:100,
+    });
+
+    $(".contact-scroll").mCustomScrollbar({
+        scrollInertia:50,
+    });
+
+//mCustomScrollbar end
 
 
-            $('.count').counterUp({
-                delay: 10,
-                time: 1000
-            });
-
-
-		
-		//		start isotope
-        $(".filter-button button").on('click', function() {
-
-    		$(".filter-button button").removeClass("active");
-    		$(this).addClass("active");
-
-    		var selector = $(this).attr('data-filter');
-    		$(".project-list").isotope({
-    			filter: selector,
-    		});
-    	});
-		jQuery(".project-list").isotope();
-	//		end isotope
-
-
-        //mCustomScrollbar start
-            $(".about-scroll").mCustomScrollbar({
-                scrollInertia:50,
-            });
-
-            $(".service-scroll").mCustomScrollbar({
-                scrollInertia:50,
-            });
-
-            $(".portfolio-scroll").mCustomScrollbar({
-                scrollInertia:50,
-            });
-
-            $(".resume-scroll").mCustomScrollbar({
-                scrollInertia:100,
-            });
-
-            $(".contact-scroll").mCustomScrollbar({
-                scrollInertia:50,
-            });
-
-        //mCustomScrollbar end
-
-
-        $(".section-page").click(function(){
-            $(".right-menu").animate({right: '0%'}, 1600);
-        });
-        $(".myhome").click(function(){
-            $(".right-menu").animate({right: '-100%'}, 1600);
-            $(".tech-panel").animate({top: '100%'}, 600);
-        });
+    $(".section-page").click(function(){
+        $(".right-menu").animate({right: '0%'}, 1600);
+    });
+    $(".myhome").click(function(){
+        $(".right-menu").animate({right: '-100%'}, 1600);
+        $(".tech-panel").animate({top: '100%'}, 600);
+    });
 
 
     $(".about-section").click(function(){
@@ -85,20 +69,51 @@
 
 //magnificPopup start
 
-    $('.image-link').magnificPopup({
-            type:'image',
-            gallery: {
-                  enabled: true
-                },
-                removalDelay: 1000,
-            
-
-});
+        $('.zoom-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          closeOnContentClick: false,
+          closeBtnInside: false,
+          mainClass: 'mfp-with-zoom mfp-img-mobile',
+          gallery: {
+            enabled: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 600, // don't foget to change the duration also in CSS
+            opener: function(element) {
+              return element.find('span');
+            }
+          }
+          
+        });
 
 //magnificPopup end
 
+// start isotop
 
-        });
+    var $grid = $('.grid').isotope({
+      // options
+    });
+    // filter items on button click
+    $('.projects-filter').on( 'click', 'li', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+    $('.projects-filter').on( 'click', 'li', function() {
+      $(this).addClass('active').siblings().removeClass('active');
+
+    });
+
+    $('.grid').isotope({
+     // options
+     itemSelector: '.element-item',
+     layoutMode: 'fitRows'
+    });
+
+// end isotope
 
 
+
+});
 

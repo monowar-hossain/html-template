@@ -15,16 +15,10 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-.main-section {
-    margin-left: -20px;
-}
+
 .tech-panel{
     left: 0;
-    width: 100%;
-}
-
-.avatar-image{
-	display:none;
+    width: 95%;
 }
 
 
@@ -35,8 +29,8 @@
     margin-left: -20px;
 }
 .tech-panel{
-    left: 0;
-    width: 100%;
+    left: -8px;
+    width: 95%;
 }
 
 }

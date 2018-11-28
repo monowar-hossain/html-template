@@ -104,8 +104,9 @@ li {
 /*================ common css ===================*/
 
 .tech-panel{
-    left: 42%;
-    width: 58%;
+    left: 40.7%;
+    margin-left: 15px;
+    width: 55%;
     height: 100%;
     top: 100%;
     position: absolute;
@@ -130,27 +131,27 @@ h2.page-title {
 }
 .about-scroll{
     height: 100vh;
-    padding-right: 42px;
+    padding-right: 20px;
 }
 .service-scroll{
     height: 100vh;
-    padding-right: 42px;
+    padding-right: 20px;
 }
 .portfolio-scroll{
     height: 100vh;
-    padding-right: 42px;
+    padding-right: 20px;
 }
 .service-scroll {
     height: 100vh;
-    padding-right: 42px;
+    padding-right: 20px;
 }
 .resume-scroll{
     height: 100vh;
-    padding-right: 42px;
+    padding-right: 20px;
 }
 .contact-scroll{
     height: 100vh;
-    padding-right: 42px;
+    padding-right: 20px;
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: #ea664f;
@@ -464,6 +465,7 @@ h2.page-title {
 
 #portfolio-section .projects-filter {
     margin: -10px auto 25px;
+    padding-left: 20px;
 }
 #portfolio-section .projects-filter li {
     border: 0;
@@ -495,6 +497,7 @@ h2.page-title {
     position: relative;
     overflow: hidden;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
@@ -509,7 +512,7 @@ h2.page-title {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 101%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(45deg, #ea664f 0%,#ffb736 100%);
     color: #ffffff;

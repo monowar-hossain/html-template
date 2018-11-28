@@ -1,9 +1,9 @@
 /* virtual - HTML Template */
 
 
-/************ TABLE OF CONTENTS ***************
+/************ TABLE OF CONTENTS *************** FF003C
 1. Fonts / Reset / Global
-2. wrapper
+2. wrapper 
 4. About Section / Skill Section
 5.  CONTACT ME
 6. Services Section / single service
@@ -154,7 +154,7 @@ h2.page-title {
     padding-right: 20px;
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background-color: #ea664f;
+    background-color: #FF003C;
 }
 
 /* common css end */
@@ -217,7 +217,7 @@ h2.page-title {
     margin-right: 10px;
 }
 .main-section .section-page span.color {
-    color: #FF7200;
+    color: #FF003C;
     transition: .4s;
     font-weight: 700;
     padding-right: 7px;
@@ -233,7 +233,7 @@ h2.page-title {
 }
 
 .main-section .section-page:hover span.white {
-    color: #FF7200;
+    color: #FF003C;
 }
 
 .main-section .section-page.my-home {
@@ -286,8 +286,8 @@ h2.page-title {
     transition: .4s;
 }
 .social-links a:hover {
-    color: #FF7200;
-    border: 1px solid #FF7200;
+    color: #FF003C;
+    border: 1px solid #FF003C;
 }
 
 .social-links a i {
@@ -307,8 +307,8 @@ h2.page-title {
     transition: .4s;
 }
 .btn-medium-border:hover {
-    border: 2px solid #FF7200;
-    color: #FF7200;
+    border: 2px solid #FF003C;
+    color: #FF003C;
 }
 /*============= fun facts ======= */
 .fun-facts {
@@ -484,7 +484,7 @@ h2.page-title {
 
 #portfolio-section .projects-filter li:hover,
 #portfolio-section .projects-filter li.active {
-    color: #FF7200;
+    color: #FF003C;
     background: #1E272E;
 }
 
@@ -512,9 +512,9 @@ h2.page-title {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 101%;
     height: 100%;
-    background: linear-gradient(45deg, #ea664f 0%,#ffb736 100%);
+    background: linear-gradient(45deg, #FF003C 0%,#ffb736 100%);
     color: #ffffff;
     opacity: 0;
     transition: all .7s ease-in-out;
@@ -575,9 +575,17 @@ h2.page-title {
     opacity: 0;
 }
 .mfp-arrow-left:after, .mfp-arrow-left .mfp-a {
-    border-right: 17px solid #FF7200;
+    border-right: 17px solid #FF003C;
 }
-
+.mfp-arrow-left:before, .mfp-arrow-left .mfp-b {
+    border-right: 27px solid #1E272E;
+}
+.mfp-arrow-right:after, .mfp-arrow-right .mfp-a {
+    border-left: 17px solid #FF003C;
+}
+.mfp-arrow-right:before, .mfp-arrow-right .mfp-b {
+    border-left: 27px solid #1E272E;
+}
 /*===================portfolio-section  end==================*/
 
 
@@ -590,7 +598,7 @@ h2.page-title {
     padding: 45px 28px 50px;
 }
 .experience-border {
-    border-left: 1px solid #FF7200;
+    border-left: 1px solid #FF003C;
 }
 .experience .inner-title {
     padding-bottom: 20px;
@@ -601,7 +609,7 @@ h2.page-title {
     position: absolute;
     width: 13px;
     height: 13px;
-    border: 2px solid #FF7200;
+    border: 2px solid #FF003C;
     background: #1E272E;
     border-radius: 100%;
     left: -22px;
@@ -616,7 +624,7 @@ h2.page-title {
     padding-bottom: 15px;
 }
 .item-header p {
-    color: #FF7200;
+    color: #FF003C;
     font-size: 12px;
     line-height: 21px;
 }
@@ -636,7 +644,7 @@ h2.page-title {
     top: 0;
 }
 .edu-item:hover h6:before {
-    background: #FF7200;
+    background: #FF003C;
 }
 
 /*-- skills ---*/
@@ -667,7 +675,7 @@ h2.page-title {
     position: relative;
 }
 .progress-bar {
-    background: #FF7200;
+    background: #FF003C;
 }
 .progress .progress-value {
     font-size: 15px;
@@ -711,8 +719,7 @@ h2.page-title {
     height: 32px;
     line-height: 32px;
     font-size: 21px;
-    color: #FF7200;
-    border-radius: 30px;
+    color: #FF003C;
     transition: all 0.3s ease 0s;
 }
 .right-menu ul li a .icon:hover {
@@ -730,7 +737,7 @@ h2.page-title {
     padding: 0px 10px;
     color: #ffffff;
     font-weight: 400;
-    background: #FF7200;
+    background: #FF003C;
     transition: .5s;
     opacity: 0;
 }
@@ -743,7 +750,7 @@ h2.page-title {
     height: 0;
     border-style: solid;
     border-width: 8px 0 8px 8px;
-    border-color: transparent transparent transparent #FF7200;
+    border-color: transparent transparent transparent #FF003C;
 }
 .right-menu ul li:hover .hover {
     right: 53px;

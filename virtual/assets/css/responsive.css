@@ -1,4 +1,10 @@
 
+@media only screen and (min-width: 1200px){
+.tech-panel {
+    width: 58%;
+}
+
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 
@@ -18,53 +24,39 @@
 
 .tech-panel{
     left: 0;
-    width: 95%;
+    width: 97%;
 }
 .main-section {
-	margin-top: 10px;
-    margin-right: 0;
-    margin-left: -20px;
+    margin-top: 30px;
+    margin-right: -15px;
+    margin-left: -15px;
     margin-bottom: -10px;
 }
 
 }
 
 @media only screen and (max-width: 767px) {
-
-.main-section .section-page.my-home {
-    position: absolute;
-    left: 0;
-    top: 0px;
-    width: 100%;
-}
-
-.row.main-section {
-    padding-top: 120px;
-}
-
-.section-page.resume-section {
-    margin-bottom: 20px;
-}
-.main-section .section-page.my-home i.fa {
-    display: none;
-}
-
-.my-name.text-center {
-    width: 100%;
-}
-
-
-
-.main-section {
-    margin-left: -20px;
-}
 .tech-panel{
-    left: -8px;
-    width: 95%;
+    left: 0;
+    width: 97%;
 }
-.right-menu ul li a .icon {
-    height: 25px;
-    line-height: 25px;
+.main-section {
+    height: auto !important;
+    margin-right: -15px;
+    margin-left: -15px;
 }
-
+.home-section {
+    padding: 15px 0px;
+    background: #323232;
+}
+.mtb-30-0{
+    margin: 0;
+}
+.row.main-section .d-flex {
+    margin-top: 15px;
+}
+.main-section .section-page a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 }

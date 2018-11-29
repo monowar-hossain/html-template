@@ -9,7 +9,7 @@
 	    margin-bottom: 45px;
 	}
 	.skills {
-	    margin-bottom: 45px;
+	    margin-bottom: 30px;
 	}
 
 }
@@ -20,7 +20,12 @@
     left: 0;
     width: 95%;
 }
-
+.main-section {
+	margin-top: 10px;
+    margin-right: 0;
+    margin-left: -20px;
+    margin-bottom: -10px;
+}
 
 }
 
@@ -37,9 +42,9 @@
     padding-top: 120px;
 }
 
-.main-section .section-page {
+.section-page.resume-section {
+    margin-bottom: 20px;
 }
-
 .main-section .section-page.my-home i.fa {
     display: none;
 }

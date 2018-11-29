@@ -104,6 +104,8 @@ li {
     z-index: 99;
     opacity: 1;
     visibility: visible;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /*
 .container-fluid{
@@ -119,27 +121,27 @@ h2.page-title {
 }
 .about-scroll{
     height: 100vh;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 .service-scroll{
     height: 100vh;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 .portfolio-scroll{
     height: 100vh;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 .service-scroll {
     height: 100vh;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 .resume-scroll{
     height: 100vh;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 .contact-scroll{
     height: 100vh;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: #FF003C;
@@ -168,7 +170,7 @@ h2.page-title {
 }
 .row.main-section .d-flex {
 }
-.mt-30-0{
+.mtb-30-0{
     margin: 30px 0;
 }
 .main-section .section-page {
@@ -327,7 +329,7 @@ h2.page-title {
     color: #fff;
 }
 .fun-facts .item {
-    padding: 40px 10px;
+    padding: 70px 10px;
     background-color: #fff;
     margin-bottom: 30px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
@@ -440,7 +442,7 @@ h2.page-title {
     background-color:#fff
 }
 #contact-section button.btn.btn-block {
-   border-radius: 0;
+    border-radius: 5px;
 }
 
 /*================== Contact me Section end==================== */
@@ -452,7 +454,7 @@ h2.page-title {
     padding-bottom: 15px;
 }
 #service-section .single-service {
-    padding: 25px;
+    padding: 40px 25px;
     margin-bottom: 30px;
     background: #fff;
     border-radius: 15px;

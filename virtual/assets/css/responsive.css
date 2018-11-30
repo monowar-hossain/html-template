@@ -9,7 +9,10 @@
 .element-item {
     height: 400px;
 }
-
+.tech-panel {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 }
 
@@ -103,3 +106,6 @@
 }
 
 
+@media only screen and (max-width: 575px) {
+
+}

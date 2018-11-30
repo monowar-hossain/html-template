@@ -1,9 +1,32 @@
+@media only screen and (min-width:1600px){
+#service-section .single-service {
+    min-height: 400px;
+    padding: 80px;
+}
+.fun-facts .item {
+    min-height: 400px;
+}
+.element-item {
+    height: 400px;
+}
 
-@media only screen and (min-width: 1200px){
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+
 .tech-panel {
     width: 58%;
 }
-
+#service-section .single-service {
+    min-height: 300px;
+}
+.fun-facts .item {
+    min-height: 300px;
+}
+.element-item {
+    height: 300px;
+}
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
@@ -11,11 +34,27 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.experience {
-	    margin-bottom: 45px;
+    .experience {
+        margin-bottom: 45px;
+    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+        transition: all 0.5s ease 0s;
+        margin-right: 10px;
+        margin-left: 3px;
+    }
+	.experience:hover {
+    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
 	}
-	.skills {
+
+    .skills {
+        margin-bottom: 30px;
+    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+        transition: all 0.5s ease 0s;
+        margin-right: 10px;
+        margin-left: 3px;
+    }
+	.skills:hover {
 	    margin-bottom: 30px;
+    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
 	}
 
 }
@@ -38,7 +77,7 @@
 @media only screen and (max-width: 767px) {
 .tech-panel{
     left: 0;
-    width: 97%;
+    width: 98%;
 }
 .main-section {
     height: auto !important;
@@ -47,10 +86,12 @@
 }
 .home-section {
     padding: 15px 0px;
-    background: #323232;
 }
 .mtb-30-0{
     margin: 0;
+}
+.main-section .section-page a {
+    padding-left: 30px;
 }
 .row.main-section .d-flex {
     margin-top: 15px;
@@ -60,3 +101,5 @@
     padding-bottom: 10px;
 }
 }
+
+

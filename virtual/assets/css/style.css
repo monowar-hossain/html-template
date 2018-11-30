@@ -19,18 +19,17 @@
 ====================================================================
  ***/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800|Open+Sans:300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
 
 
 /*-- Global Settings --*/
 
 body {
-    color: #1e1e1e;
+    color: #929Eb2;
     background-color: #F4F3F3;
-    font-size: 15px;
-    line-height: 1.7em;
-    font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -54,13 +53,15 @@ h4,
 h5,
 h6 {
     position: relative;
-    font-weight: normal;
-    margin: 0;
+    font-weight: bold;
     background: none;
     line-height: 1.2em;
-    font-family: 'Montserrat', sans-serif;
-    color: #1e1e1e;
+    font-family: 'Poppins', sans-serif;
+    color: #484848;
 }
+h2{font-size: 34px;}
+h3{font-size: 20px;}
+h4{font-size: 18px;}
 img{
     width: 100%;
 }
@@ -91,7 +92,7 @@ button:focus {
 
 p {
     font-weight: 400;
-    margin: 0;
+    font-size: 16px;
 }
 
 ul,
@@ -106,7 +107,7 @@ li {
 
 .tech-panel{
     left: 41%;
-    width: 57%;
+    width: 57.5%;
     height: 100%;
     top: 100%;
     position: absolute;
@@ -116,7 +117,7 @@ li {
     opacity: 1;
     visibility: visible;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 45px;
 }
 /*
 .container-fluid{
@@ -124,39 +125,48 @@ li {
 }
 */
 h2.page-title {
-    font-size: 30px;
-    margin-top: 26px;
-    margin-bottom: 40px;
-    font-weight: 700;
+    font-size: 34px;
+    margin: 40px 0;
 }
-.about-scroll{
-    height: 100vh;
+.about-scroll {
+    height: calc(100vh - 60px);
     padding-right: 0px;
+    margin-top: 30px;
 }
 .service-scroll{
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding-right: 0px;
+    margin-top: 30px;
 }
 .portfolio-scroll{
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding-right: 0px;
+    margin-top: 30px;
 }
 .service-scroll {
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding-right: 0px;
+    margin-top: 30px;
 }
 .resume-scroll{
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding-right: 0px;
+    margin-top: 30px;
 }
 .contact-scroll{
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding-right: 0px;
+    margin-top: 30px;
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: #FF003C;
 }
-
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #FF003C;
+}
+.last-mb-0{
+/*    margin-bottom: 0px !important;*/
+}
 /* common css end */
 
 
@@ -164,7 +174,6 @@ h2.page-title {
 
 .home-section {
     padding: 30px 15px;
-    background: #F4F3F3;
 }
 
 .hero-pic {
@@ -188,12 +197,12 @@ h2.page-title {
     background-size: cover;
     background-position: center;
     background-color: #fff;
-    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+    box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
     transition: all 0.5s ease 0s;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .main-section .section-page:hover {
-    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
+    box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
 }
 
 .main-section .section-page.my-home {
@@ -260,25 +269,13 @@ h2.page-title {
 /* About me section start */
 
 .title-about-me {
-    font-size: 30px;
-    margin-top: 26px;
-}
-
-.about-info p {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 26px;
-    margin: 20px 0 20px 0;
+margin: 60px 0 40px;
 }
 
 .about-info li {
     display: inline-block;
     width: 48%;
     margin-bottom: 20px;
-}
-.about-info li span {
-    font-size: 17px;
-    font-weight: 400;
 }
 
 .social-links {
@@ -308,11 +305,8 @@ h2.page-title {
 }
 
 .btn-medium-border {
-    border: 1px solid #fff;
-    border-radius: 35px;
+    border-radius: 10px;
     padding: 10px 45px;
-    font-size: 14px;
-    color: #1e1e1e;
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
@@ -320,7 +314,6 @@ h2.page-title {
     background: #fff;
     text-transform: uppercase;
     box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
-
 }
 .btn-medium-border:hover {
     color: #1e1e1e;
@@ -361,8 +354,6 @@ h2.page-title {
 .fun-facts h4 {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #1e1e1e;
-    font-weight: 700;
     margin-top: 15px;
 }
 
@@ -374,21 +365,9 @@ h2.page-title {
 }
 
 /*=================== Contact me Section start===================*/
-.contact-map {
-    margin-bottom: 25px;
-}
-#contact-section iframe {
-    width: 100%;
-}
 
 #contact-section .title {
-    padding-bottom: 40px;
-    font-weight: 700;
-}
-
-.contact-information {
-    margin-top: 30px;
-    margin-bottom: 20px;
+margin: 60px 0 40px;
 }
 .contact-box {
     margin-bottom: 50px;
@@ -411,61 +390,59 @@ h2.page-title {
     margin-left:60px;
 }
 .contact-info h3.header {
-    font-size:16px; 
     text-transform:uppercase;
-    margin:0;
-    font-weight:600;
+    margin: 0;
 }
-.contact-info p.bio {
-    font-size:14px;
-    margin-top:5px; 
+#contact-section .contact-title.title {
+    margin-top: 0px;
 }
 #contact-section form {
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 #contact-section form .form-group {
     margin-bottom:20px
 }
-#contact-section form input , 
+#contact-section form input, 
 #contact-section textarea {
-    border-radius:0; 
-    background-color:#fff; 
-    border-color:#ccc; 
-    font-size:15px; 
-    padding:10px 15px;
-    border-radius: 5px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: none;
+    height: 60px;
 }
-#contact-section form textarea {
-    width:100%;
-    max-width:100%;
-    min-width:100%;
-    height:150px;
-    min-height:150px;
-    max-height:150px;
-}
-#contact-section form input[type="submit"] {
-    width:100%;
-     font-size:14px; 
-    font-weight:600;
-     padding:10px 20px;
-     border-radius: 5px;
-}
-#contact-section form input[type="submit"]:hover {
-    background-color:#fff
-}
-#contact-section button.btn.btn-block {
-    border-radius: 5px;
-    background: #fff;
+#contact-section form input::placeholder, 
+#contact-section textarea::placeholder {
+    color: #D1D1D1;
 }
 
+.form-control:focus {
+    box-shadow: 3px 3px 5px rgba(255,0,51,0.1);
+}
+#contact-section form textarea {
+    height: 200px;
+    border: none;
+}
+#contact-section button.btn-block {
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 15px;
+    color: #D1D1D1;
+    height: 60px;
+}
+#contact-section button.btn-block:focus {
+    box-shadow: none;
+}
+#contact-section button.btn-block:hover {
+    background-color:#fff
+}
+#contact-section iframe {
+    width: 100%;
+    margin-bottom: -10px;
+}
 /*================== Contact me Section end==================== */
 
 
 /*===================Services section start==================*/
 
-#service-section .mCSB_container {
-    padding-bottom: 15px;
-}
 #service-section .single-service {
     padding: 20px;
     margin-bottom: 30px;
@@ -487,23 +464,14 @@ h2.page-title {
     width: 100%;
 }
 #service-section .single-service span {
-    font-size: 30px;
+    font-size: 36px;
     color: #FF003C;
 }
 #service-section .single-service h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
     margin: 20px 0;
-    color: #1e1e1e;
 }
 #service-section .single-service p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    padding: 0;
-    margin: 0;
+
 }
 
 /*===================Services section end==================*/
@@ -642,7 +610,7 @@ h2.page-title {
 
 .experience {
     background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 45px 28px 50px;
 }
 .experience-border {
@@ -650,11 +618,9 @@ h2.page-title {
 }
 .experience .inner-title {
     padding-bottom: 20px;
-    font-weight: 700;
-    color: #1e1e1e
+    font-size: 20px;
 }
-
-.item-header h6:before {
+.item-header h4:before {
     position: absolute;
     width: 13px;
     height: 13px;
@@ -663,25 +629,23 @@ h2.page-title {
     border-radius: 100%;
     left: -27px;
 }
-.item-header h6 {
-    line-height: 16px;
+.item-header h4 {
     position: relative;
-    font-weight: 600;
     padding-bottom: 5px;
-    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: 500;
 }
 .item-header {
     padding-bottom: 15px;
 }
-.item-header p {
+.item-header span {
     color: #FF003C;
-    font-size: 12px;
-    line-height: 21px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .edu-item {
     padding-left: 20px;
     padding-bottom: 36px;
-    color: #1e1e1e;
 }
 .edu-item:first-child {
     padding-top: 5px;
@@ -689,12 +653,12 @@ h2.page-title {
 .edu-item:last-child {
     padding-bottom: 0;
 }
-.item-header h6:before {
+.item-header h4:before {
     transition: all .5s ease;
     content: "";
     top: 0;
 }
-.edu-item:hover h6:before {
+.edu-item:hover h4:before {
     background: #FF003C;
 }
 
@@ -702,15 +666,13 @@ h2.page-title {
 .skills {
     background: #fff;
     padding: 45px 28px 50px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .skills .skill-item {
     padding-right: 20px;
 }
 .skills-title {
-    font-weight: 700;
     margin-bottom: 20px;
-    color: #1e1e1e;
 }
 .progress-title {
     font-size: 16px;
@@ -734,7 +696,7 @@ h2.page-title {
     font-weight: bold;
     color: #1e1e1e;
     position: absolute;
-    margin-top: -20px;
+    margin-top: -22px;
     right: 0;
 }
 
@@ -743,15 +705,15 @@ h2.page-title {
 /*=================== right menu  start==================*/
 .right-menu {
     width: 40px;
-    height: 100%;
+    height: 92%;
     font-size: 0;
     position: fixed;
     right: -100%;
     z-index: 99;
     visibility: visible;
-    top: 0;
+    top: 4%;
+    margin-right: 30px;
 }
-
 .right-menu ul li {
     display: block;
 }

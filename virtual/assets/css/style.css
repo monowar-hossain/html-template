@@ -26,7 +26,7 @@
 
 body {
     color: #1e1e1e;
-    background-color: #222f3e;
+    background-color: #F4F3F3;
     font-size: 15px;
     line-height: 1.7em;
     font-family: 'Open Sans', sans-serif;
@@ -64,9 +64,20 @@ h6 {
 img{
     width: 100%;
 }
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
 textarea {
     overflow: hidden;
     resize: none;
+}
+
+textarea:focus {
+    outline: none;
 }
 
 button {
@@ -100,7 +111,7 @@ li {
     top: 100%;
     position: absolute;
     position:fixed;
-    background-color: #323232;
+    background-color: #F4F3F3;
     z-index: 99;
     opacity: 1;
     visibility: visible;
@@ -114,7 +125,6 @@ li {
 */
 h2.page-title {
     font-size: 30px;
-    color: #f1f2f3;
     margin-top: 26px;
     margin-bottom: 40px;
     font-weight: 700;
@@ -154,7 +164,7 @@ h2.page-title {
 
 .home-section {
     padding: 30px 15px;
-    background: #323232;
+    background: #F4F3F3;
 }
 
 .hero-pic {
@@ -162,7 +172,6 @@ h2.page-title {
     height: calc(100vh - 60px);
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
 }
 
 .main-section {
@@ -179,12 +188,12 @@ h2.page-title {
     background-size: cover;
     background-position: center;
     background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
     transition: all 0.5s ease 0s;
     border-radius: 15px;
 }
 .main-section .section-page:hover {
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.8);
+    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
 }
 
 .main-section .section-page.my-home {
@@ -251,15 +260,13 @@ h2.page-title {
 /* About me section start */
 
 .title-about-me {
-    font-size: 30px; 
-    color: #f1f2f3;
+    font-size: 30px;
     margin-top: 26px;
 }
 
 .about-info p {
     font-size: 15px;
     font-weight: 400;
-    color: #f1f2f3;
     line-height: 26px;
     margin: 20px 0 20px 0;
 }
@@ -272,7 +279,6 @@ h2.page-title {
 .about-info li span {
     font-size: 17px;
     font-weight: 400;
-    color: #f2f1f1;
 }
 
 .social-links {
@@ -283,9 +289,9 @@ h2.page-title {
     width: 35px;
     height: 35px;
     background: #fff;
-    color: #1e1e1e;
+    color: #FF003C;
     display: inline-block;
-    border: 1px solid #fff;
+    border: 1px solid #FF003C;
     text-align: center;
     border-radius: 50%;
     transition: .4s;
@@ -313,11 +319,12 @@ h2.page-title {
     transition: .5s;
     background: #fff;
     text-transform: uppercase;
+    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+
 }
 .btn-medium-border:hover {
-    border: 1px solid #FF003C;
-    background: #FF003C;
-    color: #fff;
+    color: #1e1e1e;
+    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
 }
 /*============= fun facts ======= */
 .fun-facts {
@@ -326,21 +333,29 @@ h2.page-title {
 
 .fun-facts h2 {
     margin-bottom: 40px;
-    color: #fff;
 }
 .fun-facts .item {
-    padding: 70px 10px;
+    padding: 30px 10px;
     background-color: #fff;
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
     transition: all 0.5s ease 0s;
     border-radius: 15px;
+    margin-right: 5px;
+    min-height: 250px;
+    margin-left: 3px;
 }
 .fun-facts .item:hover {
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.9);
+    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
+}
+.fun-facts .item .fun-box {
+    width: 100%;
 }
 .fun-facts span {
     font-size: 40px;
+    color: #FF003C;
 }
 
 .fun-facts h4 {
@@ -369,7 +384,6 @@ h2.page-title {
 #contact-section .title {
     padding-bottom: 40px;
     font-weight: 700;
-    color: #fff;
 }
 
 .contact-information {
@@ -383,8 +397,8 @@ h2.page-title {
 .contact-icon {
     border-radius: 50%;
     position: absolute;
-    background-color: #fff;
-    color: #FF003C;
+    background-color: #FF003C;
+    color: #fff;
 }
 .contact-icon i {
     line-height: 50px;
@@ -401,10 +415,8 @@ h2.page-title {
     text-transform:uppercase;
     margin:0;
     font-weight:600;
-    color: #fff;
 }
 .contact-info p.bio {
-    color:#fff;
     font-size:14px;
     margin-top:5px; 
 }
@@ -443,6 +455,7 @@ h2.page-title {
 }
 #contact-section button.btn.btn-block {
     border-radius: 5px;
+    background: #fff;
 }
 
 /*================== Contact me Section end==================== */
@@ -454,13 +467,28 @@ h2.page-title {
     padding-bottom: 15px;
 }
 #service-section .single-service {
-    padding: 40px 25px;
+    padding: 20px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    min-height: 250px;
     background: #fff;
     border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+    transition: all 0.5s ease 0s;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+#service-section .single-service:hover {
+    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
+}
+.service-box {
+    width: 100%;
 }
 #service-section .single-service span {
     font-size: 30px;
+    color: #FF003C;
 }
 #service-section .single-service h3 {
     font-size: 18px;
@@ -489,11 +517,10 @@ h2.page-title {
 #portfolio-section .projects-filter li {
     border: 0;
     display: inline-block;
-    background: transparent;
+    background: #fff;
     font-size: 14px;
     font-weight: 600;
     margin-right: 10px;
-    color: #f1f2f3;
     padding: 5px 15px;
     text-transform: uppercase;
     cursor: pointer;
@@ -510,7 +537,7 @@ h2.page-title {
 .element-item {
     width: 100%;
     margin-bottom: 30px;
-    height: 255px;
+    height: 250px;
 }
 .single-portfolio {
     position: relative;
@@ -532,7 +559,7 @@ h2.page-title {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 101%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(45deg, #FF003C 0%,#dd879b 100%);
     color: #ffffff;
@@ -555,6 +582,7 @@ h2.page-title {
 .single-portfolio .overlay .content h3 {
     font-size: 18px;
     font-weight: 500;
+    color: #fff;
 }
 
 .single-portfolio .overlay .content p {
@@ -598,13 +626,13 @@ h2.page-title {
     border-right: 17px solid #FF003C;
 }
 .mfp-arrow-left:before, .mfp-arrow-left .mfp-b {
-    border-right: 27px solid #1E272E;
+    border-right: 27px solid #1e1e1e;
 }
 .mfp-arrow-right:after, .mfp-arrow-right .mfp-a {
     border-left: 17px solid #FF003C;
 }
 .mfp-arrow-right:before, .mfp-arrow-right .mfp-b {
-    border-left: 27px solid #1E272E;
+    border-left: 27px solid #1e1e1e;
 }
 /*===================portfolio-section  end==================*/
 
@@ -631,7 +659,7 @@ h2.page-title {
     width: 13px;
     height: 13px;
     border: 2px solid #FF003C;
-    background: #323232;
+    background: #F4F3F3;
     border-radius: 100%;
     left: -27px;
 }
@@ -691,7 +719,7 @@ h2.page-title {
 }
 .progress {
     height: 8px;
-    background: #222F3E;
+    background: #F4F3F3;
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 20px;
@@ -719,7 +747,6 @@ h2.page-title {
     font-size: 0;
     position: fixed;
     right: -100%;
-    background-color: #323232;
     z-index: 99;
     visibility: visible;
     top: 0;

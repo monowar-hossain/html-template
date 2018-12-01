@@ -225,7 +225,7 @@ h2.page-title {
     font-size: 25px;
     font-weight: 400;
     margin-right: 10px;
-    color: #1e1e1e;
+    color: #484848;
 }
 .my-name h2 i {
     margin-right: 10px;
@@ -240,14 +240,14 @@ h2.page-title {
 }
 
 .main-section .section-page span.white {
-    color: #1e1e1e;
+    color: #484848;
     font-size: 34px;
     transition: .4s;
     transition: all 0.5s ease 0s;
 }
 
 .main-section .section-page:hover span.color {
-    color: #1e1e1e;
+    color: #484848;
 }
 
 .main-section .section-page:hover span.white {
@@ -262,7 +262,7 @@ h2.page-title {
 }
 
 .main-section .section-page.my-home:hover span.color {
-    color: #1e1e1e;
+    color: #484848;
 }
 
 /* Home section css end */

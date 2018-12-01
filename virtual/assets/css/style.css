@@ -334,7 +334,7 @@ margin: 60px 0 40px;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+    box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
     transition: all 0.5s ease 0s;
     border-radius: 15px;
     margin-right: 5px;
@@ -342,7 +342,7 @@ margin: 60px 0 40px;
     margin-left: 3px;
 }
 .fun-facts .item:hover {
-    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
+    box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
 }
 .fun-facts .item .fun-box {
     width: 100%;
@@ -459,14 +459,14 @@ margin: 60px 0 40px;
     min-height: 250px;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+    box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
     transition: all 0.5s ease 0s;
     margin-right: 10px;
     margin-left: 3px;
 }
 
 #service-section .single-service:hover {
-    box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
+    box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
 }
 .service-box {
     width: 100%;

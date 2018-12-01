@@ -232,6 +232,7 @@ h2.page-title {
 }
 .main-section .section-page span.color {
     color: #FF003C;
+    font-size: 34px;
     transition: .4s;
     font-weight: 700;
     padding-right: 7px;
@@ -240,6 +241,7 @@ h2.page-title {
 
 .main-section .section-page span.white {
     color: #1e1e1e;
+    font-size: 34px;
     transition: .4s;
     transition: all 0.5s ease 0s;
 }

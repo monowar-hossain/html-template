@@ -35,7 +35,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: #24252c;
+    color: #484848;
 }
 
 a:hover,
@@ -702,7 +702,7 @@ margin: 60px 0 40px;
 .progress .progress-value {
     font-size: 15px;
     font-weight: bold;
-    color: #1e1e1e;
+    color: #484848;
     position: absolute;
     margin-top: -22px;
     right: 0;

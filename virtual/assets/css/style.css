@@ -116,8 +116,11 @@ li {
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 45px;
+}
+.service_wrapper, .about-content, .fun-facts, .timeline-zone, .skill-wrap, .contact-information, #contact-section form, .google-map, .portfolio-wrapper {
+    margin:0 30px 0 35px;
 }
 /*
 .container-fluid{
@@ -125,7 +128,7 @@ li {
 }
 */
 h2.page-title {
-    margin: 40px 0;
+    margin: 20px 0 50px;
 }
 .about-scroll {
     height: calc(100vh - 60px);
@@ -163,9 +166,7 @@ h2.page-title {
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
     background-color: #FF003C;
 }
-.last-mb-0{
-/*    margin-bottom: 0px !important;*/
-}
+
 /* common css end */
 
 
@@ -187,9 +188,7 @@ h2.page-title {
 }
 .row.main-section .d-flex {
 }
-.mtb-30-0{
-    margin: 30px 0;
-}
+
 .main-section .section-page {
     width: 100%;
     align-items: center;
@@ -270,7 +269,7 @@ h2.page-title {
 /* About me section start */
 
 .title-about-me {
-margin: 60px 0 40px;
+margin: 20px 0 50px;
 }
 
 .about-info li {
@@ -283,26 +282,26 @@ margin: 60px 0 40px;
     margin-bottom: 25px;
 }
 .social-links a {
-    margin-right: 17px;
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    color: #FF003C;
+	margin-right: 17px;
+    width: 50px;
+    height: 50px;
+    background: #FF003C;
+    color: #fff;
     display: inline-block;
     border: 1px solid #FF003C;
     text-align: center;
     border-radius: 50%;
     transition: .4s;
+    line-height: 50px;
 }
-.social-links a:hover {
+/* .social-links a:hover {
     color: #fff;
     border: 1px solid #FF003C;
     background: #FF003C;
-}
+} */
 
 .social-links a i {
-    font-size: 17px;
-    line-height: 35px;
+    font-size: 20px;
 }
 
 .btn-medium-border {
@@ -312,12 +311,13 @@ margin: 60px 0 40px;
     text-decoration: none;
     display: inline-block;
     transition: .5s;
-    background: #fff;
+    background: #FF003C;
     text-transform: uppercase;
     box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
+	color: #D1D1D1;
 }
 .btn-medium-border:hover {
-    color: #1e1e1e;
+	color: #D1D1D1;
     box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
 }
 /*============= fun facts ======= */
@@ -337,9 +337,7 @@ margin: 60px 0 40px;
     box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
     transition: all 0.5s ease 0s;
     border-radius: 15px;
-    margin-right: 5px;
     min-height: 250px;
-    margin-left: 3px;
 }
 .fun-facts .item:hover {
     box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
@@ -368,11 +366,10 @@ margin: 60px 0 40px;
 /*=================== Contact me Section start===================*/
 
 #contact-section .title {
-margin: 60px 0 40px;
+margin: 20px 0 50px;
 }
 .contact-box {
     margin-bottom: 50px;
-    width: 50%;
 }
 .contact-icon {
     border-radius: 50%;
@@ -405,7 +402,7 @@ margin: 60px 0 40px;
 }
 #contact-section form input, 
 #contact-section textarea {
-    padding: 20px 15px;
+    padding: 20px 40px;
     border-radius: 10px;
     border: none;
     height: 60px;
@@ -444,12 +441,13 @@ margin: 60px 0 40px;
 }
 #contact-section iframe {
     width: 100%;
-    margin-bottom: -10px;
+    margin-bottom: 20px;
 }
 /*================== Contact me Section end==================== */
 
 
 /*===================Services section start==================*/
+
 
 #service-section .single-service {
     padding: 20px;
@@ -461,8 +459,6 @@ margin: 60px 0 40px;
     border-radius: 15px;
     box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
     transition: all 0.5s ease 0s;
-    margin-right: 10px;
-    margin-left: 3px;
 }
 
 #service-section .single-service:hover {

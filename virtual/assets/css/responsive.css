@@ -10,10 +10,11 @@
     height: 400px;
 }
 .tech-panel {
-    padding-left: 40px;
-    padding-right: 40px;
+	
 }
-
+.service_wrapper, .about-content, .fun-facts, .timeline-zone, .skill-wrap, .contact-information, #contact-section form, .google-map, .portfolio-wrapper {
+    margin:0 50px 0 55px;
+}
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -32,32 +33,33 @@
 }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+.main-section .section-page a {
+    padding-left:0px;
+}
 
 }
 
 @media only screen and (min-width: 768px) {
     .experience {
         margin-bottom: 45px;
-    box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
+		box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
         transition: all 0.5s ease 0s;
-        margin-right: 10px;
-        margin-left: 3px;
     }
 	.experience:hover {
-    box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
+		box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
 	}
 
     .skills {
         margin-bottom: 30px;
-    box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
+		box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
         transition: all 0.5s ease 0s;
-        margin-right: 10px;
-        margin-left: 3px;
     }
 	.skills:hover {
 	    margin-bottom: 30px;
-    box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
+		box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
+	}
+	.mtb-30-0{
+		margin: 30px 0;
 	}
 
 }
@@ -74,7 +76,9 @@
     margin-left: -15px;
     margin-bottom: -10px;
 }
-
+.main-section .section-page a {
+    padding-left: 30px;
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -90,9 +94,6 @@
 .home-section {
     padding: 15px 0px;
 }
-.mtb-30-0{
-    margin: 0;
-}
 .main-section .section-page a {
     padding-left: 30px;
 }
@@ -106,6 +107,10 @@
 }
 
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 375px) {
+.main-section .section-page span.white,
+.main-section .section-page span.color {
+    font-size: 25px;
+}
 
 }

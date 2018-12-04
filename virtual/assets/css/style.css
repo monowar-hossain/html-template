@@ -314,7 +314,7 @@ margin: 20px 0 50px;
     background: #FF003C;
     text-transform: uppercase;
     box-shadow: 3px 3px 10px rgba(255,0,51,0.1);
-	color: #D1D1D1;
+	color: #fff;
 }
 .btn-medium-border:hover {
 	color: #D1D1D1;

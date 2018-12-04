@@ -18,6 +18,16 @@
             Fonts
 ====================================================================
  ***/
+ @font-face {
+  font-family: "Signatra";
+	src: url("../fonts/Signatra.otf");
+	src: url("../fonts/Signatra.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.my-home a{
+
+}
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
 
@@ -208,9 +218,11 @@ h2.page-title {
 }
 .main-section .section-page.my-home a {
     cursor: default;
+    font-family: "Signatra";
+  color: #fff;
+  font-size: 34px !important;
 }
 .main-section .section-page a {
-    font-size: 25px;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -275,11 +287,11 @@ margin: 20px 0 50px;
 .about-info li {
     display: inline-block;
     width: 48%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-
 .social-links {
     margin-bottom: 25px;
+    margin-top: 10px;
 }
 .social-links a {
 	margin-right: 17px;
@@ -317,7 +329,7 @@ margin: 20px 0 50px;
 	color: #fff;
 }
 .btn-medium-border:hover {
-	color: #D1D1D1;
+	color: #fff;
     box-shadow: 3px 3px 15px rgba(255,0,51,0.2);
 }
 /*============= fun facts ======= */
@@ -385,7 +397,7 @@ margin: 20px 0 50px;
     text-align: center;
 }
 .contact-info {
-    margin-left:60px;
+    margin-left:70px;
 }
 .contact-info h3.header {
     text-transform:uppercase;
@@ -402,7 +414,7 @@ margin: 20px 0 50px;
 }
 #contact-section form input, 
 #contact-section textarea {
-    padding: 20px 40px;
+    padding: 20px 25px;
     border-radius: 10px;
     border: none;
     height: 60px;
@@ -426,17 +438,19 @@ margin: 20px 0 50px;
 }
 #contact-section button.btn-block {
     border-radius: 10px;
-    background: #fff;
+    background: #FF003C;
     padding: 10px 15px;
-    color: #D1D1D1;
+    color: #fff;
     height: 60px;
     box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
+	text-transform: uppercase;
 }
 #contact-section button.btn-block:focus {
     box-shadow: none;
 }
 #contact-section button.btn-block:hover {
-    background-color:#fff;
+    background-color:#FF003C;
+	color:#fff;
     box-shadow: 0px 3px 20px rgba(255,132,161,0.2);
 }
 #contact-section iframe {
@@ -709,13 +723,13 @@ margin: 20px 0 50px;
 /*=================== right menu  start==================*/
 .right-menu {
     width: 40px;
-    height: 96%;
+    height: 98%;
     font-size: 0;
     position: fixed;
     right: -100%;
     z-index: 99;
     visibility: visible;
-    top: 2%;
+    top: 1%;
     margin-right: 30px;
 }
 .right-menu ul li {
@@ -723,7 +737,7 @@ margin: 20px 0 50px;
 }
 
 .right-menu ul li a {
-    margin: 8px 0;
+    margin: 20px 0;
     position: relative;
     display: block;
     color: #ffffff;

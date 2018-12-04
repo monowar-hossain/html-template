@@ -76,9 +76,7 @@
     margin-left: -15px;
     margin-bottom: -10px;
 }
-.main-section .section-page a {
-    padding-left: 30px;
-}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -94,9 +92,7 @@
 .home-section {
     padding: 15px 0px;
 }
-.main-section .section-page a {
-    padding-left: 30px;
-}
+
 .row.main-section .d-flex {
     margin-top: 15px;
 }

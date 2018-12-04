@@ -1,13 +1,13 @@
 /* virtual - HTML Template */
 
 
-/************ TABLE OF CONTENTS *************** FF003C
+/************ TABLE OF CONTENTS ***************
 1. Fonts / Reset / Global
 2. wrapper 
 4. About Section / Skill Section
 5.  CONTACT ME
-6. Services Section / single service
-7. Project section / single Project / Related Projects
+6. Services Section
+7. Project section 
 
 
 **********************************************/
@@ -213,15 +213,16 @@ h2.page-title {
     box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
 }
 
-.main-section .section-page.my-home {
+/* .main-section .section-page.my-home {
     background-color: #ff0033;
-}
+} */
 .main-section .section-page.my-home a {
     cursor: default;
     font-family: "Signatra";
-  color: #fff;
-  font-size: 34px !important;
-  padding-left: 65px;
+    color: #484848;
+    font-size: 50px !important;
+    text-transform: capitalize;
+	letter-spacing: 3px;
 }
 .main-section .section-page a {
     font-weight: 700;
@@ -229,10 +230,9 @@ h2.page-title {
     align-items: center;
     height: 100%;
     width: 100%;
-    padding-left: 50px;
     text-transform: uppercase;
 }
-
+.box-text-center {margin: auto;}
 .main-section .section-page a i {
     font-size: 25px;
     font-weight: 400;
@@ -288,11 +288,11 @@ margin: 20px 0 50px;
 .about-info li {
     display: inline-block;
     width: 48%;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .social-links {
     margin-bottom: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .social-links a {
 	margin-right: 17px;
@@ -444,7 +444,10 @@ margin: 20px 0 50px;
     color: #fff;
     height: 60px;
     box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
-	text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
 }
 #contact-section button.btn-block:focus {
     box-shadow: none;

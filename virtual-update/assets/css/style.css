@@ -232,7 +232,10 @@ h2.page-title {
     width: 100%;
     text-transform: uppercase;
 }
-.box-text-center {margin: auto;}
+.box-text-center {
+	margin: auto;
+	text-align: center;
+}
 .main-section .section-page a i {
     font-size: 25px;
     font-weight: 400;

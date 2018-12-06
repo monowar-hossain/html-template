@@ -406,7 +406,7 @@ margin: 20px 0 50px;
 }
 
 .contact-info h4.header {
-    text-transform:uppercase;
+    text-transform:capitalize;
 	margin-bottom: 2px;
 }
 #contact-section .contact-title.title {

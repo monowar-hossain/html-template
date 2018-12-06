@@ -392,6 +392,7 @@ margin: 20px 0 50px;
     position: absolute;
     background-color: #FF003C;
     color: #fff;
+	left:0;
 }
 .contact-icon i {
     line-height: 50px;
@@ -401,11 +402,12 @@ margin: 20px 0 50px;
     text-align: center;
 }
 .contact-info {
-    margin-left:70px;
+    margin-left:55px;
 }
-.contact-info h3.header {
+
+.contact-info h4.header {
     text-transform:uppercase;
-    margin: 0;
+	margin-bottom: 2px;
 }
 #contact-section .contact-title.title {
     margin-top: 0px;
@@ -449,7 +451,7 @@ margin: 20px 0 50px;
     box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 32px;
 }
 #contact-section button.btn-block:focus {

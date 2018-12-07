@@ -628,6 +628,11 @@ margin: 20px 0 50px;
 .mfp-arrow-right:before, .mfp-arrow-right .mfp-b {
     border-left: 27px solid #1e1e1e;
 }
+
+.mfp-content figure {
+    margin: 0;
+}
+
 /*===================portfolio-section  end==================*/
 
 

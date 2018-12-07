@@ -31,6 +31,8 @@
 .element-item {
     height: 300px;
 }
+
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 .main-section .section-page a {

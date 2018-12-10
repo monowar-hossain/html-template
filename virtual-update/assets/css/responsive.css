@@ -104,19 +104,70 @@
 .hero-pic {
     height: calc(80vh - 60px);
 }
+.social-links a {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.right-menu {
+    height: 96%;
+    top: 2%;
+}
 .right-menu {
     margin-right: 15px;
 }
 .right-menu ul li a {
     margin: 10px 0;
 }
+#portfolio-section .projects-filter {
+    text-align: center;
+}
+#portfolio-section .projects-filter li {
+    margin-top: 10px;
+}
+.progress .progress-value {
+    right: -30px;
+}
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
+.about-info li {
+    width: 100%;
+}
+h2.page-title {
+    margin: 20px 0 30px;
+}
+.experience {
+    padding: 45px 28px 30px;
+}
+
+}
+@media only screen and (max-width: 450px) {
 .main-section .section-page span.white,
 .main-section .section-page span.color {
     font-size: 25px;
 }
+.my-home span {
+    font-size: 40px;
+}
+.title-about-me {
+    margin: 20px 0 30px;
+}
+.social-links a {
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.social-links a i {
+    font-size: 15px;
+}
+.btn-medium-border {
+    padding: 10px 25px;
+}
+
 
 }

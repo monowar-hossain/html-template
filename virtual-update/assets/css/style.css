@@ -319,7 +319,7 @@ h2.page-title {
     padding-top: 60px;
 }
 
-.fun-facts h3 {
+.fun-facts h2 {
     margin-bottom: 40px;
 }
 .fun-facts .item {
@@ -1207,6 +1207,7 @@ h2.page-title {
 }
 #contact-section .contact-title.title {
     margin-top: 0px;
+    text-transform: uppercase;
 }
 #contact-section form {
     margin-bottom:50px;
@@ -1548,7 +1549,7 @@ h2.page-title {
     font-weight: bold;
     color: #484848;
     position: absolute;
-    margin-top: -22px;
+    margin-top: -50px;
     right: 0;
 }
 

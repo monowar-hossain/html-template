@@ -129,6 +129,7 @@
 }
 .progress .progress-value {
     right: -30px;
+    margin-top: -22px;
 }
 }
 

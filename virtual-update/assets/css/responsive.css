@@ -170,5 +170,11 @@ h2.page-title {
     padding: 10px 25px;
 }
 
+}
 
+@media only screen and (max-height: 450px) {
+.right-menu ul.social {
+    display: none;
+}
+	
 }

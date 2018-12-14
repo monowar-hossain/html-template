@@ -79,6 +79,16 @@
 }
 
 }
+@media only screen and (max-width: 1300px) {
+
+#portfolio-section .projects-filter {
+    text-align: center;
+}
+#portfolio-section .projects-filter li {
+    margin-top: 10px;
+}
+
+}
 
 @media only screen and (max-width: 767px) {
 .tech-panel{
@@ -121,12 +131,7 @@
 .right-menu ul li a {
     margin: 10px 0;
 }
-#portfolio-section .projects-filter {
-    text-align: center;
-}
-#portfolio-section .projects-filter li {
-    margin-top: 10px;
-}
+
 .progress .progress-value {
     right: -30px;
     margin-top: -22px;

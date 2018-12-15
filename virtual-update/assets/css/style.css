@@ -1318,11 +1318,15 @@ h2.page-title {
 /*===================Services section end==================*/
 
 /*===================portfolio-section  start==================*/
-
+.portfolio-wrapper h2.page-title {
+    margin-bottom: 40px;
+}
 #portfolio-section .projects-filter {
     margin: -10px auto 25px;
     padding-left: 20px;
+	text-align: center;
 }
+
 #portfolio-section .projects-filter li {
     border: 0;
     display: inline-block;
@@ -1330,6 +1334,7 @@ h2.page-title {
     font-size: 14px;
     font-weight: 600;
     margin-right: 10px;
+    margin-top: 10px;
     padding: 5px 15px;
     text-transform: uppercase;
     cursor: pointer;
@@ -1555,7 +1560,7 @@ h2.page-title {
     color: #484848;
     position: absolute;
     margin-top: -48px;
-    right: -20px;
+    right: -25px;
 }
 
 /*===================resume-section  end==================*/

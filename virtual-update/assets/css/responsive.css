@@ -46,33 +46,31 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .experience {
-        margin-bottom: 45px;
-		box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
-        -webkit-transition: all 0.5s ease 0s;
-        transition: all 0.5s ease 0s;
-    }
-	.experience:hover {
-		box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
-	}
-
-    .skills {
-        margin-bottom: 30px;
-		box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
-        -webkit-transition: all 0.5s ease 0s;
-        transition: all 0.5s ease 0s;
-    }
-	.skills:hover {
-	    margin-bottom: 30px;
-		box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
-	}
-	.mtb-30-0{
-		margin: 30px 0;
-	}
-
+.experience {
+	margin-bottom: 45px;
+	box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.experience:hover {
+	box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
 }
 
+.skills {
+	margin-bottom: 30px;
+	box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.skills:hover {
+	margin-bottom: 30px;
+	box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
+}
+.mtb-30-0{
+	margin: 30px 0;
+}
 
+}
 
 @media only screen and (max-width: 767px) {
 .tech-panel{

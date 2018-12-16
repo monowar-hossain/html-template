@@ -222,6 +222,11 @@ h2.page-title {
     margin-right: 10px;
     color: #484848;
 }
+
+.section-page i.fa:before {
+  position: relative;
+  top: -4px;
+}
 .my-name h2 i {
     margin-right: 10px;
 }

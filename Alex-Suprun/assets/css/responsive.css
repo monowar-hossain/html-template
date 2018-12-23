@@ -1,0 +1,168 @@
+@media only screen and (min-width:1600px){
+#service-section .single-service {
+    min-height: 400px;
+    padding: 80px;
+}
+.fun-facts .item {
+    min-height: 400px;
+}
+.portfolio-wrapper .element-item {
+    height: 400px;
+}
+.service_wrapper, .about-content, .fun-facts, .timeline-zone, .skill-wrap, .contact-information, #contact-section form, .google-map, .portfolio-wrapper {
+    margin:0 50px 0 55px;
+}
+.right-menu {
+    margin-right: 30px !important;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+
+.tech-panel {
+    width: 58%;
+}
+#service-section .single-service {
+    min-height: 300px;
+}
+.fun-facts .item {
+    min-height: 300px;
+}
+.portfolio-wrapper .element-item {
+    height: 300px;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.tech-panel{
+    left: 0;
+    width: 97%;
+}
+.main-section {
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+.experience {
+	margin-bottom: 45px;
+	box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.experience:hover {
+	box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
+}
+
+.skills {
+	margin-bottom: 30px;
+	box-shadow: 0px 3px 20px rgba(255,132,161,0.1);
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.skills:hover {
+	margin-bottom: 30px;
+	box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
+}
+.mtb-30-0{
+	margin: 30px 0;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+.tech-panel{
+    left: 0;
+    width: 98%;
+}
+.main-section {
+    height: auto !important;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.home-section {
+    padding: 15px 0px;
+}
+
+.row.main-section .d-flex {
+    margin-top: 15px;
+}
+.main-section .section-page a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hero-pic {
+    height: calc(80vh - 60px);
+}
+.social-links a {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.right-menu {
+    height: 96%;
+    top: 2%;
+}
+.right-menu {
+    margin-right: 15px !important;
+}
+.right-menu ul li a {
+    margin: 10px 0;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+.about-info li {
+    width: 100%;
+}
+h2.page-title {
+    margin: 20px 0 30px;
+}
+.experience {
+    padding: 45px 28px 30px;
+}
+
+}
+@media only screen and (max-width: 450px) {
+.main-section .section-page span.white,
+.main-section .section-page span.color {
+    font-size: 25px;
+}
+.my-home span {
+    font-size: 40px;
+}
+.title-about-me {
+    margin: 20px 0 30px;
+}
+.social-links a {
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.social-links a i {
+    font-size: 15px;
+}
+.btn-medium-border {
+    padding: 10px 25px;
+}
+.progress .progress-value {
+    right: -30px;
+    margin-top: -22px;
+}
+}
+
+@media only screen and (max-height: 450px) {
+.right-menu ul.social {
+    display: none;
+}
+	
+}

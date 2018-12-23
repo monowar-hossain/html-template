@@ -171,8 +171,6 @@ h2.page-title {
 .main-section {
     height: calc(100vh - 60px);
 }
-.row.main-section .d-flex {
-}
 
 .main-section .section-page {
     width: 100%;
@@ -227,20 +225,13 @@ h2.page-title {
   position: relative;
   top: -4px;
 }
-.my-name h2 i {
-    margin-right: 10px;
-}
 .my-home .desig {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 .my-home .social .fa {
-	font-size: 16px;
-    color: #fff;
-    background: #FF003C;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+	font-size: 20px;
+    color: #FF003C;
     border-radius: 50%;
 }
 .main-section .section-page span.color {

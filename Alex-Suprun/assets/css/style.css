@@ -231,10 +231,11 @@ h2.page-title {
     margin-right: 10px;
 }
 .my-home .desig {
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 .my-home .social .fa {
-    font-size: 16px;
+	font-size: 16px;
     color: #fff;
     background: #FF003C;
     width: 30px;

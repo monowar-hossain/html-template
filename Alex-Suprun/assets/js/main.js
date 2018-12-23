@@ -6,16 +6,16 @@ jQuery(document).ready(function($) {
         scrollInertia:50,
     });
 
+    $(".resume-scroll").mCustomScrollbar({
+        scrollInertia:100,
+    });
+
     $(".service-scroll").mCustomScrollbar({
         scrollInertia:50,
     });
 
     $(".portfolio-scroll").mCustomScrollbar({
         scrollInertia:50,
-    });
-
-    $(".resume-scroll").mCustomScrollbar({
-        scrollInertia:100,
     });
 
     $(".contact-scroll").mCustomScrollbar({
@@ -28,12 +28,17 @@ jQuery(document).ready(function($) {
     $(".section-page").click(function(){
         $(".right-menu").animate({right: '0%'}, 1600);
     });
+	
     $(".myhome").click(function(){
         $(".right-menu").animate({right: '-100%'}, 1600);
         $(".tech-panel").animate({top: '100%'}, 600);
     });
 
-
+    $(".section-page.my-home").click(function(){
+		$(".right-menu").stop();
+    });
+	
+	
     $(".about-section").click(function(){
         $(".tech-panel").animate({top: '100%'}, 700);
         $("#about-section").animate({top: '0px'}, 700);

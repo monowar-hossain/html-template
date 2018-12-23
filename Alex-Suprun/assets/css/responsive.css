@@ -91,7 +91,7 @@
 .row.main-section .d-flex {
     margin-top: 15px;
 }
-.main-section .section-page a {
+.main-section .section-page .animation-link {
     padding-top: 10px;
     padding-bottom: 10px;
 }

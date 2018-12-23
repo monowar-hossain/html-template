@@ -3,8 +3,8 @@
 	=>	Common css
 	=>	Home
 	=>	About
-	=>	Service
 	=>	Resume
+	=>	Service
 	=>	Portfolio
 	=>	CONTACT
 	=>	Right menu
@@ -229,6 +229,18 @@ h2.page-title {
 }
 .my-name h2 i {
     margin-right: 10px;
+}
+.my-home .desig {
+    font-size: 20px;
+}
+.my-home .social .fa {
+	font-size: 20px;
+    color: #fff;
+    background: #FF003C;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
 }
 .main-section .section-page span.color {
     color: #FF003C;

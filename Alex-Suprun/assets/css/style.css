@@ -190,6 +190,14 @@ h2.page-title {
     box-shadow: 0px 20px 30px rgba(255,0,60,0.1);
 }
 
+.main-section .section-page.my-home .animation-link {
+    cursor: default;
+    font-family: "Signatra";
+    color: #484848;
+    font-size: 45px;
+    text-transform: capitalize;
+	letter-spacing: 3px;
+}
 .main-section .section-page .animation-link {
     font-weight: 700;
     display: -webkit-box;
@@ -218,24 +226,15 @@ h2.page-title {
   position: relative;
   top: -4px;
 }
-.main-section .section-page.my-home .name {
-    cursor: default;
-    font-family: "Signatra";
-    color: #484848;
-    font-size: 45px;
-    text-transform: capitalize;
-	letter-spacing: 3px;
-}
 .my-home .desig {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 	letter-spacing: 1px;
-    color: #484848;
 }
-.my-home .social a {
+.my-home .social .fa {
 	font-size: 20px;
     color: #FF003C;
-	padding:5px;	
+    border-radius: 50%;
 }
 .main-section .section-page span.color {
     color: #FF003C;

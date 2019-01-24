@@ -446,7 +446,7 @@ body {
 }
 
 nav.main-menu.navbar {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .main-menu.nav-fixed {
     background: transparent;
@@ -560,11 +560,12 @@ right-menu-btn */
 
 .right-menu-btn{
 	position:fixed;
-	top:25px;
+	top:35px;
     z-index: 999;
     right: 5%;
 	cursor:pointer;
 }
+
 .right-menu-btn span{
   display: block;
   width: 33px;
@@ -573,13 +574,35 @@ right-menu-btn */
   position: relative;
   background: #ffffff;
   border-radius: 3px;
-  z-index: 999;
-
+  z-index: 1;
+  transition:1s;
 }
-.right-menu-btn span.closed{
-transform: rotate(20deg);
 
+.right-menu-btn.hide span:first-child{
+	transform: rotate(0deg);
 }
+.right-menu-btn span:first-child{
+	transform: rotate(45deg);
+	transform-origin: 6px 9px;
+}
+.right-menu-btn.hide span:nth-child(2){
+	opacity:1;
+}
+.right-menu-btn span:nth-child(2){
+	opacity:0;
+}
+.right-menu-btn.hide span:nth-child(3){
+	transform: rotate(0deg);
+}
+.right-menu-btn span:nth-child(3){
+	transform: rotate(-45deg);
+	transform-origin: 9px -5px;
+}
+
+
+
+
+
 
 .right-menu-btn .right-menu {
     position: absolute;
@@ -587,7 +610,7 @@ transform: rotate(20deg);
     padding: 20px;
     background: rgba(0, 0, 0, 0.3);
     left: -130px;
-    top: 50px;
+    top: 25px;
 }
 .right-menu-btn.hide .right-menu {
   left: 700px;

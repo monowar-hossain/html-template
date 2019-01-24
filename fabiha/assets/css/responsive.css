@@ -154,12 +154,13 @@
 /*========== Start About ==========*/
 .section-title h3,
 .section-title-left h3 {
-    font-size: 28px;
+    font-size: 16px;
 
 }
 .section-title h2,
 .section-title-left h2 {
-    font-size: 18px;
+    font-size: 28px;
+	line-height:1.4;
 }
 .about-img img {
     margin-left: 0px;
@@ -170,7 +171,7 @@
     display: none;
 }
 .info-about h3 {
-    font-size: 24px;
+    font-size: 16px;
     letter-spacing: 0;
 }   
 .info-about {

@@ -35,11 +35,11 @@ Table Of Index
 
 * {
 
-    -webkit-transition: 0.4s ease-in-out;
-       -moz-transition: 0.4s ease-in-out;
-        -ms-transition: 0.4s ease-in-out;
-         -o-transition: 0.4s ease-in-out;
-            transition: 0.4s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+       -moz-transition: 0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+         -o-transition: 0.6s ease-in-out;
+            transition: 0.6s ease-in-out;
 }
 svg {
     -webkit-transition: color 0.1s ease-in-out;
@@ -353,7 +353,7 @@ p {
     cursor: pointer;
     background: #ffb22a;
     border: 2px solid #ffb22a;
-    -webkit-transition: all .4s;
+    -webkit-transition: all .6s;
     display: inline-block;
     color: #fff;
     font-family: 'Lato', sans-serif;
@@ -449,7 +449,7 @@ body {
     display: block;
     line-height: inherit;
     padding: 10px;
-	transition:.4s;
+	transition:.6s;
 }
 .main-menu.navbar .logo a:hover {
     color: #ffb22a;
@@ -476,7 +476,7 @@ right-menu-btn */
   background: #ffffff;
   border-radius: 3px;
   z-index: 1;
-  transition:1s;
+  transition:.6s;
 }
 
 .right-menu-btn.hide span:first-child{
@@ -507,7 +507,7 @@ right-menu-btn */
 	padding-top:90px;
     background: rgba(0, 0, 0, 0.3);
     left: -200px;
-    top: -35px;
+    top: -42px;
 	height:100vh;
 }
 .right-menu-btn.hide .right-menu {
@@ -752,7 +752,7 @@ right-menu-btn */
     text-align: center;
     background: transparent;
     color: #444;
-    transition: all .1s;
+    transition: all .2s;
     
 }
 .social-media li a:hover {
@@ -880,7 +880,7 @@ right-menu-btn */
     text-align: center;
     color: #9b9b9b;
     background: transparent;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 .follow-me .social-media-about li a:hover {
     color: #ffb22a !important;
@@ -1265,7 +1265,7 @@ right-menu-btn */
 }
 .services-item h4 {
     margin-bottom: 10px;
-    margin-top: 18px;
+    margin-top: 10px;
     color: #444;
     text-transform: uppercase;
     font-size: 17px;

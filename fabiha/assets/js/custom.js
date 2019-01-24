@@ -164,26 +164,6 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: 0}, 1000);
     });
   
-/*    
-  	$("body .right-menu-btn").on('click', function(){
-		$("body .right-menu").toggleClass("visible");
-		$("body .right-menu-btn .minus").toggleClass("closed");
-	}); */
-/* 	
- 	$("body").click(function(){
-		 $(".right-menu").removeClass("visible");
-	});  */
-	
-/* 		$('body').on('click', function() {
-		  $(".visible").hide();
-		}) */;
-/* 
-
-		$('right-menu-btn').on('click', function() {
-		  $(".visible").show();
-		});
- */
- 
  
  // SHOW - HIDE - BOX SEARCH ON MENU
 	$('body .right-menu-btn').on('click', function () {

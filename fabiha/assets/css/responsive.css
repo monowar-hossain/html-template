@@ -1,6 +1,7 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
-/*========== Start Navbar ==========*/   
+/*========== Start Navbar ==========*/ 
+
 .navbar-light {
     background: #FFF;
 }
@@ -73,7 +74,48 @@
 .nav-fixed .social-media-nav li:first-of-type:before {
     background: #FFF;
 }
-/*========== Start Header ==========*/    
+
+/* ----------- */
+.main-menu.navbar {
+    padding: 0px 0;
+}
+.main-menu.navbar .logo {
+    padding-left: 3px;
+}
+.right-menu-btn {
+    top: 10px;
+}
+.right-menu-btn .right-menu {
+    left: -307px;
+    background: rgba(0, 0, 0, 1);
+    top: -10px;
+}
+.main-menu .right-menu li a {
+    text-align: center;
+}
+.down {
+    display: none;
+}
+/*========== Start Header ==========*/
+
+
+.home .table-cell {
+    vertical-align: middle;
+    padding-bottom: 0px;
+}
+.banner-meta li {
+    display: block;
+}
+.follow-me {
+    float: none;
+}
+.sm-center{
+	text-align:center;
+}
+.resume .btn-one {
+    float: none;
+}
+/* ------------ */
 .info-header h1 {
     font-size: 26px;
     margin-bottom: 20px;
@@ -86,6 +128,11 @@
 .info-header h1 span {
     margin-top: 10px;
 }
+
+
+
+
+
 .banner-meta {
     margin-bottom: 30px;
     margin-left: 0px;
@@ -143,8 +190,36 @@
         margin-left: 0;
     }
 .scroll-up {
-    bottom: 90px;
+    bottom: 10px;
     right: 10px;
+}
+
+/* ---fun-fact---- */
+.stat-item .count {
+    padding-left: 0;
+}
+.stat-item .count::before {
+    left: 50%;
+    transform: translate(-50%);
+}
+.stat-item .text {
+  margin-left: 0px;
+}
+.stat-item {
+    text-align: center;
+}
+
+
+/*responsive padding less 30*/
+.pb-70 {
+    padding-bottom: 40px;
+}
+.pt-100 {
+    padding-top: 70px;
+}
+.ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 }
 

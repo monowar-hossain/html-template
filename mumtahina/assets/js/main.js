@@ -54,13 +54,7 @@ function myFunction() {
   
   
   
-  $(".caret-up").click(function(e) {
-			e.preventDefault();
-		var cls = $(this).closest(".p-relative").next().offset().top;
-		$("html, body").animate({scrollTop: cls}, "slow");
-	});
-  
-  
+
   
   
   

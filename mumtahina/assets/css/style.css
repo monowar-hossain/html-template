@@ -1,0 +1,920 @@
+/*-----------------------------------------------------------------
+Main Style Stylesheet
+Template Name  : Mumtahina - Personal Portfolio HTML Template
+Author         : Mumtahina
+Version        : 1.0
+Primary Use    : Personal, Porfolio
+-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+Table Of Index
+--------------------------------
+1. Reset css
+2. Style Css
+    1- Site-menu
+    2- Home
+    3- About
+    4- Skills
+    5- Resume
+    6- Statistics
+    7- Services
+    8- Portfolio
+    9- Testimonials
+    10- Blog
+    11- clients
+    12- Contact
+    13- Footer
+-----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+					Start Default Settings
+----------------------------------------------------------------*/
+
+/*========== All Transition Settings ==========*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:300,400,400i,500,600,700');
+
+* {
+
+    -webkit-transition: 0.6s ease-in-out;
+       -moz-transition: 0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+         -o-transition: 0.6s ease-in-out;
+            transition: 0.6s ease-in-out;
+}
+svg {
+    -webkit-transition: color 0.1s ease-in-out;
+       -moz-transition: color 0.1s ease-in-out;
+        -ms-transition: color 0.1s ease-in-out;
+         -o-transition: color 0.1s ease-in-out;
+            transition: color 0.1s ease-in-out;
+}
+/*========== Block Settings ==========*/
+/*========== The Body ==========*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 25px;
+	background: #f1ede4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    width: 100%;
+    border: none;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+    color: #000;
+}
+ul
+ol,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+select:focus,
+select:active {
+    box-shadow: none;
+    border: 0;
+    outline: 0
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="subject"]:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+    border: 1px solid transparent;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="password"],
+input[type="subject"],
+textarea {
+    background: #f9f9f9;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    outline: 0;
+    padding: 13px 20px;
+    resize: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+}
+textarea {
+    height: 150px;
+    padding-top: 20px;
+}
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*========== Typography Settings ==========*/
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 48px;
+	padding-bottom:20px;
+    font-weight: 600;
+}
+h2 {
+
+    font-size: 36px;
+    font-weight: 600;
+	padding-bottom:20px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 28px;
+	padding-bottom:15px;
+}
+
+h4 {
+
+    font-size: 22px;
+    font-weight: 500;
+	padding-bottom:10px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+	padding-bottom:10px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 500;
+	padding-bottom:10px;
+}
+
+p {
+    line-height: 28px;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+/*========== Spacing CSS ==========*/
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.ptb-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.ptb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.ptb-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.no-padding {
+    padding: 0;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mr-25 {
+    margin-right: 25px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.ml-25 {
+    margin-left: 25px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+/*========= Alignment CSS ==========*/
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+/*========== My Classes ==========*/
+.section-title {
+	padding-bottom:20px;
+}
+
+.section-title h2 {
+    color: #000000;
+    display: block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 0.75;
+    margin: 0;
+    position: relative;
+}
+
+.btn-one {
+    background: #fff;
+    display: inline-block;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 44px;
+    min-width: 130px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+.btn-one:hover{
+    background: #444 ;
+    color: #000000;
+}
+
+/*=======================================================================================
+					End Default Settings
+=========================================================================================*/
+
+/*=======================================================================================
+					Start Header Section
+=========================================================================================*/
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	align-items: center;
+	display: flex;
+	z-index: 1000;
+	background-color: transparent;
+	transition: background 0.2s ease-in-out, top 0.2s ease-in-out; 
+}
+/*----------------- fixed logo ----------------*/
+.logo {
+    position: fixed;
+    left: 40px;
+    top: 5px;
+    z-index: 99999;
+}
+.logo a {
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    line-height: inherit;
+    padding: 10px;
+}
+
+/*--------------- fixed menu ------------*/
+/* .menu-wrapper {
+}
+.header-menu {
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+.header-burger {
+	height: 24px;
+	width: 24px;
+	overflow: hidden;
+	display: inline-block;
+	padding-top: 14px;
+	z-index: 10;
+	position: relative;
+	cursor: pointer; 
+}
+.header-burger:hover span {
+	background: #fff; 
+}
+.header-burger:hover span:before, 
+.header-burger:hover span:after {
+	background: #fff; 
+}
+.header-burger span {
+	position: relative;
+	display: block;
+	width: 16px;
+	height: 2px;
+	background: #fff;
+	transition: all .2s ease-in-out;
+	text-align:left;
+}
+.header-burger span:before,
+.header-burger span:after {
+	position: absolute;
+	background: #fff;
+	content: '';
+	width: 20px;
+	height: 2px;
+	transition: all .2s ease-in-out; 
+}
+.header-burger span:before {
+	top: -8px; 
+}
+.header-burger span:after {
+	top: 8px; 
+}
+.header-menu-status:checked ~ .header-burger span {
+	background: transparent; 
+}
+.header-menu-status:checked ~ .header-burger span:before {
+	transform: rotate(45deg) translate(5px, 6px); 
+}
+.header-menu-status:checked ~ .header-burger span:after {
+	transform: rotate(-45deg) translate(5px, -6px); 
+}
+.header-menu-status:checked ~ .header-nav {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.3s ease-in-out; 
+}
+.header a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+.header-nav {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	visibility: hidden;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	background-color: #1F1F1F;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	justify-content: center;
+	opacity: 0;
+	transition: 0.3s ease-in-out; 
+}
+.header-nav-item {
+	flex: 0 0;
+	margin: 0 auto; 
+} */
+
+@media (max-width: 767px) {
+.header {
+	align-items: normal;
+	padding-top: 24px;
+	left: 24px;
+	height: 80px; 
+}
+
+/* .header-nav-item {
+	margin: 0 auto 32px;
+}
+.header a {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 1px; 
+} */
+
+}
+
+/* -------- fixed virtual text ------------- */
+.verticle-text {
+    display: inline-block;
+    position: fixed;
+    font-size: 12px;
+    width: auto;
+    color: #545454;
+    transform: rotate(-90deg);
+    vertical-align: middle;
+    top: 45%;
+    left: -80px;
+	z-index:9;
+}
+.information, .information p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+/*-- section to section -- */
+
+.pagescroll {
+    position: fixed;
+    bottom: 0px;
+    left: 50px;
+    z-index: 99;
+    width: 30px;
+    height: 50px;
+    background: #000;
+}
+.pagescroll a {
+    width: 100%;
+    text-align: center;
+	color: #ffffff;
+	background-color: black;
+	display:inline-block;
+}
+/*
+.top a:hover {
+	background-color: #666666;}
+ .explore {
+	transform: rotate(-90deg); 
+	top: 38%;
+	font-size: 10px;
+	position: relative;
+} */
+/* .explore-icon {
+	text-align: center;
+	top: 25%;
+	position: relative;
+} */
+
+/*--------- fixed right social-------------- */
+.socials {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vh;
+    height: 50px;
+    transform: rotate(90deg) translate(45vh, -47.5vh);
+    transition: width 0.3s ease-out;
+    z-index: 2;
+}
+.socials-nav {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    background: #000;
+}
+.socials-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 47px;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 8px 8px 0px;
+    display: inline-block;
+	color:#fff;
+}
+
+
+/*=======================================================================================
+					Start progress bar
+=========================================================================================*/
+
+.progress-container {
+    position: fixed;
+    top: 80px;
+    bottom: 80px;
+    right: 60px;
+    width: 1px;
+    z-index: 5;
+    background: #000;
+}
+.progress-bar {
+    background: #565452;
+    position: relative;
+    width: 4px;
+    border-radius: 3px;
+    height: 100%;
+    z-index: 2;
+    float: left;
+    left: -1.5px;
+}
+
+
+/*=======================================================================================
+					Start Home Section
+=========================================================================================*/
+.home-section {
+    position: relative;
+    background-image: url(../img/Hero-girl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.p-relative {
+    position: relative;
+}
+.home-section .row.align-items-center {
+    height: 100vh;
+}
+.home-section .section-title h2 {
+    font-size: 65px;
+    line-height: 1.2;
+    color: #565451;
+	display:inline-block;
+}
+.home-section .section-title h2:before {
+    content: '';
+    position: absolute;
+    background: #3b3b3b;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 0px;
+}
+.home-section .section-title h2:after {
+    content: '';
+    position: absolute;
+    background: #3b3b3b;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0px;
+}
+
+
+
+
+
+/*=======================================================================================
+					Start About Section
+=========================================================================================*/
+.about-section {
+    background: #e6e4df;
+}
+.about-section .section-title h2 {
+    padding-bottom: 10px;
+}
+.about-img {
+    border: 2px solid #000;
+    outline: 10px solid #fff;
+    margin-top: 10px;
+    box-shadow: 2px 2px 20px 6px #9a9382;
+    margin-left: 10px;
+}
+
+/*---------- verticle-btn ------------*/
+.verticle-btn {
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    width: auto;
+    color: #545454;
+    transform: rotate(-90deg);
+    vertical-align: middle;
+    top: 45%;
+    left: -194px;
+}
+.about-btn .btn-one {
+    line-height: 35px;
+    min-width: 120px;
+    height: 35px;
+	box-shadow: 0px 0px 10px 0px #9a9382;
+}
+.about-info{
+	background:#fff;
+	padding:10px 20px;
+	box-shadow: 2px 2px 15px 1px #9a9382;
+	position:relative;
+}
+.about-info:after {
+    position: absolute;
+    background-image: url(../img/pattern1.png);
+    bottom: -88px;
+    right: -62px;
+    z-index: 999;
+    content: '';
+    height: 175px;
+    width: 180px;
+    background-size: cover;
+}
+.about-info ul {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+}
+.about-info li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+/*-------------- follow-me -------------*/
+.follow-me {
+    padding-top: 12px;
+}
+.follow-me p {
+    position: relative;
+    float: left;
+    padding-right: 0px;
+    padding-top: 4px;
+}
+
+.follow-me .social-media-about {
+    padding-left: 0;
+}
+.follow-me .social-media-about li {
+    display: inline-block;
+}
+.follow-me .social-media-about li a {
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+    line-height: 29px;
+    display: inline-block;
+    text-align: center;
+    color: #9b9b9b;
+    background: #000;
+    transition: all 0.2s;
+    margin: 3px;
+}
+.follow-me .social-media-about li a:hover {
+    color: #fff;
+}
+
+
+
+
+.first-skill {
+	background: #fff;
+	padding:10px;
+	box-shadow: 2px 2px 15px 1px #9a9382;
+}
+.date {
+    float: right;
+    margin-top: 10px;
+    background: #F1EDE4;
+    padding: 3px 5px;
+}
+.skill-title h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.skill-title {
+    border-bottom: 1px solid #777;
+    padding-bottom: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+right-menu-btn */
+
+
+.right-menu-btn {
+    position: fixed;
+    top: 10px;
+    z-index: 9999;
+    right: 0;
+    cursor: pointer;
+}
+
+.right-menu-btn span{
+  display: block;
+  width: 30px;
+  height: 2.5px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transition:.6s;
+}
+
+.right-menu-btn.hide span:first-child{
+	transform: rotate(0deg);
+}
+.right-menu-btn span:first-child{
+	transform: rotate(45deg);
+	transform-origin: 6px 9px;
+}
+.right-menu-btn.hide span:nth-child(2) {
+    opacity: 1;
+    width: 20px;
+    margin-left: 10px;
+}
+.right-menu-btn span:nth-child(2){
+	opacity:0;
+}
+.right-menu-btn.hide span:nth-child(3){
+	transform: rotate(0deg);
+}
+.right-menu-btn span:nth-child(3){
+	transform: rotate(-45deg);
+	transform-origin: 9px -5px;
+}
+.right-menu-btn + .right-menu {
+    position: fixed;
+    width: 100%;
+    padding: 50px;
+    /* padding-top: 90px; */
+    background: rgba(0, 0, 0, 0.9);
+    /* top: -30px; */
+    height: 110vh;
+    z-index: 999;
+    right: 0%;
+}
+.right-menu-btn.hide + .right-menu {
+    right: -100%;
+
+}
+
+.right-menu li a {
+    font-size: 30px;
+    padding: 15px 10px;
+    display: block;
+    color: #565451;
+    text-align: center;
+}
+.right-menu li:hover a {
+	color:#fff;
+}
+
+/* 
+.social-media-nav {
+    padding-top: 15px;
+    padding-left: 62px;
+}
+.social-media-nav li {
+    display: inline-block;
+    padding-left: 0px;
+    font-size: 17px;
+    color: #FFF;
+    position: relative;
+    padding: 0 9.6px;
+}
+.social-media-nav li svg {
+    color: #fff;
+}
+.social-media-nav li svg:hover {
+    color: #ffb22a;
+}
+ */
+
+
+.toggler-menu-close {
+    background: none;
+    border: 0;
+    cursor: pointer;
+	box-shadow:none;
+	outline:none;
+}
+.toggler-menu-close:focus {
+	border:none;
+}
+
+.right-menu-btn {
+    top: 10px;
+}
+.right-menu-btn .right-menu {
+    background: rgba(0, 0, 0, 1);
+    top: -18px;
+    left: -100vw;
+    width: 105vw;
+    margin-left: 150%;
+}
+
+.main-menu .right-menu li a {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+@media (min-width: 1200px){
+	.container {
+		max-width: 1070px;
+	}
+}
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.container {
+		max-width: 845px;
+	}
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container {
+		max-width: 620px;
+	}
+	.hero-text-wrap {
+		margin-top: 25px;
+	}
+	.download-btn {
+		float: left;
+		margin-bottom: 30px;
+	}
+	.about-btn .btn-one {
+		margin-right: 15px;
+		margin-left: 0;
+	}
+}
+
+	
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+.hero-text-wrap {
+	margin-top: 25px;
+}
+.about-desc {
+    margin-top: 35px;
+}
+.verticle-btn {
+    left: -175px;
+}
+.download-btn {
+    float: left;
+    margin-bottom: 30px;
+}
+.about-btn .btn-one {
+    margin-right: 15px;
+    margin-left: 0;
+}
+/* ---fun-fact---- */
+.stat-item .count {
+    padding-left: 0;
+}
+.stat-item .count::before {
+    left: 50%;
+    transform: translate(-50%);
+}
+.stat-item .text {
+  margin-left: 0px;
+}
+.stat-item {
+    text-align: center;
+}
+
+/*responsive padding less 30*/
+.pb-70 {
+    padding-bottom: 40px;
+}
+.pt-100 {
+    padding-top: 70px;
+}
+.ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}

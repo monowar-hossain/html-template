@@ -22,6 +22,12 @@
 		float: left;
 		margin-bottom: 30px;
 	}
+	.about-desc {
+		margin-top: 35px;
+	}
+	.verticle-btn {
+		left: -170px;
+	}
 	.about-btn .btn-one {
 		margin-right: 15px;
 		margin-left: 0;
@@ -31,14 +37,26 @@
 	
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+.socials-nav, .verticle-text, .progress-container, .pagescroll {
+    display: none;
+}
+
+.logo {
+    left: 5px;
+}
+.right-menu-btn {
+    right: 20px;
+    top: 25px;
+}
+.right-menu-btn span {
+    background: #565451;
+}
 .hero-text-wrap {
 	margin-top: 25px;
 }
 .about-desc {
     margin-top: 35px;
-}
-.verticle-btn {
-    left: -175px;
+    margin-left: 32px;
 }
 .download-btn {
     float: left;

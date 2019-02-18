@@ -24,8 +24,24 @@ $(document).ready(function(){
 	};
 	
 		
+/*--------------------
+	* Header Fixed
+----------------------*/
+
+	$(window).scroll(function() {    
+		var scroll = $(window).scrollTop();
+
+		if(scroll >= 550) {
+			$(".header").addClass("fixed");
+		} else {
+			$(".header").removeClass("fixed");
+		}
+	});
+
+	
+	
   
-  
+
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
@@ -36,39 +52,77 @@ function myFunction() {
   document.getElementById("myBar").style.height = scrolled + "%";
 }
 
-
- //animation scroll
-  $("a").on('click', function(event) {
- if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
- $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
+	
+	
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
     }
   });
-  
+//# sourceURL=pen.js
 
-/*========== Start Counter To Js Statistics   ==========*/	
-$(window).on('scroll.statistics', function () {
-	var stat = $('.statistics');
-		if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 220) {
-			$('.count').countTo();
-			$(window).off('scroll.statistics');
-		}
-	});
+	
+	
+$('.video-btn').magnificPopup({type:'video'});
+   
+
+/*========== Start Counter To Js Statistics   ==========*/
+
+	if($('.statistics').length !== 0){
+		$(window).on('scroll.statistics', function () {
+			var stat = $('.statistics');
+				if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 220) {
+					$('.count').countTo();
+					$(window).off('scroll.statistics');
+				}
+		});
+	}
 	
 	
 	    /*========== Start Portfolio Trigger Filterizr Js ==========*/
-    $("#control li").on('click', function () {
-        $(this).addClass('active').siblings().removeClass('active');
-    });
-    // The Filterizr
-    $('#filtr-container').filterizr({
-        animationDuration: 0.4
-    });
+
+	if($('.statistics').length !== 0){
+		
+		$("#control li").on('click', function () {
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+		// The Filterizr
+		$('#filtr-container').filterizr({
+			animationDuration: 0.4
+		});
+	
+	}
 	
 /*========== Start Magnigic Popup Js ==========*/
     $('.single-portfolio').magnificPopup({
@@ -132,20 +186,20 @@ $(window).on('scroll.statistics', function () {
 
 
 
-
-
 $(window).scroll(function() {
-	var hT = $('#skill-bar-wrapper').offset().top,
-		hH = $('#skill-bar-wrapper').outerHeight(),
-		wH = $(window).height(),
-		wS = $(this).scrollTop();
-	if (wS > (hT+hH-1.4*wH)){
-		jQuery(document).ready(function(){
-			jQuery('.skillbar-container').each(function(){
-				jQuery(this).find('.skills').animate({
-					width:jQuery(this).attr('data-percent')
-				}, 5000);
+	if($('#skill-bar-wrapper').length !== 0){
+		var hT = $('#skill-bar-wrapper').offset().top,
+			hH = $('#skill-bar-wrapper').outerHeight(),
+			wH = $(window).height(),
+			wS = $(this).scrollTop();
+		if (wS > (hT+hH-1.4*wH)){
+			jQuery(document).ready(function(){
+				jQuery('.skillbar-container').each(function(){
+					jQuery(this).find('.skills').animate({
+						width:jQuery(this).attr('data-percent')
+					}, 5000);
+				});
 			});
-		});
+		}
 	}
 });

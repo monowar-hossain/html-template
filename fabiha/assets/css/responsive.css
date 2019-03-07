@@ -8,7 +8,6 @@
 .my-resume:after {
     right: 45px;
     bottom: 5px;
-    height: 100px;
 }
 .my-skills:before {
     right: 15px;
@@ -495,8 +494,28 @@ p{
     padding: 60px 30px 80px 60px;
 }
 
-
-
+/*=============
+single-blog.html  {single-blog-page}
+==============*/
+.single-blog-page .blog-desc {
+    padding: 40px;
+}
+.post-single-comment-box {
+    padding: 25px;
+}
+.post-comment-form {
+    padding: 25px;
+}
+.post-comment-form .form textarea {
+    min-height: 150px;
+}
+.widget {
+    padding: 25px;
+}
+.pagination li a {
+    padding: 10px 15px;
+    border-radius: 15px 0px 15px 15px;
+}
 }
 
 
@@ -776,16 +795,9 @@ p{
     left: 15px;
     bottom: 15px;
 }
-.blog-img {
-    position: absolute;
-    left: 7%;
-    top: 0px;
-    z-index: 9;
-    width: 86%;
-    margin: auto;
-}
+
 .blog-details {
-    padding: 135px 45px 30px;
+    padding: 30px 45px;
 }
 
 /* contact */
@@ -831,6 +843,38 @@ p.footer-text {
 .blog-page:after {
     left: 15px;
     bottom: 150px;
+}
+
+/*=============
+single-blog.html  {single-blog-page}
+==============*/
+.single-blog-page .blog-desc {
+    padding: 40px;
+}
+.post-single-comment-box {
+    padding: 25px;
+}
+.reply-comment {
+    margin-left: 40px;
+}
+.post-comment-form {
+    padding: 25px;
+}
+.post-comment-form .form textarea {
+    min-height: 150px;
+}
+.fabi-related-news .single-blog.second-blog {
+    margin-top: 30px;
+}
+.sidebar {
+    margin-top: 48px;
+}
+.widget {
+    padding: 25px;
+}
+.pagination li a {
+    padding: 10px 15px;
+    border-radius: 15px 0px 15px 15px;
 }
 }
 

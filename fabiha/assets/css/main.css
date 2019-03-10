@@ -29,8 +29,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    line-height: 25px;
-/* 	width:1920px; */
+    line-height: 25px;/* 
+	width:1920px; */
 }
 p{
 	font-family: 'Poppins', sans-serif;
@@ -109,6 +109,9 @@ img {
     transition: all .2s;
     font-weight: 700;
 }
+.social-media li a:hover {
+    color: #F82462;
+}
 
 .container {
     max-width: 1418px;
@@ -169,21 +172,7 @@ img {
 }
 .btn:hover{
     border: 2px solid #F82462;
-}
-.btn:before {
-  content: "";
-  position: absolute !important;
-  top: -40px;
-  right: auto;
-  bottom: auto;
-  left: -100px;
-  height: 220px;
-  width: 50px;
-  background: #1D2063;
-  z-index: -1;
-  opacity: .1;
-  transition: .5s ease 0s;
-  visibility: hidden;
+	transform: translate(0px, -3px);
 }
 
 .btn:hover:before {
@@ -191,6 +180,30 @@ img {
   visibility: visible;
   transition: .5s ease .2s;
 }
+.btn:before {
+    content: "";
+    position: absolute !important;
+    top: -40px;
+    right: auto;
+    bottom: auto;
+    left: -100px;
+    height: 220px;
+    width: 50px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.6)), color-stop(50%, rgba(255, 255, 255, 0.85)), color-stop(70%, rgba(255, 255, 255, 0.85)), color-stop(71%, rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+    opacity: .1;
+    -webkit-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: .5s ease 0s;
+    -o-transition: .5s ease 0s;
+    transition: .5s ease 0s;
+    visibility: hidden;
+}
+
 
 
 /*----------------------------------------------------------------
@@ -359,7 +372,9 @@ img {
     border-radius: 0 0 40px 0;
     position: relative;
 }
-.fabiha-bg:before {
+
+
+.fabiha-bg .fabiha-shape1 {
     position: absolute;
     content: "";
     width: 95px;
@@ -370,7 +385,9 @@ img {
     z-index: 999;
 	border-radius: 20px 0 20px 20px;
 }
-.fabiha-bg:after {
+
+
+.fabiha-bg .fabiha-shape2 {
     position: absolute;
     content: "";
     width: 95px;
@@ -534,8 +551,8 @@ img {
     position: relative;
     vertical-align: bottom;
 }
-.box-img::before,
-.box-img::after {
+
+.about-shape1 {
     position: absolute;
     z-index: 1;
     content: '';
@@ -543,12 +560,17 @@ img {
     width: 72px;
     background: #F82462;
     border-radius: 20px 0 20px 20px;
-}
-.box-img::before {
     top: -30px;
     left: -35px;
 }
-.box-img::after {
+.about-shape2 {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    height: 77px;
+    width: 72px;
+    background: #F82462;
+    border-radius: 20px 0 20px 20px;
     bottom: 55px;
     right: -35px;
 }
@@ -643,7 +665,7 @@ img {
     margin: auto;
     display: block;
 }
-.resum-left .resume-img:after {
+.resume-shape1 {
     position: absolute;
     right: 15px;
     bottom: 18px;
@@ -661,7 +683,7 @@ img {
     border-left: none;
     padding-left: 0;
 }
-.my-resume.resum-right:after {
+.resume-shape2 {
     position: absolute;
     left: 73px;
     top: -35px;
@@ -685,7 +707,7 @@ img {
 .my-skills {
     position: relative;
 }
-.my-skills:before {
+.skill-shape1 {
     position: absolute;
     right: 50px;
     top: 100px;
@@ -696,7 +718,7 @@ img {
     z-index: 1;
     border-radius: 20px 0 20px 20px;
 }
-.my-skills:after {
+.skill-shape2 {
     position: absolute;
     left: 42px;
     bottom: 0;
@@ -798,17 +820,8 @@ img {
 	text-align:center;
 }
 
-/* .number-bg {
-    position: absolute;
-    right: 40px;
-    font-size: 60px;
-    top: 50px;
-    color: #f4f4f4;
-    z-index: -1;
-    font-weight: 700;
-} */
 .services-item:hover{
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10);
     position: relative;
     z-index: 9;
     transform: translate(0, -5px);
@@ -892,7 +905,7 @@ img {
 .portfolio {
     position: relative;
 }
-.portfolio:before {
+.portfolio-shape1 {
     position: absolute;
     right: 125px;
     top: 100px;
@@ -903,7 +916,7 @@ img {
     z-index: 1;
     border-radius: 20px 0 20px 20px;
 }
-.portfolio:after {
+.portfolio-shape2 {
     position: absolute;
     left: 91px;
     bottom: 215px;
@@ -914,7 +927,17 @@ img {
     z-index: 1;
     border-radius: 20px 0 20px 20px;
 }
-.filter-group {
+
+ .portfolio-bg1{background-image: url(../img/portfolio/item-1.jpg);}
+ .portfolio-bg2{background-image: url(../img/portfolio/item-2.jpg);}
+ .portfolio-bg3{background-image: url(../img/portfolio/item-3.jpg);}
+ .portfolio-bg4{background-image: url(../img/portfolio/item-4.jpg);}
+ .portfolio-bg5{background-image: url(../img/portfolio/item-5.jpg);}
+ .portfolio-bg6{background-image: url(../img/portfolio/item-6.jpg);}
+ .portfolio-bg7{background-image: url(../img/portfolio/item-7.jpg);}
+ 
+
+ .projects-filter {
     margin-bottom: 40px;
     margin-left: 83px;
 }
@@ -924,38 +947,41 @@ img {
     margin-bottom: 0;
     padding-left: 0;
 }
-.list-control li {
+.projects-filter ul li {
+    display: inline-block;
     color: #1D2063;
     padding: 10px 20px;
     border-radius: 15px 0px 15px 15px;
     cursor: pointer;
-    display: inherit;
     position: relative;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
 	transition:.5s;
 }
-.list-control li.active,
-.list-control li:hover {
+.projects-filter ul li.active,
+.projects-filter ul li:hover {
     color: #fff;
     background-color: #F82462;
 }
 
-
-.single-portfolio {
-    position: relative;
+.grid{
     height: 100%;
-    width: 100%;
-    margin-bottom: 30px;
-    transition: .5s;
 }
- 
-.single-portfolio .image {
+.element-item{
+    width: 100%;
+    margin-bottom: 50px;
+    height: 280px;
+}
+.single-portfolio{
     overflow: hidden;
     position: relative;
-    transition: .5s;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
+
 
 .single-portfolio .portf-hover {
     position: absolute;
@@ -981,7 +1007,6 @@ img {
 	visibility:visible;
 	opacity: 0.72;
     transition: .5s;
-	
 }
 
 /*============================================================
@@ -1066,7 +1091,7 @@ img {
 .blog {
     position: relative;
 }
-.home-blog:before {
+.blog-shape1 {
     position: absolute;
     right: 80px;
     top: 100px;
@@ -1077,7 +1102,7 @@ img {
     z-index: 1;
     border-radius: 20px 0 20px 20px;
 }
-.home-blog:after {
+.blog-shape2 {
     position: absolute;
     left: 83px;
     bottom: 85px;
@@ -1154,6 +1179,10 @@ img {
 .blog-content .blog-title a h3 {
     margin-top: 25px;
     margin-bottom: 18px;
+    transition: .3s;
+}
+.blog-content .blog-title a h3:hover {
+	color: #F82462;
 }
 .blog-content a.read-more {
     position: absolute;
@@ -1218,7 +1247,7 @@ img {
     position: relative;
     text-align: left;
 }
-.contact .form:before {
+.contact-form-shape1 {
     position: absolute;
     content: "";
     right: -28%;
@@ -1229,7 +1258,7 @@ img {
     z-index: 99;
 	border-radius: 20px 20px 20px 0;
 }
-.contact .form:after {
+.contact-form-shape2 {
     position: absolute;
     content: "";
     left: -35px;
@@ -1361,7 +1390,7 @@ img {
     color: #1D2063;
 	margin:0;
 }
-.news-feed:before {
+.news-feed-shape1 {
     position: absolute;
     left: 83px;
     top: 100px;
@@ -1372,7 +1401,7 @@ img {
     z-index: 1;
     border-radius: 0px 20px 20px 20px;
 }
-.news-feed:after {
+.news-feed-shape2 {
     position: absolute;
     right: 83px;
     bottom: 100px;
@@ -1422,7 +1451,7 @@ ul.breadcrumb li a:hover {
 
 
 /* -------blog-grid--{single-blog overright}--------- */
-.grid-blog:after {
+.grid-blog-shape1 {
     position: absolute;
     left: 83px;
     bottom: 50%;
@@ -1433,7 +1462,7 @@ ul.breadcrumb li a:hover {
     z-index: 99;
     border-radius: 20px 0 20px 20px;
 }
-.grid-blog:before {
+.grid-blog-shape2 {
     position: absolute;
     right: 80px;
     top: 350px;
@@ -1873,8 +1902,3 @@ color:#F82462
  
  
  
- 
-
-
-
-

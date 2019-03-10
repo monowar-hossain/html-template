@@ -157,19 +157,29 @@ $('body').scrollspy({ target: '#mainmenu' })
 		
 		
     /*========== Start Portfolio Trigger Filterizr Js ==========*/
-if ($('#control li').length) {
-	
-	if ($.fn.filterizr) {
-			$("#control li").click(function () {
-				$(this).addClass('active').siblings().removeClass('active');
-			});
-			
-		    // The Filterizr
-			$('#filtr-container').filterizr({
-				animationDuration: 0.4
-			});
-	}; 
-}
+
+// start isotop
+// init Isotope
+var $grid = $('.grid').isotope({
+  // options
+});
+// filter items on button click
+$('.projects-filter').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+$('.projects-filter').on( 'click', 'li', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+
+});
+
+
+$('.grid').isotope({
+ // options
+ itemSelector: '.element-item',
+ layoutMode: 'fitRows'
+});
+//      end isotope
     
     /*========== Start OWL Carousel Js testimonial   ==========*/
 	if ($('.testimonial').length) {

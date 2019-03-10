@@ -28,7 +28,7 @@
     right: -140px;
     width: 182px;
 }
-.box-img::after {
+.about-shape2 {
     right: 20px;
     bottom: 20px;
 }
@@ -40,20 +40,17 @@
 
 
 
-.my-skills:before,
-.my-skills:after,
-.portfolio:before,
-.portfolio:after,
-.home-blog:before,
-.home-blog:after,
-.news-feed:before,
-.news-feed:after,
-.grid-blog:before,
-.grid-blog:after{
+.skill-shape1,
+.skill-shape2,
+.portfolio-shape1,
+.portfolio-shape2,
+.blog-shape1,
+.blog-shape2,
+.news-feed-shape1,
+.news-feed-shape2,
+.grid-blog-shape1,
+.grid-blog-shape2{
 	display:none;
-}
-.news-feed:after {
-    display: none;
 }
 
 
@@ -108,13 +105,13 @@
 .fabiha-bg {
     height: 600px;
 }
-.fabiha-bg:before {
+.fabiha-shape1 {
     width: 65px;
     height: 59px;
     right: -30px;
     top: 30px;
 }
-.fabiha-bg:after {
+.fabiha-shape2 {
     width: 65px;
     height: 59px;
     left: 35px;
@@ -127,7 +124,7 @@
     padding-left: 40px;
 }
 
-.box-img::before, .box-img::after {
+.about-shape1, .about-shape2 {
     position: absolute;
     z-index: 1;
     content: '';
@@ -136,11 +133,11 @@
     background: #F82462;
     border-radius: 20px 0 20px 20px;
 }
-.box-img::before {
+.about-shape1 {
     top: -24px;
     left: -24px;
 }
-.box-img::after {
+.about-shape2 {
     bottom: 24px;
     right: -24px;
 }
@@ -152,12 +149,12 @@
 .resume-head {
     margin-bottom: 15px;
 }
-.resum-left .resume-img:after {
+.resum-left .resume-shape1 {
     right: 20px;
     width: 65px;
     height: 67px;
 }
-.my-resume.resum-right:after {
+.my-resume.resume-shape2 {
     left: 45px;
     top: -27px;
     width: 55px;
@@ -376,13 +373,13 @@ h4 {
 .fabiha-bg {
     height: 500px;
 }
-.fabiha-bg:before {
+.fabiha-shape1 {
     width: 65px;
     height: 59px;
     right: 0px;
     top: 30px;
 }
-.fabiha-bg:after {
+.fabiha-shape2 {
     width: 65px;
     height: 59px;
     left: 35px;
@@ -463,15 +460,18 @@ h4 {
 .profile::after {
     right: 0;
     width: 90px;
+    border-radius: 47px 0 47px 47px;
 }
-.box-img::before, .box-img::after {
+
+
+.about-shape1, .about-shape2 {
 	display:none;
 }
 
 .my-resume.resum-right {
     margin-top: 70px;
 }
-.resum-left .resume-img:after {
+.resum-left .resume-shape1 {
     right: 40px;
 }
 .skills .skill-box .progress-line {
@@ -497,8 +497,8 @@ h4 {
 }
 	
 .con-form-wrap:after,
-.contact .form:after,
-.contact .form:before {
+.contact-form-shape1,
+.contact-form-shape2 {
 	display:none;
 }
 
@@ -548,7 +548,7 @@ body{
 .section-title {
     margin-left: 30px;
 }
-.resum-left .resume-img:after {
+.resum-left .resume-shape1 {
     right: 23px;
 }	
 .resume-head .date {

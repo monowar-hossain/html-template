@@ -40,27 +40,27 @@
 
 
 
-.my-skills:before {
+.my-skills:before,
+.my-skills:after,
+.portfolio:before,
+.portfolio:after,
+.home-blog:before,
+.home-blog:after,
+.news-feed:before,
+.news-feed:after,
+.grid-blog:before,
+.grid-blog:after{
 	display:none;
 }
-.my-skills:after {
-	display:none;
+.news-feed:after {
+    display: none;
 }
-.portfolio:before {
-	display:none;
-}
-.portfolio:after {
-	display:none;
-}
-.home-blog::before {
-	display:none;
-}
-.home-blog::after {
-	display:none;
-}
+
+
 .blog-content {
     padding: 25px 45px 60px;
 }
+
 
 
 }
@@ -173,8 +173,58 @@
 .service-icon img {
     width: 75%;
 }
+.contact .form {
+    padding: 70px 30px 130px 80px;
+}
 	
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+.contact-text {
+    margin-left: 0px;
+}
+.copyright-text {
+    margin-left: 0px;
+}
+/*=============
+single-blog.html  {single-blog-page}
+==============*/
+
+.widget {
+    padding: 25px;
+}
+.media-body {
+    margin-left: 0;
+	margin-top:10px;
+}
+.recent-post-thumb {
+    float: none;
+}
+
+.recent-post-thumb img {
+    margin: 0;
+}
+.widget-tag li a {
+    margin: 0 5px 10px 0;
+    padding: 8px;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -229,15 +279,54 @@ h4 {
     width: 80px;
 }
 
-
-
-	
+.grid-blog .blog-content {
+    padding: 25px 40px 30px 40px;
+}
+/*------------------
+single-blog.html  {single-blog-page}
+------------------------*/
+.single-blog-page .blog-desc {
+    padding: 27px 50px 50px 50px;
+    background: #1D2063;
+}
+.post-single-comment-box {
+    padding: 30px;
+}
+.post-comment-form {
+    padding: 30px 50px;
+}
+.reply-comment {
+    margin-left: 80px;
+}
 }
 
 
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+body {
+    font-size: 12px;
+}
+p{
+    font-size: 12px;
+	
+}
+h1 {
+	font-size: 22px;
+	line-height:32px;
+}
+h2 {
+	font-size: 18px;
+	line-height:28px;
+}
+h3 {
+	font-size: 16px;
+	line-height:25px;
+}
+h4 {
+	font-size: 14px;
+	line-height:20px;
+}
 /*responsive padding less 30*/
 .pb-70 {
     padding-bottom: 35px;
@@ -270,6 +359,7 @@ h4 {
 .right-menu-btn + .right-menu {
     width: 100%;
     padding: 5%;
+    padding-top: 10%;
 }
 .right-menu-btn.hide + .right-menu {
     right: -100%;
@@ -282,6 +372,27 @@ h4 {
     visibility: visible;
 }
 
+
+.fabiha-bg {
+    height: 500px;
+}
+.fabiha-bg:before {
+    width: 65px;
+    height: 59px;
+    right: 0px;
+    top: 30px;
+}
+.fabiha-bg:after {
+    width: 65px;
+    height: 59px;
+    left: 35px;
+    bottom: -30px;
+}
+
+.info-header h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
 .home .col-lg-7.hero-img-plus {
     max-width: 100%;
     flex: 0 0 100%;
@@ -363,6 +474,23 @@ h4 {
 .resum-left .resume-img:after {
     right: 40px;
 }
+.skills .skill-box .progress-line {
+    height: 50px;
+}
+.skills .skill-title {
+    padding: 8px 35px;
+}
+.stat-item .count {
+    font-size: 30px;
+}
+.stat-item .text {
+    font-size: 16px;
+}
+.testimonial .single-item {
+    padding: 40px 30px;
+}
+
+
 
 .single-blog {
     margin-bottom: 100px;
@@ -379,21 +507,57 @@ h4 {
     margin-top: 0;
 }
 .contact .form {
-    padding: 60px 30px 85px 55px;
-    position: relative;
-    text-align: left;
+    padding: 60px 30px 80px 50px;
 }
-
+.copyright-text {
+    margin-top: 15px;
+    margin-left: 0;
+}
+.pagination li a {
+    padding: 12px 20px;
+}
+.post-share {
+    margin-top: 20px;
+}
+.grid-blog .single-blog {
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+.blog-content a.read-more {
+    right: 57px;
+    bottom: -28px;
+    width: 64px;
+    height: 58px;
+    line-height: 58px;
+}
+.grid-blog .first-item .blog-content a.read-more {
+    font-size: 28px;
+    bottom: -37px;
+    width: 85px;
+    height: 75px;
+    line-height: 75px;
+}
 
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+body{
+	overflow-x:hidden;
+}
+.section-title {
+    margin-left: 30px;
+}
 .resum-left .resume-img:after {
     right: 23px;
 }	
-	
-	
+.resume-head .date {
+    float: left;
+}
+.resume-head .date:after {
+    left: 0px;
+}
+
 }
 
 

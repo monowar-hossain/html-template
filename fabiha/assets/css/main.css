@@ -1154,7 +1154,6 @@ img {
 .blog-content .blog-title a h3 {
     margin-top: 25px;
     margin-bottom: 18px;
-    line-height: 31.5px;
 }
 .blog-content a.read-more {
     position: absolute;
@@ -1477,9 +1476,11 @@ ul.breadcrumb li a:hover {
     margin-bottom: 34px;
 }
 .grid-blog .first-item .blog-content a.read-more {
-    padding: 40px 37px;
     font-size: 30px;
-    bottom: -55px;
+    bottom: -50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
 }
 
 /* -------pagination----------- */

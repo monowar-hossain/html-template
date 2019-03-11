@@ -38,8 +38,6 @@
 }
 
 
-
-
 .skill-shape1,
 .skill-shape2,
 .portfolio-shape1,
@@ -52,12 +50,6 @@
 .grid-blog-shape2{
 	display:none;
 }
-
-
-.blog-content {
-    padding: 25px 45px 60px;
-}
-
 
 
 }
@@ -138,8 +130,8 @@
     left: -24px;
 }
 .about-shape2 {
-    bottom: 24px;
-    right: -24px;
+    bottom: 10px;
+    right: 10px;
 }
 /* my resume */
 .resume-item {
@@ -150,7 +142,7 @@
     margin-bottom: 15px;
 }
 .resum-left .resume-shape1 {
-    right: 20px;
+    right: 32px;
     width: 65px;
     height: 67px;
 }
@@ -173,6 +165,17 @@
 .contact .form {
     padding: 70px 30px 130px 80px;
 }
+/* portfolio */
+.stat-item {
+    padding: 10px 10px 10px 50px;
+}
+/* testimonials */
+.testimonials .client-img {
+    right: 25px;
+    top: 6px;
+    width: 90px;
+    height: 85px;
+}
 	
 }
 
@@ -184,6 +187,7 @@
 }
 .copyright-text {
     margin-left: 0px;
+    margin-right: 15px;
 }
 /*=============
 single-blog.html  {single-blog-page}
@@ -209,7 +213,9 @@ single-blog.html  {single-blog-page}
     font-size: 15px;
     line-height: 21px;
 }
-
+.fabi-related-news .blog-content {
+    padding: 18px 15px 30px 25px;
+}
 
 }
 
@@ -265,6 +271,19 @@ h4 {
     font-size: 20px;
     padding: 15px 10px;
 }
+/* home */
+.fabiha-bg .fabiha-shape1 {
+    width: 75px;
+    height: 70px;
+    right: -35px;
+    top: 35px;
+}
+.fabiha-bg .fabiha-shape2 {
+    width: 75px;
+    height: 70px;
+    left: 80px;
+    bottom: -35px;
+}
 .profile::after {
     right: -123px;
     width: 182px;
@@ -275,7 +294,6 @@ h4 {
 .resume-head .date:after {
     width: 80px;
 }
-
 .grid-blog .blog-content {
     padding: 25px 40px 30px 40px;
 }
@@ -294,6 +312,11 @@ single-blog.html  {single-blog-page}
 }
 .reply-comment {
     margin-left: 80px;
+}
+.widget-cat li a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 0;
 }
 }
 
@@ -369,23 +392,19 @@ h4 {
     visibility: visible;
 }
 
-
+/* home */
+.home {
+    padding-bottom: 65px;
+}
 .fabiha-bg {
     height: 500px;
 }
-.fabiha-shape1 {
-    width: 65px;
-    height: 59px;
-    right: 0px;
-    top: 30px;
+.fabiha-bg .fabiha-shape1 {
+    right: 0;
 }
-.fabiha-shape2 {
-    width: 65px;
-    height: 59px;
-    left: 35px;
-    bottom: -30px;
+.fabiha-bg .fabiha-shape2 {
+    left: 20px;
 }
-
 .info-header h1 {
     font-size: 30px;
     line-height: 40px;
@@ -418,6 +437,10 @@ h4 {
 .btn {
     font-size: 12px;
     padding: 7px 16px;
+}
+/* about */
+.about {
+    padding-top: 65px;
 }
 .about .container-fluid-custom {
     width: 95.333%;
@@ -468,6 +491,14 @@ h4 {
 	display:none;
 }
 
+/* resum */
+.resume-shape2 {
+    left: 48px;
+    top: -25px;
+    width: 55px;
+    height: 50px;
+}
+
 .my-resume.resum-right {
     margin-top: 70px;
 }
@@ -486,16 +517,18 @@ h4 {
 .stat-item .text {
     font-size: 16px;
 }
+
+/* testimonial */
 .testimonial .single-item {
     padding: 40px 30px;
 }
 
-
-
 .single-blog {
     margin-bottom: 100px;
 }
-	
+.single-blog.third-blog {
+    margin-bottom: 50px;
+}	
 .con-form-wrap:after,
 .contact-form-shape1,
 .contact-form-shape2 {
@@ -537,6 +570,11 @@ h4 {
     height: 75px;
     line-height: 75px;
 }
+.widget-cat li a {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 0;
+}
 
 }
 
@@ -546,16 +584,128 @@ body{
 	overflow-x:hidden;
 }
 .section-title {
-    margin-left: 30px;
+    margin-left: 0px;
 }
+
 .resum-left .resume-shape1 {
-    right: 23px;
-}	
+    right: 10px;
+    width: 50px;
+    height: 45px;
+    bottom: 13px;
+}
+.services-item {
+    padding: 35px;
+}
+.services-item .service-icon {
+    padding: 12.5px 10.5px;
+    right: 30px;
+    top: -25px;
+}
+.service-icon img {
+    width: 65%;
+}
+.resume-item {
+    padding: 30px;
+    padding-bottom: 0;
+}
+.resume-footer {
+    padding-bottom: 5px;
+}
 .resume-head .date {
     float: left;
 }
 .resume-head .date:after {
     left: 0px;
+}
+/* skill */
+.progress-line-wrap {
+    border-radius: 0 0 15px 0;
+}
+.skills .skill-box .progress-line .percent-count {
+    top: 12px;
+    right: -8%;
+
+}
+/* portfolio */
+.projects-filter {
+    margin-left: 15px;
+}
+.projects-filter ul li {
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+.sponsor {
+    padding: 20px 0;
+}
+/* contat */
+.contact-text {
+    margin-left: 20px;
+}
+.contact .form {
+    padding: 25px 25px 30px 25px;
+}
+.con-form-wrap {
+    border-radius: 35px 0 0 0;
+}
+.contact .form textarea {
+    min-height: 120px;
+}
+/* grid-blog */
+.single-blog-details{
+	margin-bottom:60px;
+}
+.pagination li a {
+    padding: 6px 10px;
+    margin: 0 5px;
+    border-radius: 10px 0 10px 10px;
+}
+
+/* single-blog-page */
+.single-blog-page .blog-desc {
+    padding: 25px 30px 30px 30px;
+}
+.related-tag a {
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.single-blog-page blockquote {
+    padding: 0px 35px 0px 45px;
+}
+.single-blog-page blockquote:before {
+    width: 35px;
+}
+.post-single-comment-box {
+    padding: 15px;
+}
+.comment-thumb {
+    width: 75px;
+    height: 70px;
+}
+.comment-other {
+    margin-left: 90px;
+}
+.post-single-comment-box p {
+     width: 100%;
+}
+.reply-comment {
+    margin-left: 40px;
+}
+.post-comment-form {
+    padding: 20px 35px;
+}
+.post-comment-form .form {
+    padding-left: 30px;
+}
+.post-comment-form .form textarea {
+    min-height: 120px;
+}
+.post-comment-area h2 {
+    margin-left: 20px;
+}
+.fabi-related-news h2 {
+    margin-left: 20px;
 }
 
 }

@@ -222,10 +222,10 @@ $('.grid').isotope({
 		  navText: [ '<span class="fas fa-arrow-left"></span>', '<span class="fas fa-arrow-right"></span>' ],
 		  responsive:{
 			0:{
-			  items:1
+			  items:2
 			},
 			600:{
-			  items:2
+			  items:3
 			},
 			800:{
 			  items:4

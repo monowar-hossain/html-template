@@ -29,8 +29,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    line-height: 25px;/* 
-	width:1920px; */
+    line-height: 25px;
+overflow-x: hidden;
 }
 p{
 	font-family: 'Poppins', sans-serif;

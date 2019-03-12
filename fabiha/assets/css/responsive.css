@@ -109,9 +109,6 @@
     left: 35px;
     bottom: -30px;
 }
-.info-header {
-    height: 600px;
-}
 .banner-text-minus {
     padding-left: 40px;
 }
@@ -260,6 +257,9 @@ h4 {
     margin: 0 6px;
 }
 /* menu */
+.navbar a.navbar-brand {
+    margin-left: 15px;
+}
 .right-menu-btn.menu-bar-hide {
     visibility: visible;
     opacity: 1;
@@ -272,6 +272,9 @@ h4 {
     padding: 15px 10px;
 }
 /* home */
+.home {
+    margin-top: 69px;
+}
 .fabiha-bg .fabiha-shape1 {
     width: 75px;
     height: 70px;
@@ -293,6 +296,9 @@ h4 {
 }
 .resume-head .date:after {
     width: 80px;
+}
+.single-blog {
+    margin-bottom: 100px;
 }
 .grid-blog .blog-content {
     padding: 25px 40px 30px 40px;
@@ -325,10 +331,10 @@ single-blog.html  {single-blog-page}
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 body {
-    font-size: 12px;
+    font-size: 13px;
 }
 p{
-    font-size: 12px;
+    font-size: 13px;
 	
 }
 h1 {
@@ -348,12 +354,19 @@ h4 {
 	line-height:20px;
 }
 /*responsive padding less 30*/
+.pt-50 {
+    padding-top: 35px;
+}
 .pb-70 {
     padding-bottom: 35px;
+}
+.pb-80 {
+    padding-bottom: 45px;
 }
 .pt-100 {
     padding-top: 65px;
 }
+
 .pb-100 {
     padding-bottom: 65px;
 }
@@ -367,6 +380,12 @@ h4 {
 .pb-115 {
     padding-bottom: 80px;
 }
+
+
+
+
+
+
 
 .navbar a.navbar-brand {
     font-size: 20px;
@@ -468,10 +487,14 @@ h4 {
 }
 .info-about .section-title {
     margin-bottom: 10px;
-    margin-left: 0;
+    margin-left: 20px;
+}
+.about-desc-text {
+    padding: 0 20px;
 }
 .follow-me {
     margin-bottom: 35px;
+    margin-left: 20px;
 }
 .profile {
     padding: 20px 30px;
@@ -509,7 +532,7 @@ h4 {
     height: 50px;
 }
 .skills .skill-title {
-    padding: 8px 35px;
+    padding: 8px 22px;
 }
 .stat-item .count {
     font-size: 30px;
@@ -520,11 +543,11 @@ h4 {
 
 /* testimonial */
 .testimonial .single-item {
-    padding: 40px 30px;
+    padding: 40px 25px;
 }
 
-.single-blog {
-    margin-bottom: 100px;
+.blog-content {
+    padding: 25px 60px 50px;
 }
 .single-blog.third-blog {
     margin-bottom: 50px;
@@ -544,7 +567,7 @@ h4 {
 }
 .copyright-text {
     margin-top: 15px;
-    margin-left: 0;
+    margin-left: 23px;
 }
 .pagination li a {
     padding: 12px 20px;
@@ -584,9 +607,14 @@ body{
 	overflow-x:hidden;
 }
 .section-title {
-    margin-left: 0px;
+    margin-left: 20px;
 }
-
+.info-about .small-padding {
+    padding-left: 20px;
+}
+.banner-text-minus {
+    padding-left: 35px;
+}
 .resum-left .resume-shape1 {
     right: 10px;
     width: 50px;
@@ -594,7 +622,7 @@ body{
     bottom: 13px;
 }
 .services-item {
-    padding: 35px;
+    padding: 35px 25px;
 }
 .services-item .service-icon {
     padding: 12.5px 10.5px;
@@ -605,7 +633,7 @@ body{
     width: 65%;
 }
 .resume-item {
-    padding: 30px;
+    padding: 30px 20px;
     padding-bottom: 0;
 }
 .resume-footer {
@@ -628,7 +656,7 @@ body{
 }
 /* portfolio */
 .projects-filter {
-    margin-left: 15px;
+    margin-left: 35px;
 }
 .projects-filter ul li {
     padding: 5px 15px;
@@ -637,6 +665,9 @@ body{
 
 .sponsor {
     padding: 20px 0;
+}
+.blog-content {
+    padding: 25px 30px 40px;
 }
 /* contat */
 .contact-text {

@@ -528,17 +528,16 @@ h4 {
 .resum-left .resume-shape1 {
     right: 40px;
 }
-.skills .skill-box .progress-line {
+
+/* skill bar */
+.skill-bar-wrap {
     height: 50px;
 }
-.skills .skill-title {
-    padding: 8px 22px;
+.skillbar-title {
+    top: 12px;
 }
-.stat-item .count {
-    font-size: 30px;
-}
-.stat-item .text {
-    font-size: 16px;
+.skill-bar-percent {
+    top: 12px;
 }
 
 /* testimonial */
@@ -646,13 +645,11 @@ body{
     left: 0px;
 }
 /* skill */
-.progress-line-wrap {
-    border-radius: 0 0 15px 0;
+.skillbar-title {
+    left: 3px;
 }
-.skills .skill-box .progress-line .percent-count {
-    top: 12px;
-    right: -8%;
-
+.skill-bar-percent {
+    right: 25px;
 }
 /* portfolio */
 .projects-filter {

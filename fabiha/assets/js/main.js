@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 	
 	
-$('body').scrollspy({ target: '#mainmenu' })
+	$('body').scrollspy({ target: '#mainmenu' })
     /*--------------------
         * Header Fixed
     ----------------------*/
@@ -67,7 +67,7 @@ $('body').scrollspy({ target: '#mainmenu' })
 	//# sourceURL=pen.js
 
 
-//-----------------------------------------------------------------------------------------------
+	//-----------------------------------------------------------------------------------------------
 
 
 
@@ -97,89 +97,64 @@ $('body').scrollspy({ target: '#mainmenu' })
 	
 	
 		
-		
-		
-		
-		
-			/*========== Start animateProgressBar   ==========*/
-		function animateProgressBar() {
-			$('.skill-box .progress-line > span').each(function () {
-				var percent = $(this).data('percent');
-				$(this).css({
-					width: percent + '%',
-					transition: 'width 1.5s linear'
-				});
-			});
-		};
-		
-	
-	if ($('.my-skills').length) {
-		$(window).scroll(function () {
-			if ($(window).scrollTop() > $('.my-skills').offset().top -350) {
-				animateProgressBar();
-			}
-		});
-		if ($(window).scrollTop() > $('.my-skills').offset().top -350) {
-			animateProgressBar();
-		}
-	}	
-/* 
-		
-		
- */
+ 		
+	/*========== Start Counter To Js skillbar   ==========*/
 
-	if ($('.my-skills').length) {
-		$(window).on('scroll.my-skills', function () {
-			var stat = $('.my-skills');
-			if ($(this).scrollTop() >= stat.offset().top - $(window).height() +220) {
-				$('.percent-count').countTo();
-				
-				$(window).off('scroll.my-skills');
+	if ($('.skillbar').length) {
+		$(window).on('scroll.skillbar', function () {
+			var stat = $('.skillbar');
+			if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 0) {
+				$('.skillbar').skillBars({
+					from: 0,
+					speed: 3000, 
+					interval: 100,
+					decimals: 0,
+				});
+				$(window).off('scroll.skillbar');
 			}
 		});
 	}
+	
 		
-		
-		
-/*========== Start Counter To Js funfact   ==========*/
+	/*========== Start Counter To Js funfact   ==========*/
 
 	if ($('.funfact').length) {
 		$(window).on('scroll.funfact', function () {
 			var stat = $('.funfact');
-			if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 220) {
-				$('.count').countTo
-				();
-				$(window).off('scroll.funfact');
+			if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 0) {
+				$('.count').countTo();
+				$(window).off('scroll.count');				
 			}
 		});
 	}
 	
 		
 		
-    /*========== Start Portfolio Trigger Filterizr Js ==========*/
+    /*========== Start Portfolio isotop Js ==========*/
 
-// start isotop
-// init Isotope
-var $grid = $('.grid').isotope({
-  // options
-});
-// filter items on button click
-$('.projects-filter').on( 'click', 'li', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
-$('.projects-filter').on( 'click', 'li', function() {
-  $(this).addClass('active').siblings().removeClass('active');
+	// start isotop
+	// init Isotope
+	var $grid = $('.grid').isotope({
+	  // options
+	});
+	// filter items on button click
+	$('.projects-filter').on( 'click', 'li', function() {
+	  var filterValue = $(this).attr('data-filter');
+	  $grid.isotope({ filter: filterValue });
+	});
+	$('.projects-filter').on( 'click', 'li', function() {
+	  $(this).addClass('active').siblings().removeClass('active');
 
-});
+	});
 
 
-$('.grid').isotope({
- // options
- itemSelector: '.element-item',
- layoutMode: 'fitRows'
-});
-//      end isotope
+	$('.grid').isotope({
+	 // options
+	 itemSelector: '.element-item',
+	 layoutMode: 'fitRows'
+	});
+	
+    /*========== End Portfolio isotop Js ==========*/
     
     /*========== Start OWL Carousel Js testimonial   ==========*/
 	if ($('.testimonial').length) {
@@ -240,66 +215,6 @@ $('.grid').isotope({
 		});       
 	};
 
-
-	
-    /*========== Start Scroll Up    ==========*/
-    // Show And Hide Buttom Back To Top
-    $(window).scroll(function () {
-        if ($(this).scrollTop() >= 600) {
-            $(".scroll-up").show(300);
-        } else {
-            $(".scroll-up").hide(300);
-        }
-    });
-    // Back To 0 Scroll Top body
-    $(".scroll-up").click(function () {
-        $("html, body").animate({ scrollTop: 0}, 1000);
-    });
-  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
 });
 

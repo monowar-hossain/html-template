@@ -13,7 +13,7 @@
 15. Funfact Section
 15. Portfolio Section
 18. Testimonial Section 
-20. News Section
+20. Blog Section
 26. Contact Form Section
 27. Main Footer
 **********************************************/
@@ -23,8 +23,6 @@
 
 body {
     position: relative;
-    margin: 0;
-    padding: 0;
 	font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -154,7 +152,7 @@ img {
     box-shadow: none;
     border: 2px solid #F82462;
 }
- .btn {
+.btn {
     background: #F82462;
     border: 2px solid #F82462;
     transition: all .6s;
@@ -525,9 +523,7 @@ img {
     margin-left: -142px;
 
 }
-.profile p {
-    color: #f9f9f9;
-}
+
 .profile::after {
     position: absolute;
     bottom: 0;
@@ -538,7 +534,7 @@ img {
     height: 100%;
     background: #F82462;
     border-radius: 47px 0 47px 47px;
-}
+}/* 
 .profile .icon-bg {
     position: absolute;
     color: #9b9b9b;
@@ -546,9 +542,8 @@ img {
     font-size: 60px;
     right: 20px;
     opacity: .1;
-}
+} */
 .profile p {
-
     margin: 10px 0;
     text-transform: capitalize;
     font-size: 16px;
@@ -616,12 +611,6 @@ img {
 /*===================================================================
                     Start My Resume
 =======================================================================*/
-.my-resume {
-	color: #fff;
-}
-.my-resume p {
-	color: #fff;
-}
 
 .resume-head .content-exper h4 {
     color: #f9f9f9;
@@ -657,14 +646,14 @@ img {
     padding: 82px;
 	padding-bottom:0px;
 }
-.resume-item .icon-bg {
+/* .resume-item .icon-bg {
     position: absolute;
     color: #9b9b9b;
     bottom: 20px;
     font-size: 50px;
     right: 20px;
     opacity: .1;
-}
+} */
 .resume-head {
     margin-bottom: 40px;
     position: relative;
@@ -762,75 +751,48 @@ img {
     z-index: 1;
     border-radius: 20px 0 20px 20px;
 }
-.info-skills {
-    text-align: left;
-    margin-bottom: 30px;
+
+
+/* Skills bar effects */
+
+
+.skill-bar-wrap {
     position: relative;
-}
-.skills .skill-box {
     margin-bottom: 30px;
-}
-.skills .skill-box:last-of-type {
-    margin-bottom: 0;
-}
-.skills .skill-title {
-    color: #ffff;
-    font-size: 16px;
-    font-weight: 400;
-    z-index: 99;
-    position: relative;
-    padding: 10px 45px;
-    margin: 0;
-}
-.progress-line-wrap {
     background: #1D2063;
-    border-radius: 0 0 25px 0;
-}
-.skills .skill-box .progress-line {
     height: 61px;
-    margin: 0;
-    position: relative;
-    width: 90%;
-    display: flex;
-    align-items: center;
+    border-radius: 0px 0px 25px 0px;
 }
-.skills .skill-box .progress-line .data-percent {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
+.skillbar {
+    width: 87%;
     height: 100%;
-    width: 0;
-    background: #F82462;
 }
-.skills .skill-box .progress-line .percent-count {
+.skillbar-title {
     position: absolute;
-    top: 15px;
-    right: -11%;
-    height: 100%;
-    width: 10%;
-    color: #ffff;
-}
-.skills .skill-box .progress-line .percent-count:after {
-    position: absolute;
-	left:18px;
-	top:0;
-	content:"%";
-    color: #ffff;
+    top: 17px;
+    left: 26px;
+    padding: 0 20px;
 }
 
+.skillbar-bar {
+  height: 100%;
+  width: 0px;
+  background: #F82462;
+  display: inline-block;
+  margin-bottom:0;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 40px;
+  top: 17px;
+}
 
 
 /*======================================================================
                     Start My Services 
 ===============================================================================*/
 
-.services-item h4 {
-    color: #f9f9f9;
-}
-.number-bg {
-    opacity: .1;
-}
 .services-item {
     margin-top: 32px;
     padding: 50px 82px;
@@ -852,30 +814,19 @@ img {
 	padding: 14.5px 19.5px;
 	text-align:center;
 }
-
 .services-item:hover{
     box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10);
     position: relative;
     z-index: 9;
     transform: translate(0, -5px);
 }
-.icon-services {
-    text-align: right;
-}
-.icon-services span {
-    font-size: 40px;
-    color: #F82462;
-}
+
 .services-item h4 {
-    color: #fff;
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
     margin-bottom: 25px;
 }
 .services-item  p {
     margin-bottom: 0px;
-	color: #fff;
 }
 
 
@@ -1089,10 +1040,7 @@ img {
     line-height: 56px;
     font-size: 16px;
 	transition: 1s;
-}/* 
-.testimonials .owl-nav button:hover {
-    bottom: -30px;
-} */
+}
 .testimonials .owl-nav button.owl-prev {
     left: 50%;
     position: absolute;
@@ -1241,7 +1189,9 @@ img {
     line-height: 72px;
     font-size: 18px;
 }
-
+.blog-content a.read-more .flaticon-right-arrow:before {
+    font-size: 25px;
+}
 /*=====================================================================
                         End Section Blog 
 ============================================================================*/
@@ -1291,8 +1241,6 @@ img {
     background: #1D2063;
     z-index: 1;
 	height: 100%;
-	/* 
-    height: calc(100% - 1px); */
 }
 .contact .form {
     padding: 100px 30px 160px 130px;
@@ -1364,52 +1312,8 @@ img {
 /*==================================================================
                         Scroll Top start
 ===================================================================*/
-.scroll-up {
-    position: fixed;
-    bottom: 55px;
-    right: 30px;
-    color: #e5d2d0;
-    cursor: pointer;
-    z-index: 10;
-    display: none;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.scroll-up .top-one {
-    display: block;
-    height: 30px;
-    margin-bottom: 5px;
-    width: 2px;
-    background: #e5d2d0;
-    margin-left: 12px;
-}
-.scroll-up .top-two { 
-    text-orientation: mixed;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
-    white-space: nowrap;
-    transform: rotate(180deg);
-}
 
-.scroll-up .top-three {
-    display: block;
-    height: 0px;
-    margin-bottom: 5px;
-    width: 2px;
-    background: #e5d2d0;
-    margin-left: 12px;
-}
-.scroll-up:hover .top-three {
-    height: 30px;
-    background: green;
-}
-.scroll-up:hover .top-one {
-    height: 0px;
-}
-.scroll-up:hover .top-two {
-    color: #f9f9f9;
-}
+
 
 /*==================================================================
                         End Scroll Top
@@ -1577,6 +1481,9 @@ ul.blog-info-bar-left li {
     height: 100px;
     line-height: 100px;
 }
+.grid-blog .first-item .blog-content a.read-more .flaticon-right-arrow:before {
+    font-size: 35px;
+}
 
 /* -------pagination----------- */
 .pagination {
@@ -1593,6 +1500,9 @@ ul.blog-info-bar-left li {
     background: #F82462;
     font-size: 18px;
     font-weight: 500;
+}
+.pagination li a i:before{
+    font-size: 22px;
 }
 
 
@@ -1994,4 +1904,5 @@ color:#F82462
  
  
  
+
  

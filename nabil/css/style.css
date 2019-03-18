@@ -1,0 +1,869 @@
+ 
+/*========== Css For Muzahid ==========*/
+
+/*========== TABLE OF CONTENTS ============
+1. Import CSS
+2. Typography Settings
+3. Basic CSS
+4. Font-face
+5. Header Section
+6. About Section
+7. Capabilitie Section
+8. Experience Section
+9. Portfolio Section
+10. Testimonial Section
+
+==================================================*/
+
+
+/*========== Import CSS ==========*/
+
+@import "font-awesome.min.css";
+@import "bootstrap.css";
+@import "slicknav.css";
+@import "slick.css";
+@import "slick-theme.css";
+
+
+/*========== Typography Settings ==========*/
+
+h1 {
+  font-size: 45px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* ======================================= 
+    Basic CSS Start
+   ======================================= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a:focus {
+	outline: 0 solid;
+}
+a, a:hover {
+  text-decoration: none;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+input:focus, button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+p {
+  color: #2f3171;
+  font-weight: 500;
+}
+html, body {
+	height: 100%;
+}
+body{
+  font-family: 'Volte';
+	color: #414857;
+	background: #fcfdff;
+	font-size: 20px;
+}
+::-moz-selection {
+  background: #575ff5;
+  color: #fff;
+}
+::selection {
+  background: #575ff5;
+  color: #fff;
+}
+.slicknav_menu {
+  display: none;
+}
+/* ======================================= 
+    Basic CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Font-face Start
+   ======================================= */
+@font-face {
+  font-family: 'Volte';
+  src: url('../fonts/Volte-Semibold.eot');
+  src: url('../fonts/Volte-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Volte-Semibold.woff2') format('woff2'),
+      url('../fonts/Volte-Semibold.woff') format('woff'),
+      url('../fonts/Volte-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Volte';
+  src: url('../fonts/Volte-Bold.eot');
+  src: url('../fonts/Volte-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Volte-Bold.woff2') format('woff2'),
+      url('../fonts/Volte-Bold.woff') format('woff'),
+      url('../fonts/Volte-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Volte';
+  src: url('../fonts/Volte-Medium.eot');
+  src: url('../fonts/Volte-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Volte-Medium.woff2') format('woff2'),
+      url('../fonts/Volte-Medium.woff') format('woff'),
+      url('../fonts/Volte-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Volte';
+  src: url('../fonts/Volte-Regular.eot');
+  src: url('../fonts/Volte-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Volte-Regular.woff2') format('woff2'),
+      url('../fonts/Volte-Regular.woff') format('woff'),
+      url('../fonts/Volte-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Volte';
+  src: url('../fonts/Volte-Light.eot');
+  src: url('../fonts/Volte-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Volte-Light.woff2') format('woff2'),
+      url('../fonts/Volte-Light.woff') format('woff'),
+      url('../fonts/Volte-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+/* ======================================= 
+    Font-face End
+   ======================================= */
+
+
+/* ======================================= 
+    Header Section CSS Start
+   ======================================= */
+.header_area {
+  position: relative;
+}
+.for_header_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header_top_area {
+  padding: 55px 60px;
+  position: fixed;
+  transition: 0.65s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.fixed-menu {
+  background: #fcfdff;
+  padding: 15px 60px;
+  box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10);
+}
+.for_middle {
+  display: flex;
+}
+.menu_area {
+	width: 100%;
+}
+.menu_area ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.menu_area ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 15px 13px;
+}
+.menu_area ul li a {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px 13px;
+	border-radius: 3px;
+  position: relative;
+}
+.fixed-menu .menu_area ul li a {
+	color: #5c54f0;
+}
+.menu_area ul li a:before, .menu_area ul li.active a:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 34%;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  border-radius: 10px;
+  transition: all ease .4s;
+}
+.fixed-menu ul li a:before, .fixed-menu ul li.active a:before {
+  background: #5c54f0;
+}
+.menu_area ul li a:hover:before, .menu_area ul li.active a:before {
+  width: 29%;
+}
+.menu_area ul li a:after, .menu_area ul li.active a:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 26%;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  border-radius: 10px;
+  transition: all ease .4s;
+}
+.fixed-menu  ul li a:after, .fixed-menu  ul li.active a:after {
+  background: #5c54f0;
+}
+.menu_area ul li a:hover:after, .menu_area ul li.active a:after {
+  width: 7%;
+}
+.hire_link {
+  background: #fff;
+  color: #575ff5 !important;
+  font-weight: 700 !important;
+  padding: 17px 30px !important;
+  border-radius: 4px !important;
+}
+.fixed-menu .hire_link {
+  background: #575ff5;
+  color: #fff !important;
+}
+.header_content {
+  padding: 285px 0 235px;
+}
+.content_inner h1 {
+  color: #2f3171;
+  font-size: 80px;
+	margin: 5px 0 35px;
+}
+.content_inner h2 {
+  color: #2f3171;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.content_inner h3 {
+  color: #2f3171;
+}
+.content_inner p {
+  margin-bottom: 55px;
+  font-weight: 500;
+}
+a.section_btn {
+	color: #fff;
+  background-color: #15ce73;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 15px 68px;
+  display: inline-block;
+}
+
+/* ======================================= 
+    Header Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    About Section CSS Start
+   ======================================= */
+.about_area {
+  position: relative;
+}
+.for_left_shap {
+  position: absolute;
+  width: 36%;
+  left: 0;
+  top: 0;
+}
+.for_padding {
+	padding: 150px 0;
+}
+
+/* ======================================= 
+    About Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Capabilitie Section CSS Start
+   ======================================= */
+.capabilitie_area {
+	position: relative;
+  padding: 130px 0;
+}
+.for_right_shap {
+  position: absolute;
+  width: 36%;
+  right: 0;
+  top: 0;
+}
+.section_title {
+	margin-bottom: 35px;
+  color: #2f3171;
+  font-size: 60px;
+}
+.single_capabilitie {
+  height: 168px;
+  width: 167px;
+	padding-top: 15px;
+  padding-left: 20px;
+	margin-bottom: 20px;
+  border-radius: 4px;
+}
+.blue_75 {
+	background: url(../images/capabilitie/progress_bg_blue_75.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blue_90 {
+	background: url(../images/capabilitie/progress_bg_blue_90.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blue_95 {
+	background: url(../images/capabilitie/progress_bg_blue_95.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.purple_60 {
+	background: url(../images/capabilitie/progress_bg_purple_60.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.purple_75 {
+	background: url(../images/capabilitie/progress_bg_purple_75.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.single_capabilitie p {
+	color: #fefefe;
+	font-weight: 600;
+  margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.single_capabilitie h4 {
+	color: #fefefe;
+	font-weight: 700;
+}
+/* ======================================= 
+    Capabilitie Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Experience Section CSS Start
+   ======================================= */
+.experience_sectoin {
+  position: relative;
+  padding: 100px 0;
+}
+.btn-link:focus, .btn-link.focus, .btn-link:hover {
+  text-decoration: none;
+}
+.accordion .card {
+  margin-bottom: 20px;
+}
+.card .card-header {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.card .card-header button.btn.btn-link.collapsed, .card .card-header button.btn.btn-link {
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  padding: 18px 35px;
+  background: #5c54f0;
+  position: relative;
+}
+.card .card-header button.btn.btn-link {
+  background: #15ce73;
+}
+.accordion .card:not(:first-of-type):not(:last-of-type), .accordion .card:first-of-type, .accordion .card:last-of-type {
+  border: none;
+}
+.card .card-body {
+  background: #fcfdff;
+  color: #2f3171;
+  font-weight: 500;
+}
+.card-header button.btn.btn-link.collapsed i, .card-header button.btn.btn-link i {
+  position: absolute;
+  right: 25px;
+  top: 24px;
+  font-size: 17px;
+  transform: rotate(90deg);
+  transition: all ease 0.6s;
+}
+.card-header button.btn.btn-link i {
+  transform: rotate(-90deg);
+  transition: all ease 0.4s;
+}
+/* ======================================= 
+    Experience Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Portfolio Section CSS Start
+   ======================================= */
+.portfolio_section {
+  position: relative;
+  padding: 35px 0 25px;
+}
+.portfolio_content {
+  margin: 0 0 40px;
+}
+.portfolio_content p a {
+  color: #15ce73;
+}
+.single_portfolio {
+  position: relative;
+  margin-bottom: 30px;
+}
+.portfolio_hover_content {
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 170px;
+  position: absolute;
+  padding: 15px 25px;
+  background: #5c54f0;
+  border-radius: 0px 0px 0px 5px;
+  transition: all ease .5s;
+}
+.single_portfolio:hover .portfolio_hover_content {
+  opacity: 1;
+}
+.portfolio_hover_content span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+.portfolio_hover_content i {
+  color: #fff;
+  font-size: 25px;
+}
+/* ======================================= 
+    Portfolio Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Testimonial Section CSS Start
+   ======================================= */
+.testimonial_section {
+  position: relative;
+  padding: 110px 0 65px;
+}
+.testimonial_content {
+  margin-bottom: 80px;
+}
+.single_testimonial .testimonial_img {
+  width: 30%;
+  float: left;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+.single_testimonial .author_comment {
+  width: 70%;
+  float: left;
+  padding: 0 30px;
+}
+.author_comment h3 {
+  color: #5c54f0;
+  font-weight: 700;
+}
+.author_comment p {
+  color: #7a859d;
+  font-weight: 500;
+  margin-bottom: 45px;
+  margin-top: 6px;
+  position: relative;
+}
+.author_comment h5 {
+  color: #6e7b95;
+}
+.author_comment p i.fa.fa-quote-left {
+  color: #5c54f0;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 18px;
+}
+.author_comment p i.fa.fa-quote-right {
+  color: #5c54f0;
+  position: absolute;
+  bottom: 12px;
+  font-size: 18px;
+}
+.slick-slider .slick-arrow {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  background: #5c54f0;
+  font-size: 17px;
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+  z-index: 1;
+  transition: all ease 0.4s;
+  -webkit-transition: all ease 0.4s;
+}
+.slick-slider i.fa.fa-long-arrow-right.slick-arrow {
+  right: 5%;
+}
+.slick-slider .slick-arrow:hover {
+  background: #15ce73;
+}
+/* ======================================= 
+    Testimonial Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Client Section CSS Start
+   ======================================= */
+.client_section {
+  padding: 60px 0 40px;
+}
+/* ======================================= 
+    Client Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Contact Section CSS Start
+   ======================================= */
+.contact_section {
+  padding: 80px 0 0;
+}
+.contact_left h3 {
+  color: #2f3171;
+  font-weight: 700;
+}
+.contact_btn {
+  color: #fff;
+  background-color: #15ce73;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 15px 30px;
+  display: inline-block;
+}
+.contact_inner {
+  padding: 40px 50px;
+  margin: 0 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10);
+}
+.contact_left p {
+  margin-bottom: 10px;
+}
+.contact_form input:focus, .contact_form button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.contact_form input:focus {
+  border-color: #5c54f0;
+}
+.contact_form input {
+  float: left;
+  width: 65%;
+  height: 56px;
+  padding-left: 20px;
+  border-color: #5c54f0;
+}
+.contact_form input[type="email"]::-webkit-input-placeholder {
+  color: #acb1ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact_form input[type="email"]::-moz-placeholder {
+  color: #acb1ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact_form input[type="email"]:-ms-input-placeholder {
+  color: #acb1ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact_form input[type="email"]:-moz-placeholder {
+  color: #acb1ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact_form input[type="email"]::placeholder {
+  color: #acb1ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact_form button {
+  float: right;
+  width: 30%;
+}
+
+/* ======================================= 
+    Contact Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Footer Section CSS Start
+   ======================================= */
+.footer_section {
+  color: #fff;
+  padding: 315px 0 120px;
+  position: relative;
+}
+.footer_section .footer_inner {
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+  height: 370px;
+}
+.for_footer_background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 94%;
+}
+.footer_title {
+  color: #fff;
+  font-size: 60px;
+}
+.footer_left_site {
+  margin: 0px 50px 0 0;
+}
+.footer_left_site p {
+  color: #fff;
+  margin-bottom: 70px;
+}
+.footer_right_site {
+  margin: 15px 0 0px;
+}
+.footer_right_site p {
+  color: #fff;
+}
+.footer_right_site p a {
+  color: #fff;
+}
+.footer_right_site p:last-of-type {
+  margin-bottom: 40px;
+}
+.write_us_btn {
+  color: #fff;
+  background-color: #15ce73;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 15px 68px;
+  display: inline-block;
+}
+.write_us_btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Write Us Form CSS */
+.write_us_form {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all ease .6s;
+}
+.write_us_form.active_form {
+  transform: translateY(0);
+}
+.write_us_form form {
+  width: 520px;
+  margin: 0 auto;
+}
+.write_us_form .form_close {
+  float: right;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: inherit;
+  transform: translate(-2px, -45%);
+}
+.write_us_form input {
+  width: 100%;
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+  background: inherit;
+  border-bottom: 1px solid #fff;
+  padding-left: 18px;
+  padding-bottom: 20px;
+}
+.write_us_form input::-webkit-input-placeholder, .write_us_form textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input::-moz-placeholder, .write_us_form textarea::-moz-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input:-ms-input-placeholder, .write_us_form textarea:-ms-input-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input:-moz-placeholder, .write_us_form textarea:-moz-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input::placeholder, .write_us_form textarea::placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form textarea {
+  resize: none;
+  width: 100%;
+  color: #fff;
+  border: none;
+  background: inherit;
+  margin-bottom: 30px;
+  padding-left: 18px;
+  border-bottom: 1px solid #fff;
+}
+.write_us_form textarea:focus {
+  outline: none;
+}
+.write_us_send_btn {
+  color: #fff;
+  background-color: #15ce73;
+  font-weight: 700;
+  margin-left: 13px;
+  border-radius: 4px;
+  padding: 15px 68px;
+  display: inline-block;
+}
+.write_us_send_btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+/* ======================================= 
+    Footer Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Blog Page CSS Start
+   ======================================= */
+.blog_page_section {
+  padding: 270px 0 25px;
+}
+.blog_header {
+  padding: 10px 0 75px;
+}
+.blog_header h2 {
+  color: #2f3171;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.blog_content_inner {}
+.single_blog {
+  position: relative;
+  padding-bottom: 115px;
+}
+.single_blog_content {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  background: #fff;
+  padding: 32px 45px;
+  margin: 0 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.08);
+}
+.single_blog_content h3 {
+  color: #2f3171;
+  font-weight: 600;
+}
+.single_blog_content p {
+  color: #3a4186;
+  margin-bottom: 10px;
+}
+.single_blog_content a {
+  color: #2f3171;
+  font-weight: 600;
+}
+.single_blog_content a:hover {
+  color: #15ce73;
+}
+a.load_more_btn {
+  padding: 15px 50px;
+  margin-top: 25px;
+}
+/* ======================================= 
+    Blog Page CSS End
+   ======================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+

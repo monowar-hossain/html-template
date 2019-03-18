@@ -1,0 +1,264 @@
+@media only screen and (max-width: 1600px) {
+	.for_footer_background img {
+	  height: 110%;
+	}
+	
+}
+
+
+
+
+@media only screen and (max-width: 1500px) {
+	.menu_area ul li {
+		padding: 15px 8px;
+	}
+	.for_footer_background {
+		width: 98%;
+	}
+	
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+	.card .card-header button.btn.btn-link.collapsed, .card .card-header button.btn.btn-link {
+		font-size: 18px;
+	}
+	.card-header button.btn.btn-link.collapsed i, .card-header button.btn.btn-link i {
+		font-size: 15px;
+	}
+	.for_header_background {
+		width: 73%;
+	}
+	.menu_area ul li a {
+	    padding: 10px 7px;
+	}
+
+
+}
+
+
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+	.single_capabilitie {
+		width: 145px;
+		background-position: right;
+	}
+	.single_capabilitie p {
+		font-size: 18px;
+	}
+	.single_capabilitie h4 {
+		font-size: 24px;
+	}
+    
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+	.slicknav_menu {
+	  display: block;
+	}
+	.menu_area {
+		display: none;
+	}
+	.for_left_shap, .for_right_shap {
+		width: 50%;
+	}
+	.for_padding {
+		padding: 70px 0;
+	}
+	.single_testimonial .testimonial_img {
+		display: block;
+    	width: 100%;
+	}
+	.single_testimonial .testimonial_img img {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.testimonial_content {
+		margin-bottom: 40px;
+	}
+	.single_testimonial .author_comment {
+	    text-align: center;
+	    width: 100%;
+	}
+	.author_comment p {
+		margin-bottom: 30px;
+	}
+	.slick-slider .slick-arrow {
+		right: 52%;
+		bottom: -45px;
+	}
+	.slick-slider i.fa.fa-long-arrow-right.slick-arrow {
+		right: 42%;
+	}
+	.experience_content {
+	    margin-bottom: 40px;
+	}
+	.about_content {
+	    margin-bottom: 40px;
+	}
+	.section_title {
+		font-size: 50px;
+	}
+	.footer_section .footer_inner {
+		height: 600px;
+	}
+
+	
+}
+
+
+
+
+/*		Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	
+}
+
+
+
+
+/*		Mobile Layout: 320px.  */
+
+@media only screen and (max-width: 767px) {
+	.header_content {
+	    padding: 70px 0 130px;
+	}
+	.content_inner h2 {
+		font-size: 40px;
+	}
+	.content_inner h1 {
+		font-size: 60px;
+	}
+	.content_inner h3 {
+		font-size: 25px;
+	}
+	a.section_btn {
+		padding: 13px 55px;
+	}
+	.for_left_shap, .for_right_shap {
+		width: 60%;
+	}
+	.contact_form input {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.contact_form button {
+		width: 100%;
+	}
+	.single_portfolio img {
+		width: 100%;
+	}
+	
+}
+
+
+
+
+/*		Galaxy55: 360px;  */
+
+@media only screen and (max-width: 360px) {
+	.section_title {
+		font-size: 45px;
+	}
+	p {
+		font-size: 19px;
+	}
+	.single_capabilitie {
+		height: 160px;
+		width: 153px;
+	}
+	.contact_inner {
+	    padding: 35px 35px;
+	    margin: 0 20px;
+	}
+	.author_comment p {
+		font-size: 17px;
+	}
+	.author_comment h3 {
+		font-size: 25px;
+	}
+	.author_comment p i.fa.fa-quote-right {
+		bottom: 8px;
+		font-size: 15px;
+	}
+	.author_comment p i.fa.fa-quote-left {
+		top: -2px;
+		font-size: 15px;
+	}
+	.slick-slider i.fa.fa-long-arrow-right.slick-arrow {
+		right: 38%;
+	}
+	.card .card-header button.btn.btn-link.collapsed, .card .card-header button.btn.btn-link {
+	    font-size: 16px;
+	}
+	.card .card-header button.btn.btn-link.collapsed, .card .card-header button.btn.btn-link {
+		padding: 15px 22px;
+	}
+	.card-header button.btn.btn-link.collapsed i, .card-header button.btn.btn-link i {
+		font-size: 14px;
+	}
+	.card-header button.btn.btn-link.collapsed i, .card-header button.btn.btn-link i {
+		top: 20px;
+	}
+	.card .card-body {
+		font-size: 15px;
+	}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+	.single_capabilitie {
+	    height: 145px;
+	    width: 138px;
+	    padding-left: 17px;
+	}
+	.single_capabilitie p {
+		font-size: 17px;
+	}
+	.single_capabilitie h4 {
+		font-size: 23px;
+	}
+	.card .card-header button.btn.btn-link.collapsed, .card .card-header button.btn.btn-link, .card .card-body {
+	    font-size: 14px;
+	}
+	.slick-slider i.fa.fa-long-arrow-right.slick-arrow {
+	    right: 36%;
+	}
+	.contact_inner {
+		margin: 0 10px;
+	}
+
+	/* Blog */
+	.single_blog_content {
+		padding: 25px 32px;
+	}
+	
+
+}
+
+
+
+
+/*		Wide Mobile Layout: 480px.  */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+
+}
+
+
+	

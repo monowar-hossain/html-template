@@ -115,17 +115,16 @@ body, p{
 	background: #000;
 }
 .service-wrap {
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .single-service {
     width: 26.70%;
     margin: 0 3.2%;
-    float: left;
-    overflow: hidden;
-    margin-bottom: 5px;
-    min-height: 200px;
+    margin-bottom: 50px;
 }
+
 .single-service a {
     display: block;
     margin-bottom: 4px;
@@ -195,6 +194,56 @@ body, p{
     transition: all .2s;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+	.single-service p {
+		float: left;
+		width: 100%;
+	}
+	.offer-content {
+		padding: 20px 30px;
+	}
+	.offer-content h2 {
+		font-size: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	.logo a img {
+		width: 80%;
+	}
+	.logo a {
+		padding: 15px;
+	}
+	.date p {
+		margin-top: 15px;
+		margin-right: 10px;
+	}
+	.offer-content {
+		padding: 10px 20px;
+	}
+	.offer-content h2 {
+		font-size: 20px;
+	}
+	.offers-section {
+		margin-top: 35px;
+	}
+	.quote-btn {
+		margin-top: 30px;
+	}
+
+	
+	.footer-area {
+		padding: 10px 20px;
+	}
+	.social-media li a {
+		margin: 0 10px;
+	}
+}
+
+
 
   </style>
   

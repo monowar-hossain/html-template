@@ -1,0 +1,419 @@
+
+
+/****== TABLE OF CONTENTS ==*****
+1.  Fonts
+2.  Reset
+4.  Main Header 
+7.  Section Title
+9.  Home Section
+9.  About Section
+10. Resume Section
+10. Skill Section
+15. Services Section
+15. Funfact Section
+15. Portfolio Section
+18. Testimonial Section 
+20. News Section
+26. Contact Form Section
+27. Main Footer
+**********************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
+
+body,p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: ##727B9A;
+    line-height: 23px;
+}
+p{
+	font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+	
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight:600;
+    margin: 0;
+}
+
+h1 {
+	font-size: 56px;
+}
+h2 {
+	font-size: 42px;
+	line-height:55px;
+}
+h3 {
+	font-size: 32px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 16px;
+}
+
+ul,li{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+}
+a, a:hover, a:focus, a:active, button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+    color: #FFF;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* global social media */
+.container {
+    max-width: 1170px;
+}
+.social-media {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+    margin-left: -15px;
+}
+.social-media li {
+    display: inline-block;
+}
+.social-media li a {
+    font-size: 20px;
+    width: 22px;
+    height: 22px;
+    margin: 0 18px;
+    line-height: 23px;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+    color: #1D2063;
+    transition: all .2s;
+    font-weight: 700;
+}
+.social-media li a:hover {
+    color: #F82462;
+}
+
+
+
+
+
+
+/*========== Common Css ==========*/
+.section-title {
+    margin-bottom: 30px;
+	margin-left:83px;
+}
+.section-title h2{
+    color: #1D2063;
+    text-transform: capitalize;
+	margin-bottom:20px;
+}
+
+
+ .btn {
+    background: #ffffff;
+    border: none;
+    transition: all .6s;
+    color: #FE5D89;
+    z-index: 9;
+    font-size: 14px;
+	line-height:20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 33px;
+    border-radius: 5px;
+	position:relative;
+	overflow:hidden;
+	margin-top:30px;
+}
+
+
+
+/*----------------------------------------------------------------
+                    End Default Settings
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                       Start header
+----------------------------------------------------------------*/
+
+/*--  header-bottom  --*/
+
+header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	-webkit-transition: 2s;
+	transition: 2s;
+}
+
+.header-area {
+	background-color: transparent;
+}
+
+.header-area a {
+	color: #323232;
+}
+
+.header-logo {
+	margin-top: 12px;
+}
+
+.site-logo {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0;
+	padding: 15px 20px;
+	border: 1px solid;
+	display: inline-block;
+	font-weight: 700;
+}
+
+/*-- fixed menu --*/
+
+.header-area.fixed-menu {
+	z-index: 9;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #1e272e;
+}
+
+.header-area.fixed-menu .header-logo {
+	width: 100px;
+	margin-top: 6px;
+}
+
+.header-area.fixed-menu ul li a {
+	padding: 14px 15px;
+}
+
+.header-area.fixed-menu ul li ul {
+	top: 53px;
+}
+
+.slicknav_menu {
+	display: none;
+}
+
+
+/*-- main menu --*/
+.mainmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
+
+.mainmenu ul li {
+	display: inline-block;
+	position: relative;
+	-webkit-transition: .4s;
+	transition: .4s;
+	float: left;
+}
+
+.mainmenu ul li a {
+	color: #fff;
+	padding: 15px 0px;
+	margin:15px;
+    padding-bottom: 4.5px;
+	margin-bottom:16.5px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-transition: .4s;
+	transition: .4s;
+	position:relative;
+	border-bottom: 2px solid transparent;
+}
+
+.mainmenu ul li.active a,
+.mainmenu ul li:hover>a {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+.mainmenu ul li.support a {
+    background: #fff;
+    border-radius: 4px;
+    color: #FE5D89;
+    padding: 15px 40px;
+    margin-left: 15px;
+    margin-right: 0;
+	border-bottom: 0;
+}
+.mainmenu ul li.login a {
+    background: #FE5D89;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 40px;
+    margin-left: 15px;
+    margin-right: 0;
+	border-bottom: 0;
+}
+
+/*-- dropdown  mainmenu  --*/
+
+.mainmenu ul ul {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 99%;
+	width: 200px;
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: .4s;
+	transition: .4s;
+	background: #fff;
+    border-radius: 4px;
+}
+
+.mainmenu ul li:hover>ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+.mainmenu ul ul li {
+	display: block;
+	float: none;
+}
+
+.mainmenu ul ul li a {
+	font-size: 14px;
+	padding: 15px 15px;
+	color: #FE5D89;
+}
+
+
+/*-- second level dropdown   --*/
+
+.mainmenu ul ul li>ul {
+	left: 100%;
+}
+
+.mainmenu ul ul li:hover>ul {
+	top: 0;
+}
+
+.mainmenu ul li ul li:hover>a {
+	padding-left: 20px;
+	-webkit-transition: .4s;
+	transition: .4s;
+	color: #696CFD;
+}
+
+.mainmenu ul li a .fa.fa-angle-right {
+	float: right;
+	font-size: 20px;
+}
+
+
+/*** 
+====================================================================
+	header area  end
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+	Hero area start
+====================================================================
+ ***/
+ .hero-section {
+    height: 100vh;
+}
+.hero-section.bg-img {
+    background-color: #555;
+    background-image: url(../img/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.hero-text {
+    color: #fff;
+}
+.hero-text h2 {
+    padding-bottom: 20px;
+}
+
+/*** 
+====================================================================
+	 Service Area  start
+====================================================================
+ ***/
+
+.service {
+	display: block;
+	padding: 25px 15px;
+	margin-bottom: 30px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.service-icon {
+	margin-bottom: 15px;
+}
+.service-icon i:before {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 0;
+}
+.service-icon.zero i:before {
+    color: #696CFD;
+    background: #CDC9FF;
+}
+.service-icon.code i:before {
+    color: #34A7FF;
+    background: #C0E3FE;
+}
+.service-icon.team i:before {
+    color: #FE5F8A;
+    background: #FAD1D5;
+}
+.service-icon.access i:before {
+    color: #6D5DA6;
+    background: #E0DBF2;
+}
+.service-content h5 a {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #2b2b2b;
+	font-size: 18px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+
+/*** 
+====================================================================
+	 Service Area  end
+====================================================================
+ ***/
+

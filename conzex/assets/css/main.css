@@ -137,7 +137,7 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    padding: 15px 33px;
+    padding: 17px 40px;
     border-radius: 5px;
 	position:relative;
 	overflow:hidden;
@@ -175,7 +175,7 @@ header {
 }
 
 .header-logo {
-	margin-top: 12px;
+	margin-top: 20px;
 }
 
 .site-logo {
@@ -219,6 +219,9 @@ header {
 
 
 /*-- main menu --*/
+.mainmenu {
+    display: inline-block;
+}
 .mainmenu ul {
 	margin: 0;
 	padding: 0;
@@ -242,7 +245,7 @@ header {
 	margin-bottom:16.5px;
 	display: block;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 500;
 	-webkit-transition: .4s;
 	transition: .4s;
 	position:relative;
@@ -254,24 +257,7 @@ header {
 	color: #fff;
 	border-bottom: 2px solid #fff;
 }
-.mainmenu ul li.support a {
-    background: #fff;
-    border-radius: 4px;
-    color: #FE5D89;
-    padding: 15px 40px;
-    margin-left: 15px;
-    margin-right: 0;
-	border-bottom: 0;
-}
-.mainmenu ul li.login a {
-    background: #FE5D89;
-    border-radius: 4px;
-    color: #fff;
-    padding: 15px 40px;
-    margin-left: 15px;
-    margin-right: 0;
-	border-bottom: 0;
-}
+
 
 /*-- dropdown  mainmenu  --*/
 
@@ -329,7 +315,32 @@ header {
 	font-size: 20px;
 }
 
-
+.support-login-btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+.support-login-btn li {
+    display: inline-block;
+}
+.support-login-btn li.support a {
+    background: #fff;
+    border-radius: 4px;
+    color: #FE5D89;
+    padding: 15px 35px;
+    margin-right: 0;
+	border-bottom: 0;
+    display: inline-block;
+}
+.support-login-btn li.login a {
+    background: #FE5D89;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 36px;
+    margin-left: 15px;
+    margin-right: 0;
+	border-bottom: 0;
+    display: inline-block;
+}
 /*** 
 ====================================================================
 	header area  end
@@ -348,7 +359,7 @@ header {
 .hero-section.bg-img {
     background-color: #555;
     background-image: url(../img/hero-bg.png);
-    background-position: center;
+	background-position: bottom center;
     background-size: cover;
 }
 .hero-text {

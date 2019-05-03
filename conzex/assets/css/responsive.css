@@ -10,7 +10,12 @@
 
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-	
+.support-login-btn li.support a {
+    padding: 12px 25px;
+}
+.support-login-btn li.login a {
+    padding: 12px 25px;
+}
 	
 	
 	

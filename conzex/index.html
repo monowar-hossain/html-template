@@ -10,7 +10,8 @@
     <title>Welcome Conzex HTML Template</title>
 
     <!-- helper css  -->
-    <link rel="stylesheet" href="assets/css/helper.css"> 
+    <link rel="stylesheet" href="assets/css/helper.css">
+    <!-- flaticon css  -->
     <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
     <!-- font-awesome css  -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"> 
@@ -18,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap-v4.1.3.min.css">
+    <!-- slicknav.min.css -->
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- responsive css -->
@@ -32,19 +35,17 @@
 <body>
 
     <!--==================================================================== 
-							Start Top Bar 
+							Start header area
 	=====================================================================-->
-        <header>
-            <!-- header-bottom-area start-->
-            <div class="header-area">
+            <header class="header-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 d-none d-lg-block">
                             <div class="header-logo">
                                 <a href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-10 text-right">
+                        <div class="col-lg-7 col-md-12 text-right">
                             <nav class="mainmenu">
                                 <ul>
                                     <li><a href="index.html">HOME</a></li>
@@ -53,28 +54,28 @@
                                         <a href="projects.html">FEATURES</a>
                                         <ul>
                                             <li><a href="projects.html">projects</a></li>
-                                            <li><a href="single-project.html">single project</a></li>
+                                            <li><a href="single-project.html">single project <i class="fa fa-angle-right"></i></a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">pages</a>
                                         <ul>
                                             <li><a href="404.html">BLOG</a></li>
-                                            <li><a href="404.html">BLOG DETAILS</a></li>
+                                            <li><a href="404.html">BLOG DETAILS <i class="fa fa-angle-right"></i></a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="blog.html">Blog</a>
                                         <ul>
                                             <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">blog details</a></li>
+                                            <li><a href="blog-details.html">blog details <i class="fa fa-angle-right"></i></a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">CONTACT</a></li>
                                 </ul>
                             </nav>
                         </div>
-						<div class="col-lg-3 text-right">
+						<div class="col-md-3 text-right d-none d-lg-block">
 							<div class="support-login-btn">
 								<ul>
                                     <li class="support"><a href="contact.html">SUPPORT</a></li>
@@ -84,18 +85,22 @@
 						</div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- header-area end-->
+            </header>
+    <!--==================================================================== 
+							end header area
+	=====================================================================-->
 	
+    <!--==================================================================== 
+							Start hero section
+	=====================================================================-->
 	    <section class="hero-section ptb-100 bg-img ptb-xs-60 d-flex align-items-center">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
 						<div class="hero-text">
-							<h2>Secure IT Solutions for a more secure environment</h2>
+							<h1>Secure IT Solutions for a more secure environment</h1>
 							<p>Lorem ipsum dummy text are usually use. Replace your text bare usually <br />use in these section. So I used here. replace your text</p>
-							<a href="#" class="btn boxed-btn">OUR SERVICE</a>
+							<a href="#" class="btn boxed-btn">GET STARTED</a>
 						</div>
                     </div>
                     <div class="col-lg-5 d-flex align-items-center">
@@ -104,9 +109,14 @@
                 </div>
             </div>
         </section>
+    <!--==================================================================== 
+							end hero section
+	=====================================================================-->
 	
-	     <!-- Our service-area -->
-        <section class="service-area pt-100 pb-70 bg-gray pt-xs-60 pb-xs-30">
+    <!--==================================================================== 
+							Start box section
+	=====================================================================-->
+        <section class="boxes-area pt-87 pb-45 bg-gray pt-xs-60 pb-xs-30">
             <div class="container">
                 <div class="row">
 				
@@ -155,18 +165,313 @@
                         </div>
                     </div>
 					
-					
-					
-					
-					
-					
-					
+                </div>
+            </div>
+        </section>
+    <!--==================================================================== 
+							end box section
+	=====================================================================-->
+		
+    <!--==================================================================== 
+							Start service section
+	=====================================================================-->
+        <section class="service-area pt-75 pb-45 bg-gray pt-xs-60 pb-xs-30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <div class="section-title">
+                            <h2>Cloud Hosting Services</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <div class="service-content">
+                                <h5><a href="service-detail.html">Cloud databases</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <div class="service-content">
+                                <h5><a href="service-detail.html">Website hosting</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <div class="service-content">
+                                <h5><a href="service-detail.html">File storage</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <div class="service-content">
+                                <h5><a href="service-detail.html">Forex trading</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <div class="service-content">
+                                <h5><a href="service-detail.html">File backups</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <div class="service-content">
+                                <h5><a href="service-detail.html">Remote desktop</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--==================================================================== 
+							end service section
+	=====================================================================-->
+	
+	
+		
+    <!--==================================================================== 
+							Start skill section
+	=====================================================================-->
+        <section class="skill-area ptb-75 bg-gray pt-xs-60 pb-xs-30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="section-title">
+                            <h2>What Our Software Can Do For You</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="skill-note-img">
+                            <img src="assets/img/skill-note.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="skill-item">
+                                <i class="flaticon-checked-1"></i>Responsive design
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="skill-item">
+                                    <i class="flaticon-checked-1"></i>Android apps development
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="skill-item">
+                                    <i class="flaticon-checked-1"></i>iOS apps development
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="skill-item">
+                                    <i class="flaticon-checked-1"></i>UX/UI design
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="skill-item">
+                                    <i class="flaticon-checked-1"></i>E-commerce development
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="skill-item">
+                                    <i class="flaticon-checked-1"></i>Print ready design
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 					
                 </div>
             </div>
         </section>
-        <!-- Our service-area end-->
-		
+    <!--==================================================================== 
+							end skill section
+	=====================================================================-->
+	
+	<!--==================================================================== 
+                            Start Our Features section
+    =====================================================================-->
+        <section class="feature-area pt-75 pb-45 bg-gray pt-xs-60 pb-xs-30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <div class="section-title">
+                            <h2>Our Features</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature">
+                            <div class="feature-icon violet">
+                                <i class="flaticon-cms"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5><a href="feature-detail.html">Incredible Infrastructure</a></h5>
+                                <p>aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature">
+                                    <div class="feature-icon skay">
+                                        <i class="flaticon-comment"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h5><a href="feature-detail.html">Email Notifications</a></h5>
+                                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature">
+                                    <div class="feature-icon yeallow">
+                                        <i class="flaticon-ui"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h5><a href="feature-detail.html">Simple Dashboard</a></h5>
+                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon black">
+                                <i class="flaticon-screen"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5><a href="feature-detail.html">Drag and Drop Functionality</a></h5>
+                                <p>Sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--==================================================================== 
+                            end Our Features section
+    =====================================================================-->
+	
+	
+    <!--==================================================================== 
+                            Start Our Team section
+    =====================================================================-->
+
+
+
+        <section class="our-team-area ptb-75 bg-gray pt-xs-60 pb-xs-30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <div class="section-title">
+                            <h2>Our Awesome Team</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 team-slider owl-carousel">
+                        <div class="single-team-member">
+                            <div class="team-thumb thumb-bg-1"></div>
+                            <div class="team-info">
+                                <h3>Waylon Dalton</h3>
+                                <h5>CEO & Founder</h5>
+                                <p>Elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                                <div class="team-social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="team-thumb thumb-bg-2"></div>
+                            <div class="team-info">
+                                <h3>Stefan Harary</h3>
+                                <h5>Marketing Manager</h5>
+                                <p>Elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                                <div class="team-social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="team-thumb thumb-bg-3"></div>
+                            <div class="team-info">
+                                <h3>Moises Teare</h3>
+                                <h5>CEO & Founder</h5>
+                                <p>Elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                                <div class="team-social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="team-thumb thumb-bg-4"></div>
+                            <div class="team-info">
+                                <h3>Gabriel Bernal</h3>
+                                <h5>CEO & Founder</h5>
+                                <p>Elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                                <div class="team-social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="team-thumb thumb-bg-4"></div>
+                            <div class="team-info">
+                                <h3>Mashok Khan</h3>
+                                <h5>Sr.Developer</h5>
+                                <p>Elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                                <div class="team-social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!--==================================================================== 
+                            end Our Team section
+    =====================================================================-->
+    
+	
+	
+	
+	
+	
 	
 	
    
@@ -184,9 +489,15 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!-- filterizr JS file -->
     <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- slicknav.min.js file -->
+    <script src="assets/js/jquery.slicknav.min.js"></script>
     <!-- My Custom Js  -->
     <script src="assets/js/main.js"></script>
-
+<script>
+	$(function(){
+		
+	});
+</script>
 	
 </body>
 

@@ -29,8 +29,85 @@
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 	
-	
-	
+
+	.header-area > .container {
+		display: none;
+	}
+
+	.slicknav_menu {
+		display: block !important;
+	    padding: 0;
+	    background: #ad2a2a;
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    z-index: 999;
+	}
+	.slicknav_brand {
+		padding: 0;
+	}
+	.slicknav_menu .slicknav_icon-bar {
+	    background-color: #000;
+	}
+	.slicknav_brand a {
+	    margin-top: 5px;
+	    display: inline-block;
+	    margin-left: 15px;
+	}
+	.slicknav_brand img {
+		width: 80px;
+		padding: 0;
+	}
+	.slicknav_btn {
+		background: transparent;
+		margin: 9px 5px 6px;
+    	padding: 7px 10px;
+	}
+	.slicknav_nav ul {
+		border-top: 1px solid #ddd;
+		margin: 0;
+	}
+	.slicknav_nav ul li {
+		border-bottom: 1px solid #000;
+		display: block;
+	}
+
+	.slicknav_nav ul li a {
+		margin: 0;
+		padding: 10px;
+		border-radius: inherit;
+		text-align: left;
+	    text-decoration: none;
+	    color: #1e272e; 
+		margin: 0;
+	}
+	.slicknav_nav .slicknav_arrow {
+		font-size: .8em;
+		margin: 0 0 0 .4em;
+		float: right;
+	}
+	.slicknav_nav li a:hover {
+		background: #1e272e;
+		color: #fff;
+		border-radius: 0;
+	}
+	.slicknav_nav .slicknav_row {
+		margin: 0;
+		text-transform:uppercase;
+		padding: 10px;
+		border-radius: inherit;
+	}
+	.slicknav_nav .slicknav_row:hover,
+	.slicknav_nav .slicknav_row:active {
+		background: #1e272e;
+		color: #fff;
+		border-radius: 0;
+	}
+	.slicknav_nav .slicknav_row:hover a{
+		background: #1e272e;
+		color: #fff;
+	}
 	
 }
 

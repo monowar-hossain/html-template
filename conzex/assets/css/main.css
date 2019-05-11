@@ -21,6 +21,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
 
+body {
+    background: #F6F8FA;
+}
 body,p {
     position: relative;
     margin: 0;
@@ -28,14 +31,10 @@ body,p {
 	font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: ##727B9A;
-    line-height: 23px;
+    color: #727B9A;
+    line-height: 24px;
 }
-p{
-	font-family: 'Poppins', sans-serif;
-    line-height: 23px;
-	
-}
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Poppins', sans-serif;
 	font-weight:600;
@@ -43,11 +42,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size: 56px;
-}
-h2 {
 	font-size: 42px;
 	line-height:55px;
+}
+h2 {
+	font-size: 35px;
+	line-height:49px;
 }
 h3 {
 	font-size: 32px;
@@ -72,7 +72,6 @@ a, a:hover, a:focus, a:active, button:focus {
     text-decoration: none;
     border: none;
     outline: 0;
-    color: #FFF;
 }
 img {
     max-width: 100%;
@@ -116,32 +115,31 @@ img {
 
 /*========== Common Css ==========*/
 .section-title {
-    margin-bottom: 30px;
-	margin-left:83px;
+    margin-bottom: 50px;
 }
 .section-title h2{
-    color: #1D2063;
+    color: #243E63;
     text-transform: capitalize;
-	margin-bottom:20px;
+	margin-bottom:15px;
 }
 
 
- .btn {
+.btn {
     background: #ffffff;
     border: none;
     transition: all .6s;
     color: #FE5D89;
     z-index: 9;
     font-size: 14px;
-	line-height:20px;
+    line-height: 20px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    padding: 17px 40px;
+    padding: 17.5px 41px;
     border-radius: 5px;
-	position:relative;
-	overflow:hidden;
-	margin-top:30px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
 }
 
 
@@ -156,7 +154,8 @@ img {
 
 /*--  header-bottom  --*/
 
-header {
+
+.header-area {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -164,12 +163,9 @@ header {
 	z-index: 9999;
 	-webkit-transition: 2s;
 	transition: 2s;
+    background-color: transparent;
+    margin-top: 35px;
 }
-
-.header-area {
-	background-color: transparent;
-}
-
 .header-area a {
 	color: #323232;
 }
@@ -196,7 +192,7 @@ header {
 	left: 0;
 	top: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: #999;
 	border-bottom: 1px solid #1e272e;
 }
 
@@ -206,27 +202,23 @@ header {
 }
 
 .header-area.fixed-menu ul li a {
-	padding: 14px 15px;
+	
 }
 
 .header-area.fixed-menu ul li ul {
 	top: 53px;
 }
-
+ 
 .slicknav_menu {
 	display: none;
 }
 
 
 /*-- main menu --*/
-.mainmenu {
-    display: inline-block;
-}
 .mainmenu ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	float: right;
 }
 
 .mainmenu ul li {
@@ -234,13 +226,12 @@ header {
 	position: relative;
 	-webkit-transition: .4s;
 	transition: .4s;
-	float: left;
 }
 
 .mainmenu ul li a {
 	color: #fff;
 	padding: 15px 0px;
-	margin:15px;
+	margin:14.5px;
     padding-bottom: 4.5px;
 	margin-bottom:16.5px;
 	display: block;
@@ -250,6 +241,9 @@ header {
 	transition: .4s;
 	position:relative;
 	border-bottom: 2px solid transparent;
+}
+.mainmenu ul li:last-child a {
+	margin-right:0px;
 }
 
 .mainmenu ul li.active a,
@@ -264,9 +258,9 @@ header {
 .mainmenu ul ul {
 	position: absolute;
 	z-index: 2;
-	left: 0;
+	right: 0;
 	top: 99%;
-	width: 200px;
+	width: 204px;
 	text-align: left;
 	opacity: 0;
 	visibility: hidden;
@@ -274,6 +268,7 @@ header {
 	transition: .4s;
 	background: #fff;
     border-radius: 4px;
+    padding: 6.5px 0;
 }
 
 .mainmenu ul li:hover>ul {
@@ -288,8 +283,9 @@ header {
 
 .mainmenu ul ul li a {
 	font-size: 14px;
-	padding: 15px 15px;
-	color: #FE5D89;
+	padding: 11px 32px;
+	color: #635AF2;
+	margin:0;
 }
 
 
@@ -304,15 +300,16 @@ header {
 }
 
 .mainmenu ul li ul li:hover>a {
-	padding-left: 20px;
+	padding-left: 32px;
 	-webkit-transition: .4s;
 	transition: .4s;
-	color: #696CFD;
+	color: #FE5D89;
 }
 
 .mainmenu ul li a .fa.fa-angle-right {
 	float: right;
-	font-size: 20px;
+	font-size: 16px;
+	padding: 2px;
 }
 
 .support-login-btn {
@@ -322,6 +319,7 @@ header {
 .support-login-btn li {
     display: inline-block;
 }
+
 .support-login-btn li.support a {
     background: #fff;
     border-radius: 4px;
@@ -330,16 +328,18 @@ header {
     margin-right: 0;
 	border-bottom: 0;
     display: inline-block;
+	font-weight: 500;
 }
 .support-login-btn li.login a {
     background: #FE5D89;
     border-radius: 4px;
     color: #fff;
-    padding: 15px 36px;
+    padding: 15px 35px;
     margin-left: 15px;
     margin-right: 0;
 	border-bottom: 0;
     display: inline-block;
+	font-weight: 500;
 }
 /*** 
 ====================================================================
@@ -357,17 +357,96 @@ header {
     height: 100vh;
 }
 .hero-section.bg-img {
-    background-color: #555;
+	background-color: #937C61;
     background-image: url(../img/hero-bg.png);
 	background-position: bottom center;
     background-size: cover;
 }
-.hero-text {
+.hero-text,
+.hero-text p {
     color: #fff;
 }
-.hero-text h2 {
+.hero-text h1 {
     padding-bottom: 20px;
 }
+
+
+
+
+
+/*** 
+====================================================================
+	 boxes-area  start
+====================================================================
+ ***/
+
+
+.service {
+	display: block;
+    padding: 30px 24px;
+	margin-bottom: 30px;
+	border-radius:4px;
+	-webkit-transition: .5s;
+	transition: .5s;
+	border: 0.7px solid #E2E2FF;
+}
+.boxes-area .service:hover{
+	box-shadow: 0px 30px 30px rgba(115, 117, 165, 0.07);
+}
+.service-area .service p{
+	transition: .5s;
+}
+
+.service-icon {
+	margin-bottom: 30px;
+}
+.service-icon i {
+    display: inline-block;
+}
+.service-icon i:before {
+    font-size: 25px;
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 0;
+	
+}
+.service-icon.zero i:before {
+    color: #696CFD;
+    background: #F3F4FA;
+}
+.service-icon.code i:before {
+    color: #34A7FF;
+    background: #E4F3FF;
+}
+.service-icon.team i:before {
+    color: #FE5F8A;
+    background: #FFE9EB;
+}
+.service-icon.access i:before {
+    color: #6D5DA6;
+    background: #F1EEFC;
+}
+.service-content h5 a {
+	font-weight: 500;
+	color: #243E63;
+	font-size: 18px;
+    line-height: 25px;
+	margin-bottom: 15px;
+	display: inline-block;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+/*** 
+====================================================================
+	 boxes-area  end
+====================================================================
+ ***/
+
 
 /*** 
 ====================================================================
@@ -375,56 +454,308 @@ header {
 ====================================================================
  ***/
 
-.service {
-	display: block;
-	padding: 25px 15px;
-	margin-bottom: 30px;
-	-webkit-transition: .3s;
-	transition: .3s;
+.service-area .service:hover{
+	
+	box-shadow: 0px 30px 30px rgba(115, 117, 165, 0.07);
+
+	background: #6563f7; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #6563f7 0%, #594be6 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #6563f7 0%,#594be6 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #6563f7 0%,#594be6 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6563f7', endColorstr='#594be6',GradientType=1 );
+	color: #fff;
 }
 
-.service-icon {
-	margin-bottom: 15px;
+.service-area .service:hover p{
+	color: #fff;
 }
-.service-icon i:before {
-    font-size: 25px;
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    line-height: 60px;
-    text-align: center;
+
+.service-area .service:hover h5 a,
+.service-area .service:hover p {
+	color: #fff;
+	
+}
+
+/*** 
+====================================================================
+	 skill Area  start
+====================================================================
+ ***/
+.skill-area {
+  border: 1px solid rgba(112, 112, 112, .02);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#421bc5+0,696cfd+100 */
+background: rgb(66,27,197); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(66,27,197,1) 0%, rgba(105,108,253,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(66,27,197,1) 0%,rgba(105,108,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(353deg, rgba(66,27,197,.02) 0%,rgba(105,108,253,.02) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#421bc5', endColorstr='#696cfd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.skill-area .section-title {
+    margin-bottom: 77px;
+}
+.skill-area .skill-item {
+    position: relative;
+    font-weight: 500;
+    color: #243E63;
+    font-size: 18px;
+    z-index: 1;
+    display: block;
+    padding: 15px 12px;
+    border: 0.7px solid #E0E0F2;
+    transition: 0.5s;
+    box-shadow: 0px 30px 30px rgba(115, 117, 165, 0.02);
+    border-radius: 4px;
+    background: #FFF;
+    margin-bottom: 15px;
+    padding-left: 46px;
+}
+.skill-area .skill-item i {
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    background: #F3F4FA;
+    position: absolute;
+    border-radius: 3px;
+    margin: 14px 11px;
     border-radius: 50%;
+    color: #686EE4;
+}
+.skill-area .skill-item i::before {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    display: inherit;
+}
+
+/*** 
+====================================================================
+	 skill-area  end
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+	 Features-area  start
+====================================================================
+ ***/
+
+
+.feature {
+	display: block;
+    padding: 30px 24px;
+	margin-bottom: 30px;
+	border-radius:4px;
+	-webkit-transition: .5s;
+	transition: .5s;
+	border: 0.7px solid #E2E2FF;
+}
+.feature-area .feature:hover{
+	box-shadow: 0px 30px 30px rgba(115, 117, 165, 0.07);
+}
+.feature-area .feature p{
+	transition: .5s;
+}
+
+.feature-icon {
+	margin-bottom: 30px;
+}
+
+
+
+.feature .feature-icon i:before{
+    font-size: 24px;
+    width: 141px;
+    height: 53px;
+    display: inline-block;
+    line-height: 53px;
+    border-radius: 33px;
+    padding-left: 24px;
     margin-left: 0;
 }
-.service-icon.zero i:before {
+.feature .feature-icon.violet i:before {
     color: #696CFD;
-    background: #CDC9FF;
+    background: #F3F4FA;
 }
-.service-icon.code i:before {
+.feature .feature-icon.skay i:before {
     color: #34A7FF;
-    background: #C0E3FE;
+    background: #E4F3FF;
 }
-.service-icon.team i:before {
+.feature .feature-icon.yeallow i:before {
     color: #FE5F8A;
-    background: #FAD1D5;
+    background: #FFE9EB;
 }
-.service-icon.access i:before {
-    color: #6D5DA6;
-    background: #E0DBF2;
+.feature .feature-icon.black i:before {
+    color: #6B5BA4;
+    background: #F1EEFC;
 }
-.service-content h5 a {
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #2b2b2b;
+
+
+.feature-content h5 a {
+	font-weight: 500;
+	color: #243E63;
 	font-size: 18px;
+    line-height: 25px;
 	margin-bottom: 15px;
 	display: inline-block;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+/*** 
+====================================================================
+	 Features-area  end
+====================================================================
+ ***/
+
+
+
+
+
+/*** 
+====================================================================
+	 Team-area  start
+====================================================================
+ ***/
+.our-team-area {
+  border: 1px solid rgba(112, 112, 112, .02);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#421bc5+0,696cfd+100 */
+background: rgb(66,27,197); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(66,27,197,1) 0%, rgba(105,108,253,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(66,27,197,1) 0%,rgba(105,108,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(353deg, rgba(66,27,197,.02) 0%,rgba(105,108,253,.02) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#421bc5', endColorstr='#696cfd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 
 /*** 
 ====================================================================
-	 Service Area  end
+	 Team-area  end
+====================================================================
+ ***/
+
+
+
+ /*** 
+====================================================================
+	 Our Team area  start
+====================================================================
+ ***/
+
+.thumb-bg-1 {
+	background-image: url(../img/team/team-a-sq-2.png)
+}
+
+.thumb-bg-2 {
+	background-image: url(../img/team/team-b-sq-2.png)
+}
+
+.thumb-bg-3 {
+	background-image: url(../img/team/team-c-sq-2.png)
+}
+
+.thumb-bg-4 {
+	background-image: url(../img/team/team-d-sq-2.png)
+}
+
+.single-team-member {
+	background: #fff;
+	box-shadow: 0 0px 24px -4px rgba(158, 152, 153, 0.5);
+	padding: 25px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	border-radius: 4px;
+}
+
+.single-team-member:hover {
+	box-shadow: 0 0px 24px 0px rgba(158, 152, 153, 0.9);
+}
+
+.team-thumb {
+	background-position: center top;
+	background-color: #ddd;
+	background-size: cover;
+	height: 103px;
+	margin-bottom: 10px;
+	position: relative;
+	-webkit-transition: 1s;
+	transition: 1s;
+	width: 103px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.team-info {
+	text-align: center;
+	color: #5c767d;
+}
+
+.team-info h3 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #294368;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.team-info h5 {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #696CFD;
+	margin-bottom: 15px;
+}
+
+.team-social-link {
+	margin-top: 6px;
+}
+
+.team-social-link a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    color: #696CFD;
+    border-radius: 50%;
+    line-height: 35px;
+    margin: 0 5px;
+    transition: .4s;
+}
+/*
+.team-social-link a:hover {
+	background: #727B9A;
+	color: #fff;
+	border-color: #1e272e;
+}*/
+
+.owl-dots {
+    width: 100%;
+    text-align: center;
+}
+.owl-dots button.owl-dot {
+    width: 15px;
+    height: 6px;
+    background-color: #D9DBFF;
+    margin: 8px;
+    margin-top: 35px;
+    text-align: center;
+    border-radius: 33px;
+}
+.owl-dots button.owl-dot.active {
+    background-color: #5E56EE;
+}
+/*** 
+====================================================================
+	 Our Team area  end
 ====================================================================
  ***/
 
